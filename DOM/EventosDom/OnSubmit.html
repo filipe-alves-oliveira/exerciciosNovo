@@ -1,0 +1,28 @@
+<!-- Evento submit: interceptar a açao de enviar as informaçoes para o parametro action q foi indicado  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <form action="https://google.com/search" method="get">
+        <label for="q">Busca</label>
+        <!-- q - query, parametro q o google entende no /serch -->
+        <input type="texte" name="q" />
+        <input type="submit" value="Pesquisar" />
+    </form>
+    <script>
+        const formE1 = document.querySelector("form")
+
+        formE1.addEventListener("submit", (event) = {
+        const queryValue = event.target.querySelector("input[name=q]").value
+        console.log("queryValue", queryValue)
+        if (!queryValue) {
+        event.preventDefault()
+        alert("Busca Obrigatoria")
+        }
+    })
+    </script>    
+</body>
+</html>

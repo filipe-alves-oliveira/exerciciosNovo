@@ -1,0 +1,46 @@
+<!-- METODO QUERY SELECTOR -->
+
+<html>
+    <head>
+        <meta charset="UTF-8" /> 
+        <!-- ajustar acentos -->
+        <title>Curriculo</title>
+    </head>
+    <body>
+        <img src="foto.png" width="100" />
+        <h1 id="person-name" class="title">Filipe</h1>
+        <h2>Programados JavaScript</h2>
+        <p>
+            Conhecimento em programaçao FrontEnd.
+        </p>
+        <p>
+            para mais detalhes visite meu <a href="github">Github</a>.
+        </p>
+        <script>
+            const subTitleE1 = document.createElement("h2") //apenas criado na memoria, precisamos anexar na arvore dom
+            subTitleE1.innerHTML = "Projetos"
+
+            const pjListE1 = document.createElement("ul")
+
+            const pjListItem1 = document.createElement("li")
+            pjListItem1 = "TODO MVC"
+
+            const pjListItem2 = document.createElement("li")
+            pjListItem2 = "Github API"
+
+            const pjListItem3 = document.createElement("li")
+            pjListItem3 = "eCommerce"
+
+            pjListE1.append(pjListItem1)
+            pjListE1.append(pjListItem2)
+            pjListE1.append(pjListItem3)
+
+            document.body.append(subTitleE1) //anexando no dom
+            document.body.append(pjListE1)
+
+            for(const i = 0; i < 3; i++) {
+                pjListItem3.innerHTML = `eCommerce ${i}`
+            }
+        </script>
+    </body>
+</html>

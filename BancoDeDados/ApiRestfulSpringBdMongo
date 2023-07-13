@@ -1,0 +1,13 @@
+curso Nélio - Java completo 2023
+
+API restful com Spring Boot e banco de MongoDB
+
+--> Nivelamento NoSQL e MongoDB
+
+Incompatibilidade de impedancia - dados armazenados de forma diferente Objetos em memória.
+com ou sem ORM (mapeamento objeto-relacional, é uma técnica para aproximar o paradigma de desenvolvimento de aplicações orientadas a objetos ao paradigma do banco de dados relacional.)- transaçoes e junçoes degradam perfomance.
+BD relacionais nao foram projetados para projetar bem em clusters
+
+MongoDB Orientado a objetos banco de dados orientado a documentos.
+
+

@@ -1,0 +1,24 @@
+<!-- tecla pressionada.
+keydown - quando a tecla é pressionada.
+keyup - quando a tecla volta ao seu estado original, quando ela sobre, up. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <input type="text" />
+    <script>
+        const inputE1 = document.querySelector("input[type=text]")
+        inputE1.addEventListener("keydown", (event) => {
+            console.log("keydown", `${event.key} - ${event.keyCode}`) //a - 65 - tabela ASC
+        })
+
+        const inputE2 = document.querySelector("input[type=text]")
+        inputE1.addEventListener("keyup", (event) => {
+            console.log("keyup")
+        })
+    </script>    
+</body>
+</html>

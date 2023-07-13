@@ -1,0 +1,25 @@
+//METODO QUERY SELECTOR
+
+<html>
+    <head>
+        <meta charset="UTF-8" /> - ajustar acentos
+        <title>Curriculo</title>
+    </head>
+    <body>
+        <img src="foto.png" width="100" />
+        <h1 id="person-name" class="title">Filipe</h1>
+        <h2>Programados JavaScript</h2>
+        <p>
+            Conhecimento em programaçao FrontEnd.
+        </p>
+        <p>
+            para mais detalhes visite meu <a href="github">Github</a>.
+        </p>
+        <script>
+            const titleE1 = document.querySelector('#person-name') //recuperando pelo id # person-name
+            console.log("titleE1 value:", titleE1.innerHTML) //titleE1, value: Filipe, linha 10 //recuperando pelo valor
+
+            titleE1.innerHTML = "Filipe Alves" //passou a ser Filipe Alves.
+        </script>
+    </body>
+</html>

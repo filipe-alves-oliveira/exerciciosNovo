@@ -1,0 +1,141 @@
+1950 - computador passou a ser eletronico
+
+1960 - ARPANET - projeto do departamento de segurança americano - 1 tentativa de internet que era ARPANET
+patrocinada pelo departamento de defesa dos EUA.
+
+1970 - TCP/IP - Robert e. Kahn & Vint. definiram o protocolo de comunicaçao.
+
+1980 - WWW - Tim Berners-lee - inventou o WWW, funciona em cima do TCP/IP
+
+1990 - Internet chegou no Brasil
+
+2000 - provedor ig, redes sociais, internet em casa (sabado 14h).
+
+Internet - rede de computadores. 
+
+Topologia:
+> anel (maquina conversando uma com a outra).
+> centralizada varios pc ligado a um nó central, Rede q tem um switch e tds pcs sao conectados nesse switch (nó central).
+
+provedores de niveis diferentes
+
+PILHA TCP/IP - transmission control protocol - orientado a conexao e confiável
+IP - internet protocol - roteamento entre redes
+TCP é um software que usa um padrao de projeto chamado layers 
+> aplicacao - (aplicacao http, ftp, smtp), comunicacao processo a processo, numero de porta
+> transporte - TCP (protocolo confiavel), UCP(melhor esforço), comunicacao host-a-host, confiabilidade, integridade
+> internet - endereço ip, conexao entre redes, trasnferencia de pacotes
+> rede/fisica - ethernet, wifi, mac, adress, fisica(hardware) e enlace (software)
+
+Anatomia do endereço IPV4 (IPV6 mais moderno):
+- ip de CLASSE A - 192.168.100.230 (cada parte tem de 0 a 255), parte destina a rede q o pc esta 
+e parte esta destinado a identifica o pc dentro de uma rede.
+192 - rede
+168.100.230 - host(pc dentro de uma rede)
+para definir o que é rede e o que é host usa-se mascara de sub-rede (255.0.0.0), serve para dizer q sempre na mascara de sub-rede um determinado bit é marcado com 1 - aquela parte do IP aponta para uma rede
+e sempre queo bit na mascara de sub-rede for 0, significa q o bit correspondente ao ip ele aponta para uma maquina.
+A mascara de sub-rede divide sempre do lado esquerdo bit 1 , e lado direito bit 0.
+255 - bit 1
+0.0.0 - bit 0
+
+
+Classe B - 192.168.100.230
+rede - 192.168
+host - 100.230
+mascara de rede - 255.255.0.0
+
+Classe C - 192.168.100.230
+rede - 192.168.100
+host - 230
+
+255.255.255.0 - as 3 primeiras partes mapeiam uma rede e a ultima parte mapeia o host
+limita a 255 maquinas dentro de uma rede classe C
+
+porta
+pc 1 - 10.85.0.4 
+pc 2 - 10.85.0.5 (rodando node na porta 8080)
+usando a porta no pc 1 http://10.85.0.5:8080 posso acessar o node do pc 2 no pc 1
+
+
+------------------------------------------------------------
+PROTOCOLO HTTP 
+hyper, text, transfer, protocol - protocolo de transferencia de uma hipertexto(contem links associados)
+hyperText - documentos escritos em HTML (hyper text markup language), textos lincados de uma pagina para outra
+e dentro do documento HTML, fazendo referencia a outros formatos de arquivos css, js, jpeg..
+Dentro da pilha TCP/IP, ultima camada, faz parte da camada de aplicaçao.
+
+é um protocolo stateless - qdo um pc manda um requisicao HTTP para um servidor, para o servidor e pc como se tivesse fazendo a comunicacao
+pela primeira vez, dentro do protocolo nao existe o estado da conversacao, nao sabe se esta fazendo a primeira ou decima req.
+Ex.: um server web q dentro dele tem uma section do usuario e no momento que é feito a req em cima de um header, vai o
+id da section, qdo chega no server esse id resgata um espaco de memoria sua informacoes, mas nativamente ele é stateless nao tem estado, td conexao é como se fosse a primeira vez
+
+cliente-servidor (manda uma req a partir da URL + parametros, hooks, ela é atendida por um servidor e manda a response)
+baseado em conceito de requisicao e resposta, mando um req baseado na URL(conjunto de parametros)
+e recebo uma resposta, response, podendo ser um html, json, video..
+
+Opera em cima da pilha TCP/IP.
+
+Fluxo:
+1 - usuario informa URL (www.google.com.br) + parametros
+2 - browser gera a req (get/http/1.1(version)) host - www.google.com.br
+3 - servidor web gera a resposta (http/1.1 200 ok ... conjunto de cabeçalhos na requisicao, no corpo da resposta a pagina de fato, a partir da url informada no browser)
+4 - browser exibe a pagina, renderiza. (varias req, imagens, fontes..)
+
+Metodos:
+Verbos: get, put, post, delete, trace, options, conect formas diferentes de fazer requisicoes.
+GET - os parametros vao no proprio corpo da URL  
+URL + parametros da req (www.google.com.br/search?q=web+moderno)
+? - divisor entre url e os parametros q vou passar nessa req 
+q=web+moderno - query(consulta realizada em cima do serviço search), chave = valor
+&hl=pt-BR - lingua da maquina (resultados em pt) 
+Ideal para verificar os parametros q foi usado para chegar no resultado.
+
+
+POST - os parametros vao no corpo da req. como as senhas e para segurança é feito com protocolo https(protocolo seguro)
+req da maquina cliente para maquina servidor ser cliptografada.
+Cabeçalho - POST/signim HTTP/1.1
+host: accounts.google.com
+user-Agent: mozzila/5.0...
+
+Corpo da requisicao - continue/https%3A%2F...
+
+Informaçoes sensiveis usar protocolo HTTPs
+
+Grupos de status HTTP:
+100 - informacao
+200 - sucesso
+300 - redirecionamento
+400 - erro gerado a partir do cliente (fez uma req passando parametros invalidos)
+500 - erro no servidor (erro banco de dados, codigo para atender a requisicao)
+
+---------------------------------------------------------------------------------------------
+SERVIDOR WEB    
+apache - 1 thread por req, 1000 usuarios, 1000 thread.
+Node - 1000 pessoas acessando uma aplicacao em Node, temos apenas uma unica thread trabalhando e recebendo essas req,
+inviteloop, despacha para o pull de thread e pegar a comunicacao assincrona, conforme a demanda aumenta ou diminui o pull.
+
+Web !== dns (aplicacao web sendo publicada em producao)
+uma determinada maquina cliente vai precisar acessar seu site (ww.cod3r.com.br)
+web server 23.67.100.3 - 
+DNS server 8.8.8.8 - 
+Ao acessar o www na maquina cliente, antes de chegar direto no servidor, via pagina para renderizar no browser, é necessario
+que uma consulta DNS seja feita, em algum servidor dns(8.8.8.8), www...(registro dns).
+sempre q o usuario acessar o www, acessa o servidor 23.67.100.3, resolvido o ip vai para o servidor e a resposta é enviado para o cliente
+
+Para q vc tenha um servidor Web, q esta visivel na internet vc precisa ter um registro desse endereco publico, ou uma rota para a pagina e precisa estar dentro de um dns.
+
+2hrs para atualizar o dns no mundo todo.
+
+Virtual Hosting - dentro deum server web, temos varios sites sendo atendido.
+estrutura de pastas - dentro do web server ter estrutura de pastas imagens, css, js, index.html, about.html.
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<!-- DomContentLoaded: essa funcao garante que só vai ser executada depois de qdo tudo estiver carregado -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <button>CLique me</button>
+    <a href="http://devsamurai.com.br">Clique me</a>
+    <script>
+        const button = document.querySelector("button")
+        button.addEventListener("click", () =>{
+            console.log("Clicou no botao")
+        })
+
+        const hyperlink = document.querySelector("a")
+        hyperlink.addEventListener("click", (event) => {
+            event.preventDefault() //o elemento nao faca seu comportamento padrao
+            console.log("Clicou no hyperlink")
+        })
+    </script>    
+</body>
+</html>
+

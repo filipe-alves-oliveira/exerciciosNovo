@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8" /> - ajustar acentos
+        <title>Curriculo</title>
+    </head>
+    <body>
+        <img src="foto.png" width="100" />
+        <h1 id="person-name" class="title">Filipe</h1>
+        <h2>Programados JavaScript</h2>
+        <p>
+            Conhecimento em programaçao FrontEnd.
+        </p>
+        <p>
+            para mais detalhes visite meu <a href="github">Github</a>.
+        </p>
+        <script>
+
+//Hierarquia do DOM - metodo ANTIGO.
+
+//Document --> Nodes(+de 1 nó) --> Elements --> Atributes
+console.log(document) //analisa td documento do código todo o HTML
+console.log(document.body) //acessa o document body do html
+
+//Acessando os nós do DOM
+document.getElementById()
+const title1 = document.getElementById("person-name") //id atributo do h1, person-name, só tras 1 pq o id é unico.
+console.log("title1", title1) //<h1 id="person-name" class="title">Filipe</h1>
+
+//Recuperando elementos a partir do nome de tag
+const title2 = document.getElementsByTagName("h1") //recupera tag h1, retorna um array, lista de tagname
+console.log("title2", title2) //<h1 id="person-name" class="title">Filipe</h1>
+
+//Recuperando elementos a partir de uma determinada classe
+const titleClass = document.getElementsByClassName("Title")
+console.log("titleClass", titleClass) //retorna lista de h1 que contemtag title.
+
+//iterando..
+for (const el of textEl) {
+    console.log("el", el) //h1, p
+}
+
+        </script>
+    </body>
+</html>
+
+

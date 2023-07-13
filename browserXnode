@@ -1,0 +1,95 @@
+//-------->>>BROWSER - no console f12
+this === window //true
+
+var a "Texto" //undefined
+window.a//"Texto"
+
+var a = 123//undefined
+window.a//123
+this.a//123
+
+let b = 123
+window.b//undefined
+this.b//undefined
+b//123
+//nao pode declarar duas variaveis no escopo global com let
+
+const c = 456
+window.c//undefined
+
+//a diferenca é que var vai direto pro window e let ou const náo vai para window, ficam em memoria dentro do browser
+
+function f1() { return this === window } //undefined
+f1()//true - definida de forma global
+window.f1()//true
+this.f1()//true
+//criando funcao nomeada será colocada dentro do window
+
+const f2 = () => console.log(this === window)//undefined
+f2()//true
+this.f2()//erro - f2 not function
+
+//OBJETO
+let pessoa = {nome: 'Ana', falar: function() {return `Eu sou ${this.nome}`}} 
+pessoa.falar()// Eu sou Ana
+this.nome //undefined, pq acessa o window, this é o window
+this === window //true
+//qdo estiver dentro de um contexto de obj this, vai apontar para o proprio obj, ou seja, ao inves de poluir o escopo global poluo meu objt 
+//pessoa esta no escopo global, mas o que esta dentro nao, ao inves de ter 10, 20 funcoes no global eu tenho apenas 1 que agrupa essas funcoes
+
+pessoa.verificarEscopo = function() {return this === window}
+pessoa.verificarEscopo() //false - pq this nao é igual a window e sim this é igual a pessoa 
+//comparar realmente nesse caso qdo chamo uma funcao a partir de pessoa se this é estritamente igual a window
+
+
+
+//-------->>>NODE 
+
+let a = 3
+
+console.log(this.a) //undefined
+console.log(global.a) //undefined 
+
+
+global.b = 123
+console.log(global.b) //123
+//global dentro do Node = window
+console.log(global === window) //true
+
+
+this.c = 456 //exporta o c para fora do arquivo
+console.log(this.c)//456 
+
+console.log(module.exports.c)//456
+//this = module.exports
+console.log(this === module.exports)//true
+
+//Dentro de Node cada arquivo é um modulo, diferente da web, no qual todos os arquivos é mimificado 
+//e gera um arquivo só e td disputa no escopo global
+//em node cada arquivo é um modulo diferente
+this.c = 456
+this.d = false
+this.e = 'teste'
+
+console.log(module.exports) //{ c: 456, d: false, e: 'teste' }
+
+//this é o module.exports
+//let é local dentro do arquivo nao é exportada, nao fica no global é local
+
+
+//criando variavel sem var e let, vc colocar ela no obj global do node
+abc = 3
+console.log(global.abc) //3
+
+
+//conclusao: conhecer o local onde vc executa o js, o runtime de onde vc usa o js.
+
+
+
+
+
+
+
+
+
+

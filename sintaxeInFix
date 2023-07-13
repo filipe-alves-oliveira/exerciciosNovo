@@ -1,0 +1,4 @@
+//Sintaxe Infix - Operador = +
+//Operando(+) + operador - d++ - postFix, depois do operando
+//operador + Operando(+) - ++d - preFix, antes do operando
+//Operando1 + Operando2 - inFix, fica entre os dois operadores(+)

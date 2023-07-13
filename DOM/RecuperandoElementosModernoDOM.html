@@ -1,0 +1,43 @@
+//METODO QUERY SELECTOR
+
+<html>
+    <head>
+        <meta charset="UTF-8" /> - ajustar acentos
+        <title>Curriculo</title>
+    </head>
+    <body>
+        <img src="foto.png" width="100" />
+        <h1 id="person-name" class="title">Filipe</h1>
+        <h2>Programados JavaScript</h2>
+        <p>
+            Conhecimento em programaçao FrontEnd.
+        </p>
+        <p>
+            para mais detalhes visite meu <a href="github">Github</a>.
+        </p>
+        <script>
+            //Recuperando os elementos ou objtos da arvore DOM.
+document.querySelector('selector') //primeira ocorrencia do elemento buscado.
+document.querySelectorAll('selector') //All - todos elementos buscado.
+Element.querySelectorAll('selector') //se retornar um elemento p, busca localizada.
+Element.querySelectorAll('selector')
+
+//Seletores CSS:
+
+//Universal: *
+console.log("*", document.querySelectorAll("*")) //html, head, meta, title, body, img .. mostra a arvore DOM toda.
+console.log("*", document.querySelectorAll("p *")) //mostra o que tem dentro do p.
+console.log("id", document.querySelector("#person-name")) //buscando o id
+console.log("tag", document.querySelector("p")) //buscando o p
+console.log("class", document.querySelectorAll(".text")) //buscando todos q tenham a class text, coloca . na frente do seletor css
+console.log("class", document.querySelector(".text")) //apenas o primeiro elemento da ocorrencia, diferente do All q retorna todos.
+console.log("attr", document.querySelectorAll("a[href]")) //busca de determinado atributo, hiperlink
+console.log("attr", document.querySelectorAll("a[href='http://..']") //busca de determinado atributo, hiperlink
+
+for (const el of document.querySelectorAll("*")) {
+    console.log("el", el)  //busca tds os elementos da arvore DOM
+}
+
+        </script>
+    </body>
+</html>
