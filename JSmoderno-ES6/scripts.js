@@ -244,6 +244,28 @@ const car = {...carName, ...carMarca, ...outrasInfos, portas: 2}  //portas: 2 - 
 console.log(car) //{name: 'gol', marca: 'Volks', km: '10000', price: 55000, portas: 2}
 
 
+//--------------- CLASSES
+class Produto {
+    constructor(name, price) { //cada objeto criado será ativado automaticamente
+        this.name = name //nome do objeto criado agora = ao nome passado pelo constructor
+        this.price = price
+    }
+
+    productComDesconto(desconto) {
+        return this.price * ((100-desconto) / 100)
+    }
+}
+
+const camiseta = new Produto("Camisa gola V ", 20)
+
+console.log(camiseta.name) //Camisa gola V 
+
+console.log(camiseta.productComDesconto(10)) //18 - com desconto de -10%
+
+
+const tenis = new Produto("tenis", 120)
+
+console.log(tenis.productComDesconto(50)) //60 - 50% de desconto no tenis de valor 120
 
 
 
