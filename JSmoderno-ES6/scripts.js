@@ -185,6 +185,14 @@ products.map((product) => {
 console.log(products)
 
 
+//----------- TEMPLATE LITERALS com backticks ``
+
+const username = 'filipe'
+const age = 32
+
+console.log(`o nome do usuario é ${username} e ele tem ${age} anos`)
+
+
 
 
 
