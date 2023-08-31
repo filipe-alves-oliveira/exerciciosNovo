@@ -219,7 +219,29 @@ const {name: nomeDoProduto, price, category: nomeDaCategoria, cor} = detalhesDoP
 console.log(`${nomeDoProduto}, ${price}, ${nomeDaCategoria}, ${cor}`) //mouse, 39.99, perifericos, gray
 
 
+//------------ SPREAD OPERATOR - arrays e objetos
 
+//EM ARRAY
+const a1 = [1, 2, 3]
+const a2 = [4, 5, 6]
+
+const a3 = [...a1, ...a2]
+
+console.log(a3) //[1, 2, 3, 4, 5, 6]
+
+const a4 = [0, ...a1, 4]
+
+console.log(a4) //[0, 1, 2, 3, 4]
+
+
+//EM OBJETO
+const carName = {name: 'gol'}
+const carMarca = {marca: "Volks"}
+const outrasInfos = {km: '10000', price: 55000}
+
+const car = {...carName, ...carMarca, ...outrasInfos, portas: 2}  //portas: 2 - colocado mais uma prop.
+
+console.log(car) //{name: 'gol', marca: 'Volks', km: '10000', price: 55000, portas: 2}
 
 
 
