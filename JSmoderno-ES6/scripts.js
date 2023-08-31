@@ -193,6 +193,32 @@ const age = 32
 console.log(`o nome do usuario é ${username} e ele tem ${age} anos`)
 
 
+//------------- DESTRUCTURING - transformar os itens de um desses dados(obj ou arrays) em var
+
+//COM ARRAYS
+const frutas = ["laranja", "maça", "limao", "uva"]
+
+const [f1, f2, f3] = frutas
+
+console.log(f1) //laranja
+console.log(f2) //maça
+console.log(f3) //limao
+
+//COM OBJETOS
+
+const detalhesDoProduto = {
+    name: "mouse",
+    price: 39.99,
+    category: "perifericos",
+    cor: "gray"
+}
+
+const {name: nomeDoProduto, price, category: nomeDaCategoria, cor} = detalhesDoProduto
+//name: nomeDoProduto e category: nomeDaCategoria - escolhendo outro nome de variavel e colocando em relação a chave
+
+console.log(`${nomeDoProduto}, ${price}, ${nomeDaCategoria}, ${cor}`) //mouse, 39.99, perifericos, gray
+
+
 
 
 
