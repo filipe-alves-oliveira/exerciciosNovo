@@ -269,3 +269,32 @@ console.log(tenis.productComDesconto(50)) //60 - 50% de desconto no tenis de val
 
 
 
+//----------- HERANÇA 
+//extends - extender uma classe para outra.
+//super - enviado para classe pai, superior que herdamos
+
+class produtoComAtributo extends Produto { //pegando a class products de cima (desconto e nome e preço)
+    constructor(name, price, colors){
+        super(name, price) //envia para classe de cima não precisa redeclarar novamente.
+        this.colors = colors
+    }
+
+    showColors () {
+        console.log("as cores são:")
+        this.colors.forEach(color => {
+            console.log(color)
+        });
+    }
+}
+
+const chapeu = new produtoComAtributo("chapéu", 30.99, ["Preto", "Azul", "Verde"])
+
+console.log(chapeu.name) //chapéu
+
+console.log(chapeu.productComDesconto(30)) //21.692999999999998
+
+chapeu.showColors() //as cores são: Preto Azul Verde //por ser um metodo nao precisa de console.log, o metodo já é baseado em console.logS
+
+
+
+
