@@ -6,8 +6,10 @@ import { useState } from "react";
 
 const ManageData = () => {
   let someData = 10;
+  console.log(someData); //10
 
   const [number, setNumber] = useState(15); //desestruturar como array
+  console.log(number); //15 - ao mudar o state(clicar no button mudar state) altera para 25
 
   return (
     <div>
