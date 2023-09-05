@@ -11,6 +11,7 @@ const renderizacaoListaEmComponente = () => {
     <div>
         {cars.map((car) => (
             <reutilizacaoComponent 
+            key={car.id}
             marca={car.marca} 
             color={car.color} 
             novoCarro={car.novoCarro} 
