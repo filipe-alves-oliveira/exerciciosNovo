@@ -2,6 +2,8 @@
 //ex.: se temos 2 props (name e age) - podemos fazer assim: My component({name, age})
 //nao necessita usar props.algumaCoisa.
 
+//o nome tem q ser o mesmo, se colocar um nome q não existe ele nao encontra e não desestrutura.
+
 const desestruturandoProps = ({marca, km, cor}) => {
   return (
     <div>
