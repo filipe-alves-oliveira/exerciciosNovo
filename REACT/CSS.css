@@ -1,0 +1,66 @@
+//CSS de COMPONENTE
+//- utilizado para um componente em especifico, criado arquivo com mesmo nome do componente .css e importado no componente.
+// import "./component.css"
+//- o css vaza para outros não é scope. p{color: green; background: white;}
+//- para não vazar devemos usar o <p className="component">Componente</p>
+
+--------------------------------------------------------------
+//CSS INLINE STYLE
+//- aplicar regras diretamente em um elemente com stributo style.
+//- dificulta a manutenção e deixa o código imprevisível em algumas situações.
+/* {} - uma chave, serve para inserir algo dinâmico.
+{{}} - duas chaves, serve para inserir objeto, CSS inline é formado por meio de um objeto, chave e valor */
+//ex.: <p style={{color: "red", backgroundColor: "green"}}>Estilo Inline</p>
+
+
+--------------------------------------------------------------
+//CSS INLINE DINÂMICO
+//- baseado em uma condicional.
+//- if ternário.
+//- dependendo da condição podemos mudar que regras de estilo um elemento recebe
+// const n = 15 - <h2 style={n < 10 ? ({color: "purple"}) : ({color: "yellow"})}>CSS dinâmico</h2> 
+// CSS dinâmico (amarelo pq é n é maior q 10).
+
+--------------------------------------------------------------
+//CLASSES DINAMICAS NO CSS
+//- mudar classe de CSS de um elemento.
+//- com if ternário.
+//- classes isoladas no arquivo CSS, resolvendo problema de organização do cósigo.
+//obs.: quando o valor final da variavel não preciso comparar, fazendo redTitle === true ? ...; o js ja entende se é true ou false.
+
+/* const redTitle = false
+
+<h2 className={redTitle ? "red-title" : "title"}>Este titulo tem classe dinâmica</h2>
+
+.red-title {
+    background-color: #282c34;
+    color: white;
+    padding: 15px;
+    border: 5px solid red;
+  }
+  
+  .title {
+    background-color: #282c34;
+    color: white;
+  } */
+
+
+--------------------------------------------------------------
+//CSS MODULES
+//- ele é exclusivo do componente, não vaza.
+//- o nome do arquivo é: Componente.module.css
+//- precisamos importar tmb no componente.
+
+//import styles from "./Title.module.css";
+//<h1 className={styles.myTitle}>TITULO</h1>
+
+//<Title />
+
+//title.module.css
+/* .myTitle {
+    background-color: #282c34;
+    color: green;
+    padding: 10px;
+  } */
+
+
