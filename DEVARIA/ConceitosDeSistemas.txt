@@ -1,0 +1,217 @@
+Conceitos de Sistemas
+
+1.0 - HISTÓRIA DA COMPUTAÇÃO
+- Existe desde o Sec. 20 - 1900
+- 1 instrumento matematico - Abaco 5.500 AC
+- Régua de Cálculo - 1638 AC
+- Máquina de Pascal 1642 DC
+
+1.0.1 - Segunda Guerra undial - Divisor de águas na computação, corrida armentista e tecnologia durante a 2 guerra.
+	- Conceitos atômicos e quanticos: computação quantica proxima evolução dos computadores.
+	- ENIAC: integrador e caldulador numerico - 1946 lançada nos EUA PRIMEIRA MÁQUINA NÃO ANALOGICA, processamento sem intervenção humana e 1000X mais performática.
+	- Surgimento do BUG, que era componentes e valvulas q eram trocados ao entrar um inseto dentro.
+	- MÁQUINA DE TURING: maquina para decifrar código criptografado dos nazistas. 
+		- Chave públicas para decifragem em cima de um algoritmo. 
+		- Quebra da criprografia Nazista. Descrobriram q o código foi descoberto, mas não falaram nada por isso o fim da Guerra. filme O JOGO DA IMITAÇÂO.
+	- Mainframe (guerra fria) Anos 50 e 60:  plataforma integrada de pcs
+		- Capaz de processar gde volume de informações em curtos espaços de tempo
+		- Acesso atraves de inumeros terminais.
+		- conexão direta ou atraves de rede
+		- sevidor evoluido em questão de performance
+		- hoje em dia cerca de 95% dos dados do sistema financeiro são processados em Servidores Mainframe.
+		- principais linguagens hoje: Cobol e Nature.
+		- Pontos positivos: Linguagem permanece no mercado por mais de 50 anos; Estabilidade na Carreira; Boa remuneração.
+		- Pontos Negativos: Linguagem proxima da máquina o que dificulta a primeira aprendizagem; Mercado mais restrito; Cursos e formaçoes com custo elevado.
+	- Paramos aqui na Decada de 60 que foi criptografia de info, velocidade de processamento e principio de redes, mainframe. 
+	- Nada ainda acessivel ao usuário Final, apenas empresas.
+	
+	
+2.0 - COMPUTADOR PESSOAL E APLICATIVOS
+
+	- Anos 90 - computador Pessoal - MACintox 1 apple.
+	- Popularização das máquinas: Até então apenas grandes corporações e empresas tinha acesso a máquinas.
+	- Interface Visual:	Tanto os mainframes quanto as máquinas corporativas até então, a interface visual era baseada em textos somente.
+	- Sistema Operacional: Talvez o maior avanço no inicio do computador pessoal, sejam os sistemas operacionais que tinham como principal responsabilidade fazer com que pessoas com menos conhecimento técnico se aproximassem dos computadores da época.
+	
+	E o que são Sistemas? Para responder essa pergunta, precisamos primeiro ensinar sobre Programas
+	
+	- Programa: Programa é um conjunto de instruções lógicas que uma máquina ou um sistema entende e consegue executar.
+	- Normalmente os Programas trabalham com o conceito de entrada, processamento e saída.
+
+	- Sistema: Sistema são um conjunto de programas integrados que tendem a ter um mesmo fim lógico que podemos chamar de negócio:
+		- Sistema para efetuar operações matemáticas: Calculadora;
+		- Sistema para efetuar todo o controle financeiro da sua conta no banco: Internet Banking;
+		- Sistema para conectar pessoas e compartilhar informações entre elas: Rede Social.
+
+
+	- Então um Sistema Operacional é?
+		- Sistema Operacional: Sistema operacional (em inglês: Operating System - OS) é um programa ou um conjunto de programas cuja função é gerenciar os recursos da máquina:
+			- Definir qual programa recebe atenção do processador;
+			- Gerenciar todos os recursos da máquina, bateria, memórias, vídeo, processador, rede entre outros;
+			- Criar um sistema de arquivos.
+			- Fornecendo uma interface entre o computador e o usuário.
+
+	- Aplicativos Desktop: Comecou então uma nova jornada na área de desenvolvimento USUÁRIO > < SOFTWARE > < SISTEMA OPERACIONAL > < HARDWARE.
+	- Aplicativos desktop são sistemas ou programas instalados na máquina e executados através de um comando de inicialização (ex. duplo clique no ícone do aplicativo) e a partir dali uma nova interface visual pode ser apresentada e a partir dali o usuário pode utilizar os recursos desse aplicativo:
+		- Navegadores (Chrome, Edge, Firefox);
+		- Jogos;
+		- Lojas para baixar outros aplicativos;
+		- IDE (Ambiente de Desenvolvimento Integrado.
+
+	- Quais foram os ganhos dos aplicativos Desktop para o mercado?
+		- Muitas empresas construíram seus softwares proprietários para funcionamento da sua operação
+		- Início da popularização da indústria dos games para computadores
+		- Construção de ferramentas de apoio ao dia-a-dia das pessoas no geral: Ex. Excel, Photoshop, Word entre outros
+		- Início da transformação de processos físicos para digitais
+		- Aumento da procura por programadores e projetos de desenvolvimento
+		- Disseminação da internet
+
+	- Mas como qualquer solução de sistemas os aplicativos desktop tinham algumas dificuldades
+		- Distribuição inicial se dava a partir de CDs
+		- Atualizações não eram automáticas deviam ser instaladas máquina a máquina
+		- Espaço em disco era um recurso escasso
+		- Processamento das máquinas ainda era muito baixo
+		- Conexão de internet ainda era muito baixa
+		- Linguagens de programação orientadas a máquina e não ao programador
+
+	- Olhando para o mercado atual quais são as linguagens utilizadas para desenvolver aplicativos desktop?
+		- Java, C#, Swift e Delf.
+		
+	- Pontos positivos de trabalhar com app desktop
+		- Linguagem atuais sãos as mesmas para o desenvolvimento web ou de aplicativos para smartphone;
+		- Boa oportunidade para o mercado de games;
+	- Pontos negativos
+		- Baixa demanda de mercado
+		- Usuário final se acostumou a utilizar sistemas web, utilizando desktop somente quando necessário
+
+
+3.0 - INTERNET
+
+	A internet surgiu a partir de pesquisas militares na Guerra Fria. As duas superpotências compreendiam a eficácia e a necessidade absoluta dos meios de comunicação. 
+	Nessa perspectiva, o governo dos Estados Unidos temia um ataque russo às bases militares. Então foi idealizado um modelo de troca e compartilhamento de informações que permitisse a descentralização das mesmas. 
+	Assim, se o Pentágono fosse atingido, as informações armazenadas ali não estariam perdidas. Era preciso, portanto, criar uma rede, a ARPANET,
+
+	Embora tenha sido criada para fins militares a internet acabou sendo disponibilizada para o usuário final e se popularizou mundialmente tornando toda informação acessível e compartilhável, alguns grandes pontos da internet são:
+	- Comunicação entre pessoas de qualquer localidade do planeta;
+	- Transações entre empresas acontecendo de forma praticamente instantânea;
+	- Popularização de conteúdos de forma global, possibilitando estudo e informação para qualquer pessoa com acesso;
+
+
+	Precisamos agora explicar algumas informações importantes sobre a internet
+	- Todo conteúdo é público
+	- Como a internet nada mais é que uma rede mundial de computadores interligados, é importante ressaltar que TODA informação é pública, ou seja, todos tem acesso a essa informação.
+
+
+	- HTTP e HTTPS - protocolo de comunicação - TODO TRAFEGO WEB É FEITO ATRAVES DE REQUISIÇÃO HTTP.
+		- Com a popularização da internet, se fez necessário criar uma camada de segurança justamente pelo fato de que toda informação é pública. 
+			Aqui foi utilizado o mesmo conceito dos alemães na segunda guerra (toda informação é pública, mas você não conseguirá entede-la sem o modelo de decifragem necessário).
+		- Com este conceito foi criado o protocolo HTTP (HyperText Transfer Protocol - HTML) é um protocolo de comunicação utilizado por sistemas. Ele é a base para a comunicação de dados via internet.
+		- Porém o HTTP é apenas um protocolo entre duas máquinas conectadas a internet, então uma variação desse protocolo foi criada o HTTPS (Hyper Text Transfer Protocol Secure) com uma camada adicional de segurança.
+
+	- Paginas Estáticas - documentos que já estão escritos como deve ser exibido para o usuário final (ex.: verzel.com.br).
+
+	Esse modelo de páginas estáticas existe ainda hoje e muita empresa ainda utiliza.
+	- Pontos positivos
+		- Alta disponibilidade, não precisando de processamento adicional, já foi escrito, só pegar e exibir para o usuário.
+		- Velocidade de carregamento, se não tem processo não vai ser lento.
+	- Pontos negativos
+		- Não tem personalização por usuário, mesma pagina para todo mundo, não podendo ser modificado.
+		- Informações só alteram com uma nova versão do código.
+
+	Esse modelo de páginas estáticas existe ainda hoje e muita empresa ainda utiliza.
+	- HTML5, CSS 3 e JS
+	- Porém para as empresas e seus clientes utilizar somente de conteúdo estático não era suficiente, então surgiram as páginas Dinâmicas.
+	- Esse modelo de páginas dinâmicas revolucionou o mercado e muitas empresas migraram dos aplicativos desktop para sistemas web (ex.: internet banking, ecommerce, facebook..)
+	- Pontos positivos
+		- Cada usuário tem uma visualização diferente do site, facebook;
+		- Informações atualizadas em tempo real;
+		- Regra de negócio fica totalmente do lado da empresa, servidor (Server Side - quem processa a pagina dinâmica é o servidor da empresa.)
+	- Pontos negativos
+		- Alto consumo de conexão, 3mb a cada req.
+		- Disponibilidade necessita de muito servidores para atender o processamento.
+
+	Esse modelo de páginas dinâmicas revolucionou o mercado e muitas empresas migraram dos aplicativos desktop para sistemas web.
+		- Java, nodeJs, php, C#, python
+
+	Como a necessidade de muitos servidores e conexão para utilizar os modelos tradicional de Sistema Web, foi criado uma nova arquitetura SPA (Single Page Aplication - ex.: jira, face..).
+	Como toda arquitetura de Sistemas os SPAs também tem suas vantagens e desvantagens
+	- Pontos positivos
+		- Diminuição do trafego de internet durante navegação;
+		- Processamento da camada visual, utilizando recursos da máquina do usuário;
+		- Mudanças de conteúdos não precisam de novas requisições HTTP.
+
+	- Pontos negativos
+		- Primeiro carregamento um pouco mais demorado;
+		- Acaba desprivilegiando o sistema no SEO se comparado com os modelos dinâmicos.
+
+
+	Atualmente os SPAs são uma força predominante no desenvolvimento de sistemas web através dessas principais tecnologias:
+	- React, Vue.js e Angular.
+	
+	
+4.0 - Smartphones
+
+	Futuro no Sistemas?
+
+	Em 2007, a internet e sistemas web dominavam o mercado enquanto aplicativos desktop estavam em baixa, com o lançamento do iPhone da Apple uma nova revolução no mercado 
+	da tecnologia surgiu:
+
+	- Sistema Operacional e Aplicativos semelhante a um computador;
+	- Portátil;
+	- Uma nova opção para o mercado dos games;
+	- Novos Hardwares como GPS, Camera e Acelerômetro trouxeram novas opções de sistemas e funcionalidades;
+	- Aumentou assim como o computador pessoal a inserção de novas pessoas no mercado da tecnologia.
+	Para o Sistemas os Smartphone tem um papel fundamental nas tecnologias atuais e grandes empresa até substituíram seus Sistemas Web por Apps.
+	- sistemas de smartphones hoje: IOS, Android e Windows Phone
+
+	- Pontos positivos
+		- Diversos hardwares para novas funcionalidade;
+		- Desenvolvimento seguro, podendo conter regra de negócio dentro do código ao contrário dos SPAs;
+		- Processamento da Interface Gráfica pelo próprio dispositivo fazendo empresas gastarem menos com infra;
+		- Desempenho de processamento;
+		- Introdução de conceitos importantes para a programação como UX e Mobile First.
+
+
+	- Pontos Negativos
+		- Boa parte dos aplicativos depende de conexão o tempo todo;
+		- Linguagems respectivas para cada sistema operacional;
+		- Empresas acabam tendo que contratar 1 programador pelo menos para cada sistema operacional.
+
+	Quais são as tecnologias nativas para se desenvolver aplicativos de smartphones?
+		- JAVA, C#, Fluter.
+
+
+	Multi plataforma
+	Para resolver esse problema múltiplos programadores o facebook, Microsoft e google iniciaram projetos multi Plataforma onde você escreve um único Código e a 
+	Plataforma gera os aplicativos para cada Sistema Operacional.
+		- Xamarin, React, 
+
+
+	Inteligência Artificial
+	Por ultimo, mas não menos importante tivemos uma nova camada de Sistemas denominados de Inteligência Artificial.
+
+	- Inteligência Artificial
+	Sistema ou Conjunto de Sistemas que tem a responsabilidade de tomar decisões dentro do seu âmbito de definição.
+
+	Além disso para que um sistema seja classificado como IA além da tomada de decisão é necessário que ela tem um mecanismo de auto evolução para que no futuro decisões tomadas anteriormente ajudem numa melhor decisão atual.
+
+	Quais são as tecnologias em alta para se desenvolver IA?
+		- Java, NodeJs, Python, Lua, Fluter.
+
+	Futuro no Sistemas?
+		- Computação Quântica
+		- IA gerindo parte de uma automação ou produção
+		- Conectividade maior e mais abrangente e com isso mais dissipação de informações
+		- Novos dispositivos no dia-a-dia totalmente integrados com Sistemas
+
+	Referência Bibliográfica
+
+	https://www.tecmundo.com.br/tecnologia-da-informacao/1697-a-historia-dos-computadores-e-da-computacao.html
+	https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/
+	https://www.dca.fee.unicamp.br/~leopini/DISCIPLINAS/EA869/2018-1/b1-historia-1
+	https://www.youtube.com/watch?v=EW7m2WIvFgQ
+	https://pt.wikipedia.org/wiki/Sistema_operativo#:~:text=Sistema%20operativo%20ou%20operacional%20(em,entre%20o%20computador%20e%20o
+	https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_Internet
+	https://tecnoblog.net/263808/o-que-e-inteligencia-artificial/
+	https://www1.folha.uol.com.br/folha/cotidiano/ult95u34809.shtml#:~:text=A%20internet%20foi%20criada%20em,primeiro%20e%2Dmail%20da%20hist%C3%B3ria.&text=Em%201987%2C%20pela%20primeira%20vez,seu%20uso%20comercial%20nos%20EUA.
+	https://pt.wikipedia.org/wiki/Hypertext_Transfer_Protocol
