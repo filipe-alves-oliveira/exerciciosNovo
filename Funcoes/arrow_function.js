@@ -1,6 +1,9 @@
 // Subistituir a palavra function pela => // 95 - Arrow Function - sintaxe reduzida - ES2015
 //sempre atribuida para uma const
 
+//DIFERENÇA DE ARROW FUNCTION PARA FUNCTION É QUE A ARROW FUNCTION NÃO CRIA ESCOPO
+//O SEU ESCOPO SERÁ O MESMO QUE ESTÁ ACIMA DELA.
+
 //sem arow function
 const mult = (n) => {
   n *= n
