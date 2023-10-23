@@ -578,5 +578,80 @@ Exemplo “Trocar um pneu”
 -Parafusar os parafusos no step;
 -Guardar roda com pneu furado e macaco;
 
+-----------------------------------------------------------------------------------------------------------
 
+Estrutura de repetição WHILE(Enquanto)
+
+Características
+-É a estrutura de repetição mais simples;
+-É ideal para situações em que não se sabe o número exato de vezes em que o bloco de instruções deve ser repetido;
+-Pode ser utilizado para substituir laços FOR
+
+Como funciona?
+-A condição é validada antes de cada repetição do laço;
+-Enquanto a condição for Verdadeira, o bloco de instruções dentro do laço é executado;
+-Quando a condição se torna Falsa, o laço é finalizado.
+-Enquanto o For tem 3 condições(a variavel, condição e incremento) o while tem apenas a condição.
+
+Ex.: Algoritmo Imprimir_numeros_de_1_a_10
+Início
+var contador:inteiro;
+contador<- 1
+Enquanto (contador < 10) Faça
+    Escreva contador;
+    contador <- contador + 1
+  FimEnquanto
+Fim
+
+“Descascar uma cenoura”;
+-Pegar a cenoura e o descascador ou faca;
+-Lavar a cenoura;
+-Enquanto cenoura tiver casca;
+-Passar o descascador em uma parte da cenoura;
+-Utilizar a cenoura;
+
+
+Subir uma escadaria até o final”;
+-Enquanto ainda houver degraus a subir;
+-Subir um degrau;
+-Se o degrau que você está é longe do próximo então:
+Andar até ficar próximo do degrau seguinte;
+-Olhar para escadaria para visualizar a altura percorrida.
+
+Exemplo “Trocar um pneu”
+-Abrir porta mala;
+-Pegar macaco e step;
+-Desparafusar parafusos da roda;
+-Levantar o carro com o macaco;
+-Retirar roda com pneu furado;
+-Colocar step no lugar da roda furada;
+-Abaixar o carro e retirar o macaco;
+-Parafusar os parafusos no step;
+-Guardar roda com pneu furado e maca;
+
+Características
+-Testa a condição de validação do laço apenas no final do comando. Desta forma, é assegurado que as instruções dentro do laço serão executadas pelo menos uma vez;
+-A diferença para a estrutura WHILE é que na DO/WHILE a condição de validação é verificada após a execução do bloco de instruções do laço.
+
+Como funciona?
+-Na primeira vez que o laço for executado todas as instruções dentro deste serão executadas, independente da condição estabelecida;
+-Somente após a primeira execução das instruções do laço é que a expressão será testada;
+-Depois da primeira execução, as instruções dentro do laço só são executadas novamente se a condição de validação for Verdadeira.
+
+Ex.: Algoritmo Imprimir_numeros_de_1_a_10
+Início
+var contador:inteiro;
+contador<- 1
+Faz
+    Escreva contador;
+    contador <- contador + 1
+  Enquanto(contador < 10);
+Fim
+
+"Descascar uma cenoura"
+-Pegar a cenoura e o descascador ou faca;
+-Lavar a cenoura;
+-Passar o descascador em uma parte da cenoura;
+-Enquanto cenoura tiver casca;
+-Utilizar a cenoura;
 
