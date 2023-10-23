@@ -533,10 +533,50 @@ Funcionamento
 Tipos de Estruturas de repetição;
 
 -For (Para/Faça);
--While (Enquanto/Faça);
+-While (Enquanto/Faça ou só Enquanto);
 -Do While (Faça Enquanto);
 
+-----------------------------------------------------------------------------------------------------------
 
+Estrutura de repetição FOR (Faça enquanto)
+
+Características
+
+-Deve ser usada quando o número exato de repetições é conhecido;
+-Utiliza uma variável de controle que deve ser do tipo Inteiro ou Literal.
+
+Como funciona?
+-For: comando que inicializa a estrutura de repetição. Sua condição é testada antes de executar qualquer instrução dentro do laço;
+-Variável de inicialização: comando de atribuição que inicia uma variável de controle do laço. É executada apenas uma vez, no início do laço;
+-Condição: determina o final do laço (repetição). Normalmente é uma expressão lógica. É verificada antes da execução do laço. Se for Mestrado Profissional em Ensino e suas Tecnologias – 2019 Campos Centro - IFFluminense 58 Verdadeira, as instruções dentro do laço são executadas. Se for Falsa o laço é finalizado;
+-Incremento/decremento: é executado sempre no final do laço, mudando o valor da variável de controle a cada repetição do laço
+
+Ex.: Algoritmo Imprimir_numeros_de_1_a_100
+Início
+var contador:inteiro;
+Para contador <- 1 até 100 Faça (variavel de inicialização - CONTADOR)
+    Escreva(contador);
+  FimPara
+Fim
+
+“Subir uma escadaria até o final”;
+-Faça enquanto não atingir o total de degraus;
+-Subir um degrau;
+-Se o degrau que você está é longe do próximo então:
+    Andar até ficar próximo do degrau seguinte;
+-Olhar para escadaria para visualizar a altura percorrida.
+
+
+Exemplo “Trocar um pneu”
+-Abrir porta mala;
+-Pegar macaco e step;
+-Desparafusar parafusos da roda;
+-Levantar o carro com o macaco;
+-Retirar roda com pneu furado;
+-Colocar step no lugar da roda furada;
+-Abaixar o carro e retirar o macaco;
+-Parafusar os parafusos no step;
+-Guardar roda com pneu furado e macaco;
 
 
 
