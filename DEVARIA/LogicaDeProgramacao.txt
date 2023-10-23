@@ -1,0 +1,542 @@
+
+O que lógica?
+ 
+“A lógica é uma área da filosofia que visa estudar a estrutura formal dos enunciados (proposições) e suas regras. Em suma, a lógica serve para SE PENSAR CORRETAMENTE, sendo assim, uma ferramenta do correto pensar.
+
+Lógica tem origem na palavra gregalogos, que significa razão, argumentação ou fala. A ideia de falar e argumentar pressupõe que o que está sendo dito possua um sentido para aquele que ouve.”
+
+“Esse sentido fundamenta-se na estrutura lógica, quando algo "tem lógica" quer dizer que faz sentido, é uma argumentação racional."
+
+Sequência lógica
+Estes pensamentos, podem ser descritos como uma sequência de instruções, que devem ser seguidas para se cumprir uma determinada tarefa.
+
+Sequência lógica são passos executados até atingir um objetivo ou solução de um problema.
+
+E lógica de programação?
+A lógica computacional é derivada da lógica matemática, mas vai para além dessa, e aplicada à programação de computadores.
+
+Sem ela, diversos avanços tecnológicos, como sistemas e aplicações, seriam impossíveis.
+Esse tipo de lógica analisa um problema e a solução proposta e o transforma em algoritmo.
+
+Claro que o primeiro programador do mundo foi um(a)?
+Mulher
+
+
+ADA LOVELACE (1842 D.C)** 
+Reconhecida principalmente por ter escrito o primeiroa lgoritmo para ser processado por uma máquina, a máquina analítica de Charles Babbage.
+Desenvolveu os algoritmos que permitiriam à máquina computaros valores defunções matemáticas.
+Descreve o algoritmo para a máquina analítica computar a Sequência de Bernoulli. É considerado o primeiro algoritmo especificamente criado para ser implementado num computador.
+
+JOHN MCCARTHY (1958 D.C)
+primeiro a publicar uma proposta de uso da lógica matemática para programação.
+"programas para manipular com sentenças instrumentais comuns apropriadas à linguagem formal (muito provavelmente uma parte do cálculo de predicado)“.
+
+Lógicade programação:
+  associação direta da lógica de programação com o raciocínio matemático, onde o importante é a interpretação de um problema e a utilização correta de uma fórmula.
+
+De fato, não existem “fórmulas” em informática,o que existe é nosso modo de pensar em como resolver e extrair o máximo de informações de um problema, de maneira eficaz e eficiente sobre um ângulo de visão
+Essa solução precisa ser exteriorizada e expressa numa linguagem conhecida. A lógica da programação entra nesse ponto, para desenvolvermos soluções e algoritmos e apresenta-los ao mundo.
+
+--------------------------------------------------------------------------------------------------------------------
+PENSANDO LOGICAMENTE
+
+Como tomamos decisões?
+
+Raciocínio
+Exercício da razão pelo qual se procura alcançar o entendimento de atos e fatos, se formulam ideias, se elaboram juízos, se deduz algo a partir de uma ou mais premissas.
+EX.: - olho uma coisa, ver a cor - preta - raciocinio.
+- cabo de energia cortou (ideia - remendar). - raciocinio.
+- Votação - análisa, tira juízos e vota. - raciocinio.
+
+Raciocínio lógico
+É um processo de estruturação do pensamento de acordo com as normas da lógica que permite chegar a uma determinada conclusão ou resolver um problema.
+Ex.: raciocina várias resoluções do problema.
+
+Raciocínio lógico
+- Dedução corresponde a determinar a conclusão, deduz uma conclusão. Utiliza-se a regra e a sua premissa para chegar a uma conclusão, por exemplo: "Quando chove, a relva fica molhada. Hoje choveu, portanto a relva está molhada." É comum associar-se os matemáticos a este tipo de raciocínio. Lógica.
+
+- Indução é determinar a regra. É aprender aregra a partir de diversos exemplos de como a conclusão segue dapremissa. Exemplo: "A relva ficou molhada em todas as vezes que choveu (choveu varias vezes - amostragem). Então, se chover amanhã, a relva ficará molhada." É comum associar os cientistas a este estilo de raciocínio.
+Pessoas q abordam comportamentos. Amostragem de um determinado conteudo, ibope. Gosto de chocolate, gosto de caramelo, ou seja, óbvio que gosto do TWIX, conclusão futura.
+
+- Abdução significa determinar a premissa. Usa-se aconclusão e a regra para defender que a premissa poderia explicar a conclusão. Exemplo: "Quando chove, a relva fica molhada. A relva está molhada, então deve ter chovido." Associa-se este tipo de raciocínio aos médicos e detetives etc. Comprova o passado atravês do presente.
+
+Ex. de Dedução:
+"Premissa 1: Todos os homens são mortais."
+"Premissa 2: Sócrates é homem.”
+
+Agora apresentemos uma forma lógica válida:
+"TODO x é y. z é x. Logo, z é y”. Veja que as duas premissas obedecem a uma forma lógica válida. Se a conclusão for
+"Logo, Sócrates é mortal (Logo, z é y)", então temos uma dedução.
+
+Ex. de Indução:
+O ferro conduz eletricidade
+O ferro é metal
+
+O ouro conduz eletricidade
+O ouro é metal
+
+O cobre conduz eletricidade
+O cobre é metal
+
+Logo os metais conduzem eletricidade.
+
+Os indutivistas acreditam que as explicações para os fenômenos advém unicamente da observação dos fatos.
+
+Todo cão é mortal.
+Todo gato é mortal.
+Todo peixe é mortal.
+Todo pássaro é mortal.
+Cães, gatos, peixes e pássaros são animais.
+
+Logo, todo animal é mortal.
+
+Esse é um exemplo de indução completa.
+
+Ex. de Abdução:
+Tem-se observado B(um conjunto de dados ou factos) e A podendo explicar B.
+
+É provável que A esteja certo.
+
+Assim, a abdução é a inferência a favor da melhor explicação.
+
+A hipótese A, ao ser verdadeira, explica B. nenhuma outra hipótese pode explicar tão bem B como A.
+
+Logo, A é provavelmente verdadeira.
+
+"Quando chove, a grama fica molhada. A grama está molhada, então pode ter chovido."
+
+1. Concentre-se no realmente importa
+Ao eliminar pequenas escolhas, você economiza o melhor das habilidades do seu cérebro para as decisões mais importantes.
+
+Quando era presidente dos Estados Unidos, Barack Obama decidiu parar de tomar uma decisão cotidiana: a escolha do que vestir.
+
+"Era sempre um terno azul ou cinza, com uma camisa branca, porque ele conhecia a ciência por trás das decisões e, usando um tipo de uniforme, economizava energia para tomar decisões realmente importantes", diz Mogdil.
+
+2. Ilustre aquilo que você está pensando
+Uma simples figura de dois quadrados se conectando já diz muito quando você está elencando sua ideia e quer seguir na solução, pois a parte inicial já ficou ilustrada e você pode ficar no próximo passo da decisão
+
+3. Tente olhar de todos os ângulos possívels
+Quando precisamos tomar uma decisão ou sugerir uma solução precisamos olhar de todos os ângulos para vermos todos os contextos e variáveis e assim decidimos de uma melhor forma
+
+4. Anotar nunca é demais
+Quanto mais anotações mais seu cérebro precisa guardar informações e assim você pode seguir sua linha de raciocínio com mais facilidade.
+
+Porém, máquinas não são seres humanos
+A esposa do programador disse:
+- Vá ao mercado e traga um litro de leite. Se tiver ovos, traga seis.
+O programador voltou com seis litros de leite, então sua esposa  disse:
+- Programador! Porquê você trouxe seis litros de leite?
+E o Programador respondeu:
+- Eles tinham ovos...
+
+Por mais que as máquinas sejam supervelozes, elas ainda dependem da solução vinda de alguém:
+Seja vinda do sistema operacional;
+Seja vinda do aplicativo em execução;
+Seja vinda de algum comando dado pelo ser humano.
+
+Nosso trabalho como programadores é entender uma necessidade do mundo real, utilizar nosso raciocínio e lógica de programação para transformar essa necessidade em algo que o computador entenda.
+
+--------------------------------------------------------------------------------------------------------------------
+
+PRINCIPAIS TÉCNICAS
+
+Facilitar nossa maneira de pensar logicamente
+
+Conforme o estudo de lógica de programação foi crescendo, algumas técnicas foram elaboradas para facilitar nosso trabalho de criar soluções lógicas:
+
+-Fluxogramas, derivado de algoritmo.
+-Algorítmos
+-Pseudo Código
+-Diagramas (caso de uso, sequência entre outros).
+
+Fluxograma - A LAMPADA NÃO FUNCIONA? > SIM > a lampada estava plugada > SIM > o bulbo queimou > SIM > trocar o bulbo.
+A LAMPADA NÃO FUNCIONA? > NÂO > Plugar a lampada.
+
+- Acordar > tomar vafé > escova dentes > Ver TV ...
+
+Algoritmo
+“Chupar uma bala”.
+
+Pegar a bala
+Retirar o papel
+Chupar a bala
+Jogar o papel no lixo
+
+
+“Trabalhar pela manhã”.
+
+Acordar
+Tomar banho
+Vestir-se
+Tomar café
+Tirar o carro da garagem
+Ir para o trabalho
+
+
+PSEUDO CÓDIGO.
+
+algoritmo "exemplo1"
+var
+   n1, n2, soma: real
+ 
+inicio
+ 
+escreva("digite um número ")
+leia(n1)
+escreva("digite outro número ")
+leia(n2)
+soma <- n1 + n2;
+escreva(" primeiro número = ", n1)
+escreva(" segundo número = ", n2)
+escreva(" soma = ", soma)
+ 
+fimalgoritmo
+
+-DIAGRAMAS (USO) - descrever graficamente um subconjunto do modelo para simplificar a comunicação. 
+
+-DIAGRAMAS (Sequência) - mostra como um conjunto de objetos interage em um processo ao longo do tempo.
+
+-HISTÓRIA DO USUÁRIO (US) - descrevem o motivo e o que há por trás do trabalho diário dos membros da equipe de desenvolvimento, muitas vezes expressos como persona + necessidade + propósito.
+
+EX.: Funcionalidades: Controlar o Tráfego Aéreo
+COMO um controlador de tráfego aéreo
+EU quero obter informações meteorológicas e climáticas
+PARA utilizar estas informações em outras atividades do Sistema
+
+Cenário 1: Ajustar Altímetro
+DADO que estou em vôo nivelado
+E vou iniciar o procedimento de sua aproximação para pouso
+E defino “altitude”
+E defino “pressão atmosférica”
+E defino “temperatura”
+QUANDO “reunir” as informações altitude + pressão atmosférica+ temperatura
+ENTÃO preciso ver “o valor a ser ajustado no altímetro”
+
+Cenário 2: Identificar Altitude
+DADO que temos uma atmosfera padrão
+E defino “pressão padrão”
+E defino “nível médio do mar” (QFF)
+QUANDO “reunir” as informações pressão padrão + QFF
+ENTÃO preciso ver “a distância vertical que separa
+
+---------------------------------------------------------------------------------------------------------------
+FLUXOGRAMA
+
+Fluxograma: é um tipo de diagrama, e pode ser entendido como uma representação esquemática de um processo ou algoritmo, muitas vezes feito através de gráficos que ilustram de forma descomplicada a transição de informações entre os elementos que o compõem, ou seja, é a sequência operacional do desenvolvimento de um processo, o qual caracteriza: o trabalho que está sendo realizado, o tempo necessário para sua realização, a distância percorrida pelos documentos, quem está realizando o trabalho e como ele flui entre os participantes deste processo.
+
+-Cada Figura tem um valor de definição, ou seja, quadradinho arredondado nas pontas indica que é inicio ou fim de um fluxo, instrução.
+-Um Fluxograma sempre segue um fluxo base (entrada, processamento e saída);
+-Um Fluxograma embora visual ele tem muito menos componentes e técnicas que um algoritmo, por isso ele é uma variação;
+
+
+Pontos fortes do Fluxograma:
+-Demonstrar a forma como o código é organizado.
+Ex.: Ecommerce - Tela de login / Tela da Home /  Tela de compra / Tela do Carrinho.
+Fluxo geral e fluxo de cada tela especifico de cada funcionalidade.
+
+-Visualizar a execução do código dentro de um programa.
+Ex.: Testar o fluxo e o resultado do fluxograma.
+
+-Mostrar a estrutura de um site ou aplicativo.
+
+-Entender como usuários navegam em um site ou programa.
+
+
+Simbologia de um Fluxograma (ver fluxograma de exemplo no gitHub - https://app.diagrams.net/).
+
+https://app.diagrams.net/#Hfilipe-alves-oliveira%2FexerciciosNovo%2Fmain%2FDEVARIA%2FFluxograma%2FfirstFlowchart.drawio
+
+-retangulo arredondado ou bolinha - começo ou fim do fluxograma (TERMINATOR)
+-Quadrado - processo (PROCESS), verbo: fazer, comprar, atuar, logar, pegar.
+-retangulo com onda, S, embaixo - Documento (Document) - saida final para o usuário.
+-Losangulo - Decisão (Decision) - condição, se. 
+-quadrado torto - Dados (Data), ou entrada/saída de dados. Informação que o usuário digita.
+-Cilindro- Banco de dados (Database) armazenagem de informação - arquivo de txt, bd, API.
+-> - seta de fluxo.
+{ } - comentário ou anotação.
+
+Exemplos de fluxogramas, departamentos (https://www.lucidchart.com/pages/pt/modelos-e-exemplos-de-fluxograma):
+-Estoques - Peidod de compra, venda arquivada, rece o produto.
+-Compras - checagem do pedido, procede? , pedido negado, Compra autorizada, Seleção de fornecedor, compra sem recurso, efetua a compra.
+-Finanças - verificação de recursos, recurso disponível, compra autorizada.
+-Pagamento - efetua pagamento.
+
+-----------------------------------------------------------------------------------------------------------
+
+ALGORITMOS
+
+Um algoritmo é formalmente uma seqüência finita de passos que levam a execução de uma tarefa. Podemos pensar em algoritmo como uma receita, uma seqüência de instruções que dão cabo de uma meta específica. Estas tarefas não podem ser redundantes nem subjetivas na sua definição, devem ser claras e precisas.
+
+Como exemplos de algoritmos podemos citar os algoritmos das operações básicas (adição, multiplicação, divisão e subtração) de números reais decimais. Outros exemplos seriam os manuais de aparelhos eletrônicos, como um videocassete, que explicam passo-a-passo como, por exemplo, gravar um evento.
+
+Para que serve um algoritmo?
+
+-O algoritmo é uma sequência de passos lógicos e finitos que permite solucionar problemas;
+-O objetivo de aprender a criar algoritmos é que este é a base de conhecimentos para as linguagens de programação;
+-Em geral, existem muitas maneiras de resolver o mesmo problema. Ou seja, podem ser criados vários algoritmos diferentes para resolver o mesmo problema;
+-Assim, ao criarmos um algoritmo, indicamos uma dentre várias possíveis sequências de passos para solucionar o problema.
+
+Algoritmos no dia a dia
+
+Aplicamos o conceito de algoritmo diariamente sempre que estabelecemos um planejamento mental para realizar uma determinada tarefa, considerando que deveremos executar um conjunto de passos até atingir o objetivo desejado.
+
+Exemplo no dia a dia
+-Receita culinária.
+-Manuais de instrução.
+-Roteiros realização de tarefas especídifcas.
+
+Principais caracteristicas de um algoritmo
+-Completo: Todas as ações precisam ser descritas e devem ser únicas.
+-Sem redundância: Um conjunto de instruções só poder ter uma única forma de ser interpretada.
+-Deterministico: Se as instruções forem executadas, o resultado esperado será semre atingido.
+-Finito: AS instruções precisam terminar após um número limitado de passos.
+
+Uso de algoritmos
+-Aspecto positivo: Não e necessário aprender novos conceitos, pois a língua natural já é bem conhecida.
+-Aspecto negativo: A língua natural dá oportunidade para várias interpretações e ambiguidades, dificultando a transcrição desse algoritmo para programa.
+
+Os algoritmos são expressos diretamente em linguagem natural. Ou seja, a sequência de passos é descrita em nossa língua nativa (português).
+
+Fases do algoritmo
+Entrada -> Processamento -> Saída.
+
+-----------------------------------------------------------------------------------------------------------
+Ferramenta de fluxograma
+
+https://app.diagrams.net/
+
+Exemplo “Chupar uma bala”
+-Pegar a bala;
+-Tirar a embalagem da bala;
+-Colocar a bala na boca;
+-Jogar a embalagem fora.
+
+Exemplo “Receita de Arroz”
+-Pegar panela;
+-Pegar Ingredientes (arroz, tempero, óleo/azeite);
+-Ligar Panela;
+-Colocar azeite e temperos(cebola) na panela;
+-Colocar arroz na panela e misturar;
+-Adicionar agua o suficiente e sal;
+-Esperar agua secar;
+-Desligar panela;
+
+Exemplo “Trocar um pneu”
+-Abrir porta mala;
+-Pegar macaco e step;
+-Desparafusar parafusos da roda;
+-Levantar o carro com o macaco;
+-Retirar roda com pneu furado;
+-Colocar step no lugar da roda furada;
+-Abaixar o carro e retirar o macaco;
+-Parafusar os parafusos no step;
+-Guardar roda com pneu furado e maca;
+
+Exemplo “Calcular a média dos quatro bimestres”
+-Receber nota do primeiro bimestre;
+-Receber nota do segundo bimestre;
+-Receber nota do terceiro bimestre;
+-Receber nota do quarto bimestre;
+-Somar todas as notas e dividir por 4;
+-Exibir a média no boletim;
+
+-----------------------------------------------------------------------------------------------------------
+
+TESTE DE MESA
+
+Após desenvolver um algoritmo ele deverá sempre ser testado. Este teste é chamado de TESTE DE MESA, que significa, seguir as instruções do algoritmo de maneira precisa para verificar se o procedimento utilizado está correto ou não.
+
+Seguindo o exemplo do calculo da média dos quatro bimestres podemos testar da seguinte forma:
+b1, b2, b3, b4, média
+
+
+E como ficaria o teste de mesa dos demais algoritmos apresentados?
+
+-Chupar uma bala
+-Receita de arroz;
+-Trocar um pneu;
+-Realizar um processo de adição;
+
+
+Controle de fluxo / estrutura de seleção
+
+Estruturas de Seleção, também conhecidas como Estruturas Condicionais ou controle de fluxo:
+-São comandos que auxiliam no direcionamento da sequência de execução de um programa por meio da avaliação de condições lógicas;
+-Têm como função validar condições e comparar o resultado destas;
+-Transforma o algoritmo em condicional, onde a escolha de um grupo de ações a ser executado quando determinadas condições, representadas por expressões lógicas, são ou não satisfeitas.
+
+Para que servem?
+-Permitem alterar o Fluxo de Execução do algoritmo, de forma a selecionar qual parte deve ser executada;
+-Essa “decisão” de execução é tomada a partir de uma condição, que pode resultar apenas dois valores: verdadeiro ou falso;
+-Uma condição é representada por expressões relacionais ou lógicas, idade da pessoa < 18 ou > 18 anos.
+
+Funcionamento:
+-Após executar as funções de validação e comparação, as estruturas de seleção irão executar os blocos de comando, definidos de acordo com o resultado da comparação (verdadeiro ou falso).
+
+Tipos de Estruturas de Seleção:
+-Se / se não /se não se (IF/ELSE);
+-Escolha o caso (SWITCH CASE);
+
+Estrutura de seleção SE/SENÃO (IF/ELSE):
+-Sintaxe do algoritmo:
+Se <condição> Então 
+{
+    <instruções>;
+}
+
+SENÃO
+{
+    <instruções>;
+}
+
+fimSe
+
+
+Como funciona?
+-A condição é verificada a cada passagem pela estrutura IF/SE, cada vez q passar por um se/senão é feito uma pergunta if().
+-Se a condição for satisfeita (verdadeira), são executadas as instruções entre chaves do IF/SE;
+-Se a condição NÃO for satisfeita (falso), são executadas as instruções dentro das chaves do ELSE/SENÃO;
+-As instruções do ELSE/SENÃO serão executadas somente quando o valor da condição do IF/SE for falso
+Ex.: algoritmo verifica_numero:
+
+inicio
+var x, y :inteiro
+
+x = 30;
+y = 20;
+
+Se (x<y) então {
+    Escreva "X menor que Y";
+} SENÃO {
+    Escreva "X maior que Y";
+}   
+fimSe
+Fim
+
+-----------------------------------------------------------------------------------------------------------
+Estrutura de seleção SE/SENÃO (IF/ELSE)
+
+Vamos aplicar algumas seleção nos algoritmos
+
+1- “Calucar média dos bimestres e informar se está aprovado ou não”;
+2- “Decidir os afazeres de um domingo”;
+
+1-"Calcular a média dos bimestres e informar se está aprovado ou não";
+
+Receber nota do primeiro bimestre;
+Receber nota do segundo bimestre;
+Receber nota do terceiro bimestre;
+Receber nota do quarto bimestre;
+Somar todas as notas e dividir por 4;
+Se a média for maior ou igual a 6 então
+Escrever no boletim "Aprovado";
+
+Senão
+Escrever no boletim "Reprovado";
+
+2-"Decidir os afazeres de um domingo
+
+Acordar
+Tomar café
+Olhar a previsão do tempo do dia;
+Se a previsão for de chuva:
+Decidir ficar me casa;
+
+Senão
+Decidir fazer passeio em família.
+
+-> Estrutura de seleção SELECIONAR CASO(SWITCH CASE)
+
+Como funciona?
+
+-A variável a ser testada deve ser sempre do tipo inteiro ou literal, o que deve ser testado é um nº ou boolean;
+-É utilizado para oferecer várias opções ao usuário, deixando que escolha um valor dentre vários;
+-A principal vantagem desse comando é que ele evita uma série de testes com o comando IF/SE, acima de 3 opções usa SWITCH CASE;
+-Funciona de maneira semelhante ao IF/SE encadeado;
+-A condição após o SWITCH/ESCOLHA informa o valor que será comparado em cada CASE/CASO;
+-No primeiro CASE/CASO é verificado se o valor recebido como parâmetro é igual ao seu valor; o Se o valor do parâmetro informado for o mesmo (igual) do CASE/CASO, será executado o trecho de código dentro do respectivo CASE/CASO;
+-Se o valor do parâmetro informado for diferente do CASE/CASO, será testada a condição do próximo CASE/CASO;
+-O comando DEFAULT/SENÃO é opcional e define um fluxo alternativo para as situações não atendidas por nenhum CASE/CASO;
+-O trecho de código dentro do DEFAULT/SENÃO será executado apenas quando o valor de nenhum CASE/CASO for igual ao valor do parâmetro informado.
+
+Ex.: Algoritmo informa_sexo
+Início
+var sexo: literal
+Escolha(sexo)
+Caso("F"):
+    Escrea: "Sexo Feminino";
+    Pare;
+FimEscolha
+Fim.
+
+“Decidir o afazer de acordo com o dia da semana”;
+-Acordar
+-Tomar café
+-Olhar o calendário;
+-Escolha o dia da semana:
+
+-Caso Sexta:
+Trabalhar e depois sair;
+
+-Caso Sábado:
+Fazer compras
+Arrumar o carro;
+
+-Caso Domingo:
+Descansar;
+
+-Senão:
+Trabalhar;
+
+“Definir entrada no cinema de acordo com a idade”;
+-Receber idade do cliente;
+-Receber documento;
+-Validar se documento é verdadeiro;
+-Escolha idade cliente:
+
+-Caso Maior que 18 anos:
+Permitir acesso
+
+-Caso Maior que 12 anos:
+Permitir acesso somente com acompanhante;
+
+-Caso Menor que 2 anos:
+Permitir acesso com os pais;
+
+-Senão:
+Não permitir acesso
+
+obs.: verificar a ordem correta do switch/case
+
+-----------------------------------------------------------------------------------------------------------
+Estrutura de repetição, entrada e saída de dados
+
+Estrutura de repetição
+
+Utilizamos os comandos de repetição quando desejamos que um determinado conjunto de instruções ou comandos sejam executados um número definido ou indefinido de vezes, ou enquanto um determinado estado de coisas prevalecer ou até que seja alcançado.
+
+-São comandos que permitem que uma sequência de instruções seja executada várias vezes até que uma condição seja satisfeita;
+-Se uma instrução ou uma sequência de instruções precisa ser executada várias vezes, deve-se utilizar uma estrutura de repetição.
+
+Para que servem?
+-Servem para repetir um conjunto de instruções sem que seja necessário escrevê-las várias vezes;
+-Permitem que um trecho do algoritmo seja repetido, em um número determinado ou indeterminado de vezes, sem que o código a ser repetido tenha que ser escrito novamente;
+-As estruturas de repetição também são chamadas de Laços ou Loops.
+
+Funcionamento
+-As estruturas de repetição envolvem a avaliação de uma condição (teste);
+-A avaliação resulta em valores Verdadeiros ou Falsos;
+-Se o resultado da condição for Verdadeiro, é iniciada a repetição ou, caso esteja em execução, é reiniciada a execução das instruções dentro da Estrutura de Repetição;
+-A única Estrutura de Repetição que não realiza a avaliação da condição antes de iniciar é a Do/While (Faça/Enquanto).
+-Desta forma, é assegurado que todas as instruções dentro da Estrutura de Repetição do Do/While serão executadas pelo menos uma vez.
+
+Tipos de Estruturas de repetição;
+
+-For (Para/Faça);
+-While (Enquanto/Faça);
+-Do While (Faça Enquanto);
+
+
+
+
+
