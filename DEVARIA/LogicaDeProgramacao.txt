@@ -597,7 +597,7 @@ Ex.: Algoritmo Imprimir_numeros_de_1_a_10
 Início
 var contador:inteiro;
 contador<- 1
-Enquanto (contador < 10) Faça
+Enquanto (contador < 10) Faça *
     Escreva contador;
     contador <- contador + 1
   FimEnquanto
@@ -609,7 +609,6 @@ Fim
 -Enquanto cenoura tiver casca;
 -Passar o descascador em uma parte da cenoura;
 -Utilizar a cenoura;
-
 
 Subir uma escadaria até o final”;
 -Enquanto ainda houver degraus a subir;
@@ -645,13 +644,89 @@ contador<- 1
 Faz
     Escreva contador;
     contador <- contador + 1
-  Enquanto(contador < 10);
+  Enquanto(contador < 10); *
 Fim
+
+-DIFERENÇA DO WHILE PARA O DO WHILE É O LUGAR DA PERGUNTA - O WHILE COMEÇA COM A PERGUNTA O DO WHILE TERMINA.
 
 "Descascar uma cenoura"
 -Pegar a cenoura e o descascador ou faca;
 -Lavar a cenoura;
 -Passar o descascador em uma parte da cenoura;
--Enquanto cenoura tiver casca;
+-Enquanto cenoura tiver casca; *
 -Utilizar a cenoura;
 
+-----------------------------------------------------------------------------------------------------------
+
+Entrada e saída de dados
+
+Existem basicamente duas instruções principais em algoritmos que são: Leia e Escreva.
+
+LEIA: A instrução LEIA é utilizada quando se deseja obter informações do usuario por meio do teclado, ou seja, é um comando de entrada de Dados.
+ESCREVA: A instrução ESCREVA é utilizada para mostrar informações, ou seja, é um Comando de Saida de dados.
+
+Lendo instruções
+Como funciona?
+-Usa-se a instrução Leia, quando é necessário que o usuário do algoritmo digite algum dado;
+-A instrução de entrada de dados (Leia) será responsável pela leitura e armazenamento desses dados na variável indicada
+
+Sintaxe: leia(variável);
+
+Escrevendo instruções
+Como funciona?
+-Usa-se a instrução Escreva quando é necessário mostrar algum dado do algoritmo para o usuário;
+-A instrução de saída de dados (Escreva) será responsável pela exibição dos dados da variável, constante ou expressão na tela do computador.
+
+Sintaxe: escreva(variável);
+
+Comentários
+Como funciona?
+-A inserção de comentários no decorrer do algoritmo facilita a leitura deste por outros programadores;
+-Os comentários também servem para auxiliar o programador a relembrar o próprio código depois de um tempo sem utilizá-lo.
+
+Sintaxe: //comentários
+
+Utilizando entrada e saída
+-Leia idade do cliente; - usuario digita
+-Leia documento; - usuario digita
+-Validar se documento é verdadeiro; - algoritmo valida
+Escolha idade cliente:
+    Caso Maior que 18 anos:
+        Escreva “acesso permitido”;
+    Caso Maior que 12 anos:
+        Escreva “acesso somente com acompanhante”;
+    Caso Menor que 2 anos:
+        Escreva “Acesso somente com responsável”;
+    Senão:
+        Escreva “Acesso não permitido”;
+
+Exemplo “Calcular a média dos quatro bimestres”
+-Leia nota do primeiro bimestre;
+-Leia nota do segundo bimestre;
+-Leia nota do terceiro bimestre;
+-Leia nota do quarto bimestre;
+-Somar todas as notas e dividir por 4;
+-Escreva a média no boletim;
+
+-----------------------------------------------------------------------------------------------------------
+
+Dados e Tipo de Dados
+
+-Dados são observações documentadas ou resultados da medição.
+-A disponibilidade dos dados oferece oportunidades para a obtenção de informações.
+-Os dados podem ser obtidos pela percepção através dos sentidos (por exemplo observação) ou pela execução de um processo de medição.
+-Dados=informação.
+
+Na lógica de programação e na programação em si, os dados são manipulados através de variáveis e constantes que são utilizadas durante todo algoritmo/código
+
+Sendo na lógica de programação ou na programação em si os dados normalmente respeitam esses tipos:
+-Numéricos: São dados utilizados para cálculos matemáticos ou estatísticos. Normalmente esses dados se dividem em dois subtipos:
+-Inteiro – Número sem casa decimal;
+-Reais ou Flutuantes – Números com casa decimal;
+-Caracteres – São dados relacionados a alfanumérico onde o dado pode ser uma letra ou diversas (nome, rg e etc);
+-Lógicos: São dados utilizados para tomadas de decisão e servem para atender as condições de alguma parte do fluxo:
+-Verdadeiro (true);
+-Falso (false);
+-Binários – São dados relacionados a linguagem que o computadores entende os famosos (zero e um) que podemos utilizar durante um algoritmo (ex. arquivos binários como pdf, excel entre outros) durante um programa;
+
+-Variáveis e constantes são os elementos básicos que um programa manipula. Uma variável é um espaço reservado na memória do computador para armazenar um tipo de dado determinado. Variáveis devem receber nomes para poderem ser referenciadas e modificadas quando necessário. Um programa deve conter declarações que especificam de que tipo são as variáveis que ele utilizará e as vezes um valor inicial. Tipos podem ser por exemplo: inteiros, reais, caracteres, etc. As expressões combinam variáveis e constantes para calcular novos valores.
