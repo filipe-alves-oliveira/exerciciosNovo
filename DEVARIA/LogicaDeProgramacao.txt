@@ -772,3 +772,119 @@ n1+n2+n3/3 - o 3 é constante.
 -Retirar a forma do forno;
 -Deixar forma esfriar;
 -Servir o bolo.
+
+-----------------------------------------------------------------------------------------------------------
+
+Variáveis
+
+Agora que você sabe o que é uma Constante... O que seria uma Variável?
+
+-É uma entidade destinada a guardar uma informação cujo valor varia;
+-Chama-se variável, pois o valor contido nesta varia com o tempo ou condição, ou seja, não é um valor fixo;
+-O conteúdo de uma variável pode ser alterado, consultado ou apagado quantas vezes forem necessárias no algoritmo;
+-Ao alterar o conteúdo de uma variável, a informação anterior é perdida. Ou seja, a variável armazena sempre a última informação recebida;
+-Em geral, uma variável possui três atributos: nome, tipo de dado e a informação por ela guardada.
+
+Boas práticas no nome de variáveis:
+-Devem ser iniciadas sempre por uma letra;
+-Não devem conter caracteres especiais;
+-Não devem conter espaços em branco;
+-Não devem conter hífen entre os nomes.
+
+Exemplos:
+VAR NOME :literal[50]
+IDADE :inteiro
+SALARIO :real
+TEM_FILHOS :lógico
+
+INICIO -> recebe salário -> recebe abono -> SalNovo = Salario + Abono -> Salnovo -> FIM
+
+“Bolo de chocolate ou qualquer outro bolo”
+-ovos : Inteiro
+chocolateEmPo : Inteiro
+manteiga : Inteiro
+farinhaDeTrigo : Inteiro
+acucar : Inteiro
+fermento : Inteiro
+leite : Inteiro
+
+-minutosDoLiquidificador : Inteiro
+temperaturaDoForno : Inteiro
+tempoDePreAquecimento : Inteiro
+tempoDeCozimentoForno : Inteiro
+
+“Bolo de chocolate ou qualquer outro bolo”
+
+-Leia (ovos)
+Leia (chocolateEmPo)
+Leia (manteiga)
+Leia (farinhaDeTrigo)
+Leia (acuca)
+Leia (fermento)
+Leia (leite)
+
+-Leia (minutosDoLiquidificador)
+Leia (temperaturaDoForno)
+Leia (tempoDePreAquecimento)
+Leia (tempoDeCozimentoForno)
+
+-Adicionar ovos, chocolateEmPo, manteiga, farinhaDeTrigo, acucar e leite em um liquidificador;
+-acucar e leite em um liquidificador; Bater ingredientes no liquidificador por minutosDoLiquidificador;
+-Adicionar fermento a mistura;
+-Untar uma forma;
+-Adicionar mistura na forma;
+-Ligar o forno na temperaturaDoForno e deixe ligado por tempoDePreAquecimento;
+-Colocar forma no forno;
+-Deixar forma no forno por tempoDeCozimentoForno;
+-Retirar a forma do forno;
+-Deixar forma esfriar;
+-Servir o bolo.
+
+Operadores
+
+Características
+-Operadores são símbolos que representam atribuições, cálculos e ordem dos dados;
+-As operações possuem uma ordem de prioridades (alguns cálculos são processados antes de outros);
+-Os operadores são utilizados nas expressões matemáticas, lógicas, relacionais e de atribuição.
+
+Tipos de Operadores:
+Quanto ao numero de operandos sobre os quais atuam:
+-Unários: quando atuam sobre um único operado.
+-Binários: quando atuam sobre dois operandos, que podem ser: duas variáveis, duas constantes ou uma variável e uma constante.
+
+Exemplos:
+-x (o valor armazenado no operando x passa a ser negativo)
+X++ (incrementa +1 na variável X).
+
+Obs.:
+++significa adicionar +1 ao valor da variável.
+--significa diminuir -1 do valor da variável.
+
+Binário:
+z=x+y (somátoria entre as variáveis x e y)
+z=x+7 (somatória entre uma variável e uma constante)
+
+Quanto ao tipo de dado dos operandos e do valor resultante de sua avaliação
+-Operadores aritmeticos;
+-Operadores de atribuição;
+-Operadores lógicos;
+-Operadores Relacionais.
+
+Operadores aritmeticos:
+Adição +; Divisão /; Negativo Unário -; subtração -; Restou ou módulo %; Incremento ++; Multiplicação *
+Positivo unário +; Decremento --
+
+Ex.:
+Algoritmo Calculo_Area_Quadrado
+var lado, area :real;
+
+inicio
+    Leia lado;
+    area <- (lado*lado);
+    Escreva "A area do quadrado é" + area;
+Fim
+
+
+
+
+
