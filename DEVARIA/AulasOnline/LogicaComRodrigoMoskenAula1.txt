@@ -1,0 +1,69 @@
+
+-linguagem compilada - codigo Fonte (independencia do SO) > Complilador (atua ao modificar o programa) > Codigo aberto (depende do SO) > Executador(Atua ao executar o programa) > Resultado.
+No JAVA tem um Maquina Virtual que executa antes do SO, para executar precisa instalar a JVM, o código roda nela não no SO. No caso do C ele transpila e transforma no executavel.
+
+-Linguagens Interpretadas - codigo Fonte (independencia do SO) > Interpretador (Atua ao executar o programa) > Resultado.
+Diferena que escrevemos o código e a linguagens interpretada não passa por um processo de compilação, ela vai direto pro interpretador. Ex.: Python, ele lê e já executa, transforma em bit e faz o seu pc executar.
+JAVASCRIPT - Também é o mesmo processo, inclusive podemos ver ele nas paginas web, é interpretado, precisa do código.
+Você precisa ter o JS e o python instalado no seu SO, eles q vão ler e trasnferir para o SO.
+
+-Vantagens e Dsvantagens:
+COMPILADAS
+-maior velocidade de execução;
+-Dependencia do SO;
+-Necessidade de compilar a cada alteraçao;
+-Código fonte secreto após compilado.
+
+INTERPRETADAS 
+-Mais lentas;
+-independencia do SO;
+-Código fonte sempre livre.
+
+-QUAL DEVO ESCOLHER?
+Linguagens de programação são ferramentas, e assim como tais devem ser utilizadas para o serviço correto.
+Cada linguagem foi feita para um proposito, necessario verificar o que quer fazer e ver qual linguagem se encaixa para aquilo
+Ex.: se for mexer com IA - Python, pq ela tem libs e feature que ajudam a fazer IA.
+API - Java. Arquivo - Python. Node - simples. C#, Java, aplicações grandes e complexas.
+
+C, C++, C#, JAVA - fortemente tipadas e compiladas.
+JS, Python, Ruby - fracamente tipadas e interpretadas.
+
+Conceitos presentes em todas as linguagens:
+-variaveis, condições, loops, funcoes, bibliotecas/módulos.
+
+VARIAVEIS 
+-Areas de memoria RAM reservada no computador, para armazenar valores que utilizaremos em nossos algoritmos.
+-como o nome diz, são volateis, o lugar é fixo, mas o valor pode ser alterado.
+-podem armazenar diversos tipos de dados.
+-na programacao nao utiliza o HD, que seria um BD, somente a memoria RAM.
+
+Podem ser de 2 tipos: Primitivos ou Referencia.
+-primitivos: Só guardam um valor. Guardam na memoria realmente o valor passado. São armazenados diretamente na Stack e variam um pouco com cada linguagem.
+ex.: int, float, double, char e boolean, cada um desses tem um tamanho e é resevado na memoria.
+obs.: String não é um tipo primitivo é um conjunto de character, não tem como saber o tamanho por isso não tem como resevar. Se usar o menor vc estara gastando menos memoria e seu programa será mais rápido.
+
+Tabela ASC - tabela de comparação entre numero e charactere.
+
+-Referencia: String nome. Guarda na memoria mais rápida o endereço onde está guardado aquele valor. Por não armazenar o valor na Stack podem esbanjar o espaço da Heap e guardarem mais dados. Não existe um limite traçado de quanto podem armazenar, vão até o limite da memoria disponivel e podem armazenar qlqr tipo de valor, ou conjuntos de valor, sao um tipo complexo de dados (Objetos).
+Na memoria mais rápida ele nao guarda o valor, no tipo referencia esse numero pode ser grande demais e a memoria mais rapida é limitada.
+
+STACK E HEAP 
+-Qdo um linguagem de prog. vai executar ela pega a memoria do seu pc, RAM, separa em duas ou mais parte, ou mais dependendo da linguagem, mas a maioria separa em duas, a Stack (pilha), memoria organizada e a HEAP (monte), varios dados largados, bagunçado, + lenta mais pode guardar varios dados, bem maior que a STACK. Tipo primitivo guardado na stack e tipo referencia guarda o endereço.
+
+StackOverflow - tansborda a memoria stack.
+HeapOverflow - trasnborda a memoria Heap.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
