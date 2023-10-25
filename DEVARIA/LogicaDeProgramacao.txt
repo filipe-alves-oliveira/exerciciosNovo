@@ -730,3 +730,45 @@ Sendo na lógica de programação ou na programação em si os dados normalmente
 -Binários – São dados relacionados a linguagem que o computadores entende os famosos (zero e um) que podemos utilizar durante um algoritmo (ex. arquivos binários como pdf, excel entre outros) durante um programa;
 
 -Variáveis e constantes são os elementos básicos que um programa manipula. Uma variável é um espaço reservado na memória do computador para armazenar um tipo de dado determinado. Variáveis devem receber nomes para poderem ser referenciadas e modificadas quando necessário. Um programa deve conter declarações que especificam de que tipo são as variáveis que ele utilizará e as vezes um valor inicial. Tipos podem ser por exemplo: inteiros, reais, caracteres, etc. As expressões combinam variáveis e constantes para calcular novos valores.
+
+-----------------------------------------------------------------------------------------------------------
+
+Constantes
+
+Constante é um determinado valor fixo que não se modifica ao longo do tempo, durante a execução de um programa. Conforme o seu tipo, a constante é classificada como sendo numérica, lógica e literal.
+
+Como funciona?
+-Em programação, uma constante armazena um valor fixo, que NÃO mudará com o tempo de execução do programa. Ou seja, o valor será definido uma única vez e jamais será alterado durante a execução da aplicação;
+-Uma constante deve ser utilizada quando uma informação NÃO tem qualquer possibilidade de alteração, ou variação, no decorrer da execução do algoritmo (programa).
+
+Ex.: pi: 3,1416
+velocidade da luz: 299.792.458 m/S
+
+n1+n2+n3/3 - o 3 é constante.
+
+“Bolo de chocolate”
+-Ovos= 4
+-chocolateEmPo = 80g
+-manteiga = 40g
+-farinhaDeTrigo = 900g
+-acucar = 600gr
+-fermento = 40g
+-Leite = 240ml
+
+-minutosDoLiquidificador = 5
+-temperaturaDoForno = 180C
+-tempoDePreAquecimento = 10
+-tempoDeCozimentoForno = 40
+
+-Adicionar ovos(4), chocolateEmPo(80), manteiga(40), farinhaDeTrigo(900), acucar(600) e leite(240) em um liquidificador;
+-Bater ingredientes no liquidificador por minutosDoLiquidificador(5);
+-Adicionar fermento(40) a mistura;
+-Untar uma forma;
+-Adicionar mistura na forma;
+-Ligar o forno na temperaturaDoForno(180) e deixe ligado por tempoDePreAquecimento(10);
+-Colocar forma no forno;
+-Deixar forma no forno por tempoDeCozimentoForno(40);
+-Desligar o forno;
+-Retirar a forma do forno;
+-Deixar forma esfriar;
+-Servir o bolo.
