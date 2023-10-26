@@ -784,6 +784,7 @@ Agora que você sabe o que é uma Constante... O que seria uma Variável?
 -O conteúdo de uma variável pode ser alterado, consultado ou apagado quantas vezes forem necessárias no algoritmo;
 -Ao alterar o conteúdo de uma variável, a informação anterior é perdida. Ou seja, a variável armazena sempre a última informação recebida;
 -Em geral, uma variável possui três atributos: nome, tipo de dado e a informação por ela guardada.
+-cada espaço da memória é unico dela.
 
 Boas práticas no nome de variáveis:
 -Devem ser iniciadas sempre por uma letra;
@@ -792,10 +793,10 @@ Boas práticas no nome de variáveis:
 -Não devem conter hífen entre os nomes.
 
 Exemplos:
-VAR NOME :literal[50]
-IDADE :inteiro
-SALARIO :real
-TEM_FILHOS :lógico
+VAR NOME :literal[50] maximo 50 char. - literal: ponto flutuante, string. Ele mesmo.
+IDADE :inteiro - tamanho fixo.
+SALARIO :real - tamanho fixo.
+TEM_FILHOS :lógico - 0 e 1
 
 INICIO -> recebe salário -> recebe abono -> SalNovo = Salario + Abono -> Salnovo -> FIM
 
@@ -840,7 +841,7 @@ Leia (tempoDeCozimentoForno)
 -Deixar forma esfriar;
 -Servir o bolo.
 
-Operadores
+OPERADORES
 
 Características
 -Operadores são símbolos que representam atribuições, cálculos e ordem dos dados;
@@ -884,6 +885,96 @@ inicio
     Escreva "A area do quadrado é" + area;
 Fim
 
+-----------------------------------------------------------------------------------------------------------
+
+Operadores de Atribuição
+
+Atribuição simples =
+atribuição com subtração -=
+atribuição com divisao /=
+atribuicao com adicao +=
+atribuicao com multiplicacao *=
+atribuicao com modulo %=
+
+Ex.: Algoritmo Calculo_area_circulo
+var raio, area :real;
+real PI = 3.14;
+inicio
+    Leia raio;
+    area <- (pi)*(raio)**2
+    Escreva "A area do circulo é" + area;
+Fim
+
+Operadores Logicos
+Conjunção e/and/&& - as duas condições devem ser verdadeiras para que o resultado seja vdd.
+Disjunção ou/or/|| - pelo menos uma condição deve ser verdadeira para que o resultado seja vdd.
+Negação não/not - inverte o valor do resultado da condição.
+
+
+retorno de cada expresão   E       OU
+expressao A - exp. B   - A e B  A ou B
+    F           F           F      F
+    F           V           F      v
+    V           F           F      V 
+    V           V           V      v
+    
+*E - basta um F para ser F
+*OU - basta um V para ser V
+
+Ex.: Algoritmo Verifica_aluno_aprovado
+var nota, frequencia :real;
+inicio  
+    Leia nota, frequencia;
+    if(nota >=7 E frequencia >= 70% OU nome = "Rafael")
+        Escreve Aprovado;
+    else
+        Escreva "Reprovado";
+    Fim 
+
+Operadores Relacionais
+Igual ==
+Maior >
+Menor ou igual >=
+Diferente != ou <>
+Menor <
+Menor ou igual <=
+
+Ex.: Algoritmo Pode_tirar_carteira_de_motorista
+var idade :inteiro;
+inicio 
+    Leia idade;
+    if idade >= 18
+        Escreva "Pode tirar carteira de motorista";
+    else
+        Escreva "Não pode tirar carteira de motorista."
+Fim
+
+EXEMPLOS UTILIZANDO TODO CONTEÚDO APRESENTADO
+Receber 2 números e a operação aritmética e realizar o calculo de acordo com os dados passadosReceber usuário e senha do usuário e validar se o usuário é um email válido e se a senha contem pelo menos um número e um caracter especial e caso não atenda uma das validações retornar para o usuário qual a informação inválida
+
+
+REFERÊNCIA BIBLIOGRÁFICA
+
+https://educapes.capes.gov.br/bitstream/capes/560827/2/Apostila%20-%20Curso%20de%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o.pdf
+http://proedu.rnp.br/bitstream/handle/123456789/704/Logica_Programacao_web.pdf?sequence=3&isAllowed=y
+https://amenteemaravilhosa.com.br/aprenda-desenvolver-pensamento-lateral/
+https://www.guiadopc.com.br/artigos/34848/historia-logica-programacao.html
+https://pt.wikipedia.org/wiki/Ada_Lovelace
+https://www.youtube.com/watch?v=PbRkAwZnQCU
+https://www.youtube.com/watch?v=zwmQh55GDm4
+https://pt.wikipedia.org/wiki/Fluxograma#:~:text=Fluxograma%3A%20%C3%A9%20um%20tipo%20de,operacional%20do%20desenvolvimento%20de%20um
+https://www.lucidchart.com/pages/pt/o-que-e-um-fluxograma
+https://maisconsultoria.com.br/2019/08/09/fluxograma-de-processos/
+https://www.ime.unicamp.br/~hildete/dados.pdf
+
+FERRAMENTAS DE ESTUDO
+
+https://visualg3.com.br/
+https://www.qconcursos.com/
+https://br.codecombat.com/
+https://www.urionlinejudge.com.br/ju dge/pt/login
+https://www.hackerrank.com/
+https://www.codecademy.com/
 
 
 
