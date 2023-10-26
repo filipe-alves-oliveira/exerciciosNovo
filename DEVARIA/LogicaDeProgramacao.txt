@@ -888,10 +888,10 @@ Fim
 -----------------------------------------------------------------------------------------------------------
 
 Operadores de Atribuição
-
-Atribuição simples =
-atribuição com subtração -=
-atribuição com divisao /=
+Lado esquerdo atrubição / lado direito condiçãoes ou variaveis que vai passar o valor para o lado esquerdo.
+Atribuição simples = RECEBE / x = y / x recebe y 
+atribuição com subtração -= / x = 20 / x - = 5 / x = x -5 .: x = 15
+atribuição com divisao /= / x = 30 / y = 2 / x = /= .: x = 30/2 .: x = 2
 atribuicao com adicao +=
 atribuicao com multiplicacao *=
 atribuicao com modulo %=
@@ -906,34 +906,44 @@ inicio
 Fim
 
 Operadores Logicos
-Conjunção e/and/&& - as duas condições devem ser verdadeiras para que o resultado seja vdd.
-Disjunção ou/or/|| - pelo menos uma condição deve ser verdadeira para que o resultado seja vdd.
-Negação não/not - inverte o valor do resultado da condição.
+-Conjunção e/and/&& - as duas condições devem ser verdadeiras para que o resultado seja vdd.
+e - portugues / and - bd / && - linguagem de programação.
 
+-Disjunção ou/or/|| - pelo menos uma condição deve ser verdadeira para que o resultado seja vdd.
+ou - portugues / or - bd / || - linguagem de programação.
+
+-Negação não/not/! - inverte o valor do resultado da condição.
+não - portugues / not - bd / ! - linguagem de programação.
+ex.: Não > que 18 anos - verificar o menor de 18 anos.
 
 retorno de cada expresão   E       OU
 expressao A - exp. B   - A e B  A ou B
     F           F           F      F
-    F           V           F      v
+    F           V           F      V
     V           F           F      V 
     V           V           V      v
-    
-*E - basta um F para ser F
-*OU - basta um V para ser V
+
+*E - basta um F para ser F -(E1FpF) 
+*OU - basta um V para ser V -(OU1VpV)-(no caso de duas expressões uma sendo verdadeira ele nem checa a 2 expressão, sendo falso a 1ª ele nem checa a 2ª).
 
 Ex.: Algoritmo Verifica_aluno_aprovado
 var nota, frequencia :real;
 inicio  
-    Leia nota, frequencia;
-    if(nota >=7 E frequencia >= 70% OU nome = "Rafael")
+    Leia nota, frequencia, nome; EX.: nota = 8 / frequencia = 20% / nome = "Rafael"
+    -if nota >=7 E frequencia >= 70% - V/F - REPROVADO
+    -if nota >=7 OU frequencia >= 70% - V/F - APROVADO
+    -if nota >=7 E frequencia >= 70% OU nome = "Rafael" - F/V/V - vai checar o OU primeiro(V/V) - APROVADO. Errado pq a nota foi menor que 7 .: seria REPROVADO, sempre usar parenteses().
+    -if (nota >=7 E frequencia >= 70%) OU nome = "Rafael" - V/F - F .: F/V - V APROVADO.
+    -if (nota >=7 E frequencia >= 70% OU nome = "Rafael") - V/F/V - APROVADO, ERRADO como se não tivesse parentes.
+    não tendo parentes e tendo E e OU, resolve o pc resolve primeiro o OU depois o E.
         Escreve Aprovado;
     else
         Escreva "Reprovado";
     Fim 
 
 Operadores Relacionais
-Igual ==
-Maior >
+Igual == comparativo.
+Maior > 
 Menor ou igual >=
 Diferente != ou <>
 Menor <
@@ -950,7 +960,66 @@ inicio
 Fim
 
 EXEMPLOS UTILIZANDO TODO CONTEÚDO APRESENTADO
-Receber 2 números e a operação aritmética e realizar o calculo de acordo com os dados passadosReceber usuário e senha do usuário e validar se o usuário é um email válido e se a senha contem pelo menos um número e um caracter especial e caso não atenda uma das validações retornar para o usuário qual a informação inválida
+-Receber 2 números e a operação aritmética e realizar o calculo de acordo com os dados passados
+Ex.: Algoritmo Receber_numero
+
+var N1, N2 :inteiro;
+    operacao: Caractere
+inicio 
+    Leia N1, N2;
+        soma = N1 + N2
+        subtr = N1 - N2
+    if (operação == "+")
+        Escreva "A soma é " + soma;
+    elseif (operacao == "-")
+        Escreva "A subtração é " + subtr;
+    else
+        Escreva "Operação inválida."
+Fim
+
+
+-Receber usuário e senha do usuário e validar se o usuário é um email válido e se a senha contem pelo menos um número e um caracter especial e caso não atenda uma das validações retornar para o usuário qual a informação inválida
+
+Algoritmo Validar_Usuario
+
+Var
+    usuario, senha: Caractere
+    contemNumero, contemCaracterEspecial: Logico
+
+Inicio
+    Escreva("Digite o nome de usuário: ")
+    Leia(usuario)
+
+    Escreva("Digite a senha: ")
+    Leia(senha)
+
+    contemNumero <- Falso
+    contemCaracterEspecial <- Falso
+
+    // Verificação do usuário como email
+    Se (usuario contém "@" e usuario contém ".") Então
+        Escreva("Usuário é um email válido")
+    Senão
+        Escreva("Usuário inválido. Deve ser um email válido")
+    FimSe
+
+    // Verificação da senha
+    Para i <- 0 Até Comprimento(senha) - 1 Faça
+        Se (senha[i] >= '0' e senha[i] <= '9') Então
+            contemNumero <- Verdadeiro
+        Senão Se (senha[i] = '@' ou senha[i] = '#' ou senha[i] = '$' ou senha[i] = '%' ou senha[i] = '&' ou senha[i] = '*') Então
+            contemCaracterEspecial <- Verdadeiro
+        FimSe
+    FimPara
+
+    Se (contemNumero e contemCaracterEspecial) Então
+        Escreva("Senha válida")
+    Senão
+        Escreva("Senha inválida. Deve conter pelo menos um número e um caractere especial")
+    FimSe
+
+Fim
+
 
 
 REFERÊNCIA BIBLIOGRÁFICA
