@@ -1,1 +1,51 @@
 Noções de banco de dados
+
+o que é um banco de Dados?
+-Local de armazenamento de dados - Um sistema que armazena dados sobre um dominio específico.
+
+-Organização dos dados - Além de armazenar o banco de dados é um sistema que organiza esse grupo de dados para um sistema utilizarem de forma estruturada.
+
+
+Formulário de cadastro.
+1920 - cadastro de pessoa com dados em um formulário de papel ou na máquina de escrever. Esses dados eram armazenados em um arquivo e pastas em uma sala de arquivos, famoso Banco de Dados Manual.
+
+Formulário de cadastro digital - armazena em um Banco de Dados.
+
+HISTÓRIA - quando começou?
+-1960 - Organização em arquivos
+Os dados eram armazenados em fitas magnéticas e a leitura era realizado por sequencia.
+
+-1970-Criação do SGBD (Sistema de gerencimaneto de BD)
+Começou a ser usados sistemas de gerencimaneto de banco de dados.
+
+-1980-Banco de dados relacional dominou
+O banco de dados relacional passou a ser utilizado em grande escala e foi criada a linguagem SQL.
+
+-1990-Uso massivo e interface para Web
+
+-2000-Novas linguagens
+
+Porque Utilizar Banco de Dados?
+-Armazenagem segura dos dados - Com um sistema centralizado especializados de armazenamento gera segurança.
+-Agilidade no processo - Redução do tempo de armazenamento manual, além de ter agilidade na leitura e escrita de novos dados.
+-Organização dos dados - O banco de dados proporciona uma organização no armazenamento de dados.
+-Redução de redundância e inconsistências - O banco de dados possui controles para não deixar dados serem inseridos de foma incorreta e dedundante. Consistencia nos dados, o que é nome, idade, diferenciar e dar consistencia do que é correto.
+
+DADOS 
+-É o registro do atributo de um ente, objeto ou fenomeno.
+ex.: nome Daniel - dado
+nome do produto: Chocolate - dado
+
+NOME DO PRODUTO  MARCA   TIPO
+Chocolate        garoto  Ao leite
+Chocolate        lacta   Ao leite
+Chocolate        nestle  Ao leite
+Chocolate        nestle  Branco
+
+INFORMAÇÃO: É a manipulação e a organização dos dados dano algum sentido.
+-EU tenho 4 chocolates sendo 4 ao leite e um branco.
+
+TIPOS DE DADOS - caracteristicas que os dados possuem para ser armazenados em memória.
+-Dados primitivos - Na programação existem 4 tipos de dados primitivos e as linguagens subdividem em vários tipos:
+
+
