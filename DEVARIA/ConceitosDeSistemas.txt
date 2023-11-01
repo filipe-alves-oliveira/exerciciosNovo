@@ -56,7 +56,7 @@ Conceitos de Sistemas
 		- Navegadores (Chrome, Edge, Firefox);
 		- Jogos;
 		- Lojas para baixar outros aplicativos;
-		- IDE (Ambiente de Desenvolvimento Integrado.
+		- IDE (Ambiente de Desenvolvimento Integrado.)
 
 	- Quais foram os ganhos dos aplicativos Desktop para o mercado?
 		- Muitas empresas construíram seus softwares proprietários para funcionamento da sua operação
