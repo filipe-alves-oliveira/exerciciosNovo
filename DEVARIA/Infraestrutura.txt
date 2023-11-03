@@ -1,0 +1,79 @@
+O que é infraestrutura
+
+“Sistema básico que corresponde aos serviços públicos de um município: a coleta de lixo diz respeito à infraestrutura de uma cidade.”
+
+“Suporte invisível que sustenta uma construção: a infraestrutura do prédio.”
+
+A base para o funcionamento da tecnologia
+-A infraestrutura de tecnologia da informação é composta de recursos físicos e virtuais que suportam o fluxo, armazenamento, processamento e análise de dados
+
+Infraestrutura não é o fim e sim o meio.
+
+Exemplos de infraestrutura de TI
+-Redes de computadores
+Conjunto de equipamentos e softwares para sustentar uma rede de computadores.
+
+-Servidores
+Conjuntos de equipamentos e softwares que sustentam o funcionamento de servidores.
+
+-Segurança
+Conjunto de equipamentos e softwares que garantem a segurança da informação.
+
+-Câmeras
+Conjunto de equipamentos e softwares que configurados proporcionam um gerenciamento e câmeras.
+
+-Nuvem
+Ativos tecnológicos que disponibilizam serviços pela internet para uso de vários fins.
+
+-Impressão
+Conjunto de impressoras e softwares para gerenciar e permitir impressões de diversos formatos.
+
+Enraizando o conceito das principais camadas
+Software, Usuario, Sistema operacional, Hardware.
+
+
+Principais exemplos de Hardware
+Impressora, Celulares, Monitores, Sevidores, Computador, Notebook.
+
+Principais Componentes de um computador
+Processador, Placa de rede, Memória, Fonte, Hard Disk (HD), Placa Mãe, Placa de Vídeo.
+
+Processador
+-Também conhecido como CPU - Unidade Central de Processamento
+-Calcular e realizar tarefas determinadas pelo usuário e é considerado o cérebro do computador
+-Os núcleos de processamento são capazes de processar multitarefas
+-Partes mais importantes do processador: ULA - Clock - Cache - Registradores
+
+Memória RAM
+-É a memória temporária de um computador
+-Utilizada para o processador acessar os dados mais rápidos para fazer os cálculos
+-É utilizada sempre quando os programas e serviços estão sendo executados
+-Dois tipos de memória: SDR e DDR, sendo que a versão 4 é a mais potente
+
+Hard Disk Drive
+-O Hard Disk Drive é, ainda hoje, a principal forma de armazenar dados em um computador. Mesmo com a existência do SSD, o atual substituto do HD, eles reinam na maioria dos PCs de mesa e notebooks
+
+Solid Slate Drive
+-Um SSD (Solid State Drive) é o substituto e concorrente do HDD, a peça traz uma série de melhorias, principalmente de velocidade, para a máquina, seja um desktop ou um notebook
+
+A diferença
+SSD # HDD
+
+Placa de rede
+-Responsável pela conexão a com a rede de computadores.
+-Todos os dados que saem e entram no computador passam pela placa de rede, seja ela uma placa de rede sem ou com fio.
+-As placas de redes podem transmitir em velocidades que variam de 10Mbps até 10 Gbps, e isso determina a performance que o computador tem na transmissão de dados com a internet por exemplo
+
+Fonte
+-Equipamento que alimenta a energia de um computador, notebook e servidores. É responsável por distribuir a energia necessária para cada peça dentro da máquina, fazendo com que todos tenham o funcionamento.
+-Existem diversas potências de fonte e tudo depende qual equipamento ela vai alimentar, pois quanto mais potente seja o equipamento mais capacidade de energia a fonte tem que prover.
+-Eficiência: Na hora de comprar é muito importante escolher uma bem avaliada pelo 80plus
+
+Placa mãe
+-É a peça do computador que interliga todas as outras mencionadas anteriormente, ou seja, ela é responsável pela conexão entre o processador, memória RAM, Fonte, placa de rede, placa de vídeo, HD, driver de CD, entradas USBs entre outros componentes.
+-Além de interligar as peças a placa mãe trafega do com todos os dados entre as peças, então ela desenvolve um papel extremamente importante.
+-Os modelos de diferenciam de pois cada placa tem suporte para peças com características diferentes e com as evoluções das peças as placas mães vão se adaptando
+
+Placa de vídeo
+-É o componente responsável por disponibilizar o vídeo no monitor, controlando e processando todos os gráficos para que o usuário possa visualizar em formato de imagem e vídeos.
+-A GPU (Unidade de Processamento Gráfico) é a parte mais importante da placa de vídeo. É o processador responsável pela execução de cálculos e rotinas que resultam nas imagens exibidas no monitor.
