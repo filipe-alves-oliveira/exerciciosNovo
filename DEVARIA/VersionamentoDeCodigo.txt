@@ -1,0 +1,94 @@
+Ferramenta Git
+
+Existem diversas ferramentas para gerenciar e versionar o código fonte ou qualquer projeto com arquivos, porém nos últimos anos o servidores Git tomaram conta da comunidade e das empresas, boa parte se dá a sua arquitetura e inteligência que ajuda na realização do trabalho de versionamento com excelência, evitando retrabalhos, conflitos e até mesmo ajudando os usuários a trabalharem em equipe.
+
+Site Oficial:
+git-scm.com
+
+--------------------------------------------------------------------------------------------------------------------
+
+Versionamento de código
+-Atualmente, saber trabalhar em equipe é algo muito importante. No entanto, muito além das competências sociais, é importante também possuir as competências técnicas para conseguir colaborar com seus colegas de trabalho na entrega de bons projetos.
+
+O que é versionamento?
+-O versionamento é o gerenciamento de versões diferentes de um documento de texto qualquer. Perceba que não precisa ser código.
+
+O versionamento é controlado pelo o que chamamos de sistema de controle de versões. Normalmente, esses sistemas são utilizados no desenvolvimento de software para controlar as diferentes versões e histórico de desenvolvimento do código.
+
+Principais vantagens em versionar
+-Controle de histórico
+É possível visualizar todo o histórico de desenvolvimento e voltar para versões anteriores. Além disso, temos a possibilidade de avaliar no detalhe o que foi mudado de uma versão para outra.
+
+-Trabalho em equipe
+Um sistema de versionamento permite que várias pessoas trabalhem no mesmo conjunto de arquivos (repositório) ao mesmo tempo em que evita conflitos entre as alterações. Cada membro do time de desenvolvimento tem sua “cópia” dos arquivos que ao final das alterações é colocada junto das versões alteradas dos demais. Indo um pouco mais além, cada pessoa envolvida no projeto pode ter níveis de permissões diferentes para realizar determinadas ações.
+
+-Marcação e resgate de versões estáveis
+Através de padrões de nomenclatura para as ramificações do código no versionamento, é possível identificar de forma fácil versões específicas e quais oferecem código estável e quais ainda estão sob avaliação ou desenvolvimento.
+
+-Ramificação de projeto
+Esta é a base para o versionamento. A possibilidade de ter várias linhas de desenvolvimento paralelas sem que uma interfira na outra. Cada dev tem sua versão do código e pode alterá-la da forma como achar necessário sem receio de interferir no trabalho do seu time.
+
+-Segurança
+Os softwares de controle de versão em geral possuem recursos para evitar invasões de agentes infecciosos nos arquivos. Somente usuários aos quais foi concedida permissão para edição do código conseguirão alterá-lo.
+
+-Confiança
+Embora a finalidade das ferramentas de versionamento não seja a de oferecer um backup do código, mas sim seu histórico e fácil navegação entre versões, ele pode acabar servindo para isto também. Normalmente os código versionados ficam em serviços hospedados na web que nos garantem que eles não serão perdidos. Assim, temos mais confiança de que nenhuma eventualidade poderá nos fazer perder o que já foi construído.
+
+
+Ferramenta Github
+https://github.com/
+
+Ferramenta Bitbucket
+https://bitbucket.org/
+
+Ferramenta Github Desktop
+https://desktop.github.com
+
+Linux Kraken
+https://www.gitkraken.com
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+Criar repositório
+
+-Objetivo: Iniciar uma pasta como um repositório do git
+-Quando utilizar: Quando iniciamos um novo projeto, ou parte de um projeto que precisa ser isolada e gerenciada separadamente.
+-Ponto de atenção: Nunca crie um repositório dentro de outro, no git cada pasta/diretório raiz deve ser tratado como um repositório separadamente;
+
+
+GIT INIT <nome do diretório caso não esteja nele>
+
+Exercícios:
+-Vamos criar um repositório pelo github;
+-Vamos criar um repositório pelo github desktop
+
+Gerenciar arquivos
+-Objetivo: Adicionar/Remover arquivos dentro do repositório criado;
+-Quando utilizar:Conforme formos trabalhando no dia a dia vamos subimos as atualizações do que está local na nossa máquina;
+-Ponto de atenção:A idéia é que vamos fazer diversos commits por dia
+
+
+GIT STATUS
+GIT ADD <Nome do arquivo>
+GIT ADD –A
+GIT COMMIT –M “Comentário do que foi feito”
+GIT PUSH
+
+Exercícios:
+-Vamos gerenciar arquivos pelo github desktop;
+-Vamos gerenciar arquivos pela linha de comando;
+
+Atualizar arquivos
+-Objetivo:Capturar atualização dos arquivos que foram criados no servidor e adicionar localmente
+-Quando utilizar:Conforme formos trabalhando no dia a dia vamos atualizar nosso repositório para que ele sempre esteja atualizado com os arquivos dos demais usuários;
+-Ponto de atenção:Realizar essa atividade sempre antes de fazer um commit;
+
+GIT STATUS
+GIT PULL
+
+Exercícios:
+-Vamos atualizar arquivos pelo github desktop;
+-Vamos atualizar arquivos pela linha de comando;
+
+--------------------------------------------------------------------------------------------------------------------
