@@ -1,4 +1,4 @@
-O que é infraestrutura
+O que é INFRAESTRUTURA
 
 “Sistema básico que corresponde aos serviços públicos de um município: a coleta de lixo diz respeito à infraestrutura de uma cidade.”
 
@@ -7,7 +7,7 @@ O que é infraestrutura
 A base para o funcionamento da tecnologia
 -A infraestrutura de tecnologia da informação é composta de recursos físicos e virtuais que suportam o fluxo, armazenamento, processamento e análise de dados
 
-Infraestrutura não é o fim e sim o meio.
+Infraestrutura não é o fim e sim o MEIO.
 
 Exemplos de infraestrutura de TI
 -Redes de computadores
@@ -29,7 +29,8 @@ Ativos tecnológicos que disponibilizam serviços pela internet para uso de vár
 Conjunto de impressoras e softwares para gerenciar e permitir impressões de diversos formatos.
 
 Enraizando o conceito das principais camadas
-Software, Usuario, Sistema operacional, Hardware.
+Software não se comunica diretamente com o hardware, nesse meio tem o SO, que fala com a máquina, não precisamos programar e saber onde vou guardar os dados dentro do HD, não precisamos gerenciar os recursos de uma máquina, quem faz isso é o SO.
+Usuario, Sistema operacional, Hardware.
 
 
 Principais exemplos de Hardware
