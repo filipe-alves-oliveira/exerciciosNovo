@@ -25,22 +25,22 @@
 # print(f"resultado: {a - b}")
 
 # ---------------------------------------------------------
-import math
+# import math
 
-# a = int(input("a: "))
+a = int(input("a: "))
 # b = int(input("b: "))
 # c = int(input("c: "))
 
-a = 1
-b = 12
-c = -13
+# a = 1
+# b = 12
+# c = -13
 
-calculo_delta = b ** 2 - 4 * a * c
+# calculo_delta = b ** 2 - 4 * a * c
 
-print(f"resultado de delta eh: {calculo_delta}")
+# print(f"resultado de delta eh: {calculo_delta}")
 
-x1 = (- b + (calculo_delta ** 0.5)) / (2*a)
-x2 = (- b - (calculo_delta ** 0.5)) / (2*a)
+# x1 = (- b + (calculo_delta ** 0.5)) / (2*a)
+# x2 = (- b - (calculo_delta ** 0.5)) / (2*a)
 
-print(f"resultado x1: {x1}")
-print(f"resultado x2: {x2}")
+# print(f"resultado x1: {x1}")
+# print(f"resultado x2: {x2}")
