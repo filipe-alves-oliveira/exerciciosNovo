@@ -30,6 +30,7 @@ Conjunto de impressoras e softwares para gerenciar e permitir impressões de div
 
 Enraizando o conceito das principais camadas
 Software não se comunica diretamente com o hardware, nesse meio tem o SO, que fala com a máquina, não precisamos programar e saber onde vou guardar os dados dentro do HD, não precisamos gerenciar os recursos de uma máquina, quem faz isso é o SO.
+Software que não tem um SO - impressora, tem um software que conversa direto com a impressora.
 Usuario, Sistema operacional, Hardware.
 
 
@@ -37,10 +38,10 @@ Principais exemplos de Hardware
 Impressora, Celulares, Monitores, Sevidores, Computador, Notebook.
 
 Principais Componentes de um computador
-Processador, Placa de rede, Memória, Fonte, Hard Disk (HD), Placa Mãe, Placa de Vídeo.
+Processador, Placa de rede, Memória, Fonte, Hard Disk (HD - disco de armazenamento), Placa Mãe, Placa de Vídeo.
 
 Processador
--Também conhecido como CPU - Unidade Central de Processamento
+-Também conhecido como CPU # do gabinete - Unidade Central de Processamento
 -Calcular e realizar tarefas determinadas pelo usuário e é considerado o cérebro do computador
 -Os núcleos de processamento são capazes de processar multitarefas
 -Partes mais importantes do processador: ULA - Clock - Cache - Registradores
