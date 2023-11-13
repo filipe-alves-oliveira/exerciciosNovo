@@ -20,7 +20,7 @@ Conjuntos de equipamentos e softwares que sustentam o funcionamento de servidore
 Conjunto de equipamentos e softwares que garantem a segurança da informação.
 
 -Câmeras
-Conjunto de equipamentos e softwares que configurados proporcionam um gerenciamento e câmeras.
+Conjunto de equipamentos e softwares que configurados CPUproporcionam um gerenciamento e câmeras.
 
 -Nuvem
 Ativos tecnológicos que disponibilizam serviços pela internet para uso de vários fins.
@@ -41,29 +41,36 @@ Principais Componentes de um computador
 Processador, Placa de rede, Memória, Fonte, Hard Disk (HD - disco de armazenamento), Placa Mãe, Placa de Vídeo.
 
 Processador
--Também conhecido como CPU # do gabinete - Unidade Central de Processamento
--Calcular e realizar tarefas determinadas pelo usuário e é considerado o cérebro do computador
--Os núcleos de processamento são capazes de processar multitarefas
--Partes mais importantes do processador: ULA - Clock - Cache - Registradores
+-Também conhecido como CPU # do gabinete. Dentro do gabinete tem a CPU - Unidade Central de Processamento
+-Calcular e realizar tarefas determinadas pelo usuário e é considerado o cérebro do computador, peça mais rápida e que precisa de mais velocidade.
+-o que define se ele pe bom ou não é os núcleos, processadores de 4 núcleos são os melhores q fazem o processamento de 4 coisas ao mesmo temp- Os núcleos de processamento são capazes de processar multitarefas
+
+- Partes mais importantes do processador: 
+-ULA (Unidade de calculo aritmetico +, *, -, /).
+-Clock (Velocidade do processador, não adianta comprar um core i5 de 8 nucleos da geração 3, o clock dele será muito mais baixo que nas novas gerações, melhor comprar um processador com clock melhor e mais nucleos. 2.4 gigahertz, é 2.4 bilhoes de processamentos de calculos por segundos).
+-Cache (ex.: calculadora HP - grava a % para fazer o calculo no final da conta, o cache é isso, guarda os dados q vão ser usados depois para que o processador nao precise colocar esses dados em outro lugar ele mesmo grava esses dados q vai usar rapidamente)
+-Registradores (guardam regras, calculos aritmeticos que a ULA utiliza para fazer os calculos, Memoria de coisas aritmeticos.)
+NÃO PRECISAMOS PROGRAMAR NADA DISSO, QM FAZ ESSE TRABALHO É O SO E O PROCESSADOR.
 
 Memória RAM
--É a memória temporária de um computador
+-É a memória temporária de um computador, SÓ UTILIZADA COM ENERGIA QDO PC TA LIGADO, armazena dados de forma temporaria, qdo abrimos o browser, programas, windows, td q está sendo executado está usando a memória RAM para executar. A memoria RAM é muito mais rápida q o disco rigido que é o HD e o SSD. Os programas utilizam essa memoria em execução para ter mais velocidade. Voce coloca várias coisas na MEMORIA RAM e o sistema vai utilizando essa memoria e qdo vc fecha o programa ele pega a memoria guarda no HD qdo necessario e o resto ele limpa a memória.
 -Utilizada para o processador acessar os dados mais rápidos para fazer os cálculos
--É utilizada sempre quando os programas e serviços estão sendo executados
--Dois tipos de memória: SDR e DDR, sendo que a versão 4 é a mais potente
+-É utilizada sempre quando os programas e serviços estão sendo executados.
+-Dois tipos de memória: SDR e DDR, sendo que a versão 4 é a mais potente, ou seja, DDR3 mais potente que a 3 e hoje está na DDR5 lançada em 2021 e qtos GB tem capacidade de armazenar, geralmente compramos de 4gb, 8gb ou 16gb. Se fosse um back e front seria necessário minimo de 8gb
+
 
 Hard Disk Drive
--O Hard Disk Drive é, ainda hoje, a principal forma de armazenar dados em um computador. Mesmo com a existência do SSD, o atual substituto do HD, eles reinam na maioria dos PCs de mesa e notebooks
+-O Hard Disk Drive é, ainda hoje, a principal forma de armazenar dados em um computador. Mesmo com a existência do SSD, o atual substituto do HD, eles reinam na maioria dos PCs de mesa e notebooks, voce grava as informações em um disco CD mesmo e usa essas informações gravadas qdo o sistema pede. Só que é diferente da memória RAM, pq qdo desligamos o PC não perde os dados ficam no HD ou SSD.
 
 Solid Slate Drive
--Um SSD (Solid State Drive) é o substituto e concorrente do HDD, a peça traz uma série de melhorias, principalmente de velocidade, para a máquina, seja um desktop ou um notebook
-
+-Um SSD (Solid State Drive) é o substituto e concorrente do HDD, a peça traz uma série de melhorias, principalmente de velocidade, para a máquina, seja um desktop ou um notebook. Diferente do HD ele não utiliza disco utiliza uma memoria flash, um novo conceito de armazenamento, é uma evolução como exemplo: de disco vinil para CD.
 A diferença
-SSD # HDD
+SSD # HDD - tempo de acesso, qdo vc acessa um arquivo no HD tem um tempo de 5.5 ms no SSD 0.1 ms, ou seja, muito mais rápido.
+
 
 Placa de rede
 -Responsável pela conexão a com a rede de computadores.
--Todos os dados que saem e entram no computador passam pela placa de rede, seja ela uma placa de rede sem ou com fio.
+-Todos os dados que SAEM e ENTRAM no computador passam pela placa de rede, seja ela uma placa de rede sem ou com fio.
 -As placas de redes podem transmitir em velocidades que variam de 10Mbps até 10 Gbps, e isso determina a performance que o computador tem na transmissão de dados com a internet por exemplo
 
 Fonte
@@ -74,8 +81,86 @@ Fonte
 Placa mãe
 -É a peça do computador que interliga todas as outras mencionadas anteriormente, ou seja, ela é responsável pela conexão entre o processador, memória RAM, Fonte, placa de rede, placa de vídeo, HD, driver de CD, entradas USBs entre outros componentes.
 -Além de interligar as peças a placa mãe trafega do com todos os dados entre as peças, então ela desenvolve um papel extremamente importante.
--Os modelos de diferenciam de pois cada placa tem suporte para peças com características diferentes e com as evoluções das peças as placas mães vão se adaptando
+-Os modelos de diferenciam de pois cada placa tem suporte para peças com características diferentes e com as evoluções das peças as placas mães vão se adaptando. Processador antigo não encaixa em uma placa mãe nova. Encaixe de slots de memória. Placa q não aceita SSD, placa q aceita.
 
 Placa de vídeo
 -É o componente responsável por disponibilizar o vídeo no monitor, controlando e processando todos os gráficos para que o usuário possa visualizar em formato de imagem e vídeos.
 -A GPU (Unidade de Processamento Gráfico) é a parte mais importante da placa de vídeo. É o processador responsável pela execução de cálculos e rotinas que resultam nas imagens exibidas no monitor.
+-Qto melhor o GPU, mais processamento de imagem vou ter.
+
+-----------------------------------------------------------------------------------------------------------
+O que é redes?
+
+É a conexão de equipamentos (computadores, notebooks, impressoras, celulares ....) para permitir a troca de informações entre eles, possibilitando assim a utilização dos sistemas.
+
+Classificação de redes
+
+-LAN
+Mais conhecida como rede local, que é a interligação de equipamentos em um mesmo ambiente.
+-MAN
+Rede metropolitana, ou seja, é uma interligação de equipamentos em um uma distância regional.
+-WAN
+Interliga equipamentos em longas distâncias, levando os dados para diversos países e regiões.
+
+Como é distribuído os dados?
+
+Redes moveis / Rede Residenciais -> ISP global -> ISP Regional <- Redes Corporativas.
+
+
+Mas os dados trafegam como?
+
+Modelo OSI
+
+7. Interação com o usuário (Próprias aplicações como Browser) - Aplicação
+6. Preparar e traduzir os dados dos pacotes recebidos - Apresentação
+5. Responsável por iniciar, gerenciar e terminar as conexões - Sessão
+4. Controle do fluxo dos pacotes da origem e destino - Transporte 
+3. Endereçamento dos dispositivos de rede - Rede
+2. Transmissão física dos dados - Ligação de Dados
+1. São os próprios equipamentos de rede (Bit puro) - Física
+
+-Protocolo de redes
+É uma bagunça a rede de computadores?
+Como que as máquinas se entendem?
+Protocolo são regras e normas utilizadas para a comunicação entre máquinas e equipamentos.
+Vamos falar de IP, TCP, HTTP, FTP, SMTP, SSH e DNS.
+
+-Protocolo HTTP e HTTPs
+Protocolo utilizado para comunicação entre cliente e servidor
+Toda comunicação HTTP funciona com uma requisição e uma resposta
+A aplicação mais comum do HTTP é a navegação de sites nos Browsers, troca de dados entre sistemas e Mobile
+Notebook -> Requisição -> Servidor -> resposta -> Notebook.
+
+-Método de requisição GET
+Requisição do cliente para o servidor para obter alguma informação
+Cliente -> Requisição de alguma informação -> servidor -> Resposta com a informação solicitada -> Cliente.
+
+-Método de requisição POST
+Requisição do cliente para o servidor para enviar alguma informação para gravação
+Cliente -> Requisição com dados para ser salvos -> servidor -> Resposta se houvesse sucesso no processamento -> Cliente.
+
+-Método de requisição PUT
+Requisição do cliente para o servidor para atualizar alguma informação
+Cliente -> Requisição com dados para ser atualizado -> servidor -> Resposta se houvesse sucesso no processamento -> Cliente.
+
+-Método de requisição DELETE
+Requisição do cliente para o servidor para deleção alguma informação
+Cliente -> Requisição com dados para ser excluido -> servidor -> Resposta se houvesse sucesso no processamento -> Cliente.
+
+1xx: Informational (Informação) – Informa que a requisição foi atendida e está em processo;
+2xx: Success (Sucesso) – Requisição do cliente foi bem sucedida;
+3xx: Redirection (Redirecionamento) – Ação adicional que deve ser tomada;
+4xx: Client Error (Erro no cliente) – Avisa que o cliente fez uma requisição que não pode ser atendida;
+5xx: Server Error (Erro no servidor) –Erro no servidor ao cumprir uma requisição válida
+
+Segurança HTTP/HTTPs
+-Uso do SSL/TLS
+Essa prática faz com o que o HTTP vire HTTPS, sendo configurado um certificado para gerar autenticidade e criptografia.
+
+-Uso de autenticação nas requisições
+É uma forma de garantir que quem requisite tem autorização dos dados. Alguns protocolos mais utilizados: No Auth Basic Authentication oAuth2 (ex com Bearer token)
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
