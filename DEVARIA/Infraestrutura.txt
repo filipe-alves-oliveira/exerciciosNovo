@@ -52,6 +52,8 @@ Processador
 -Registradores (guardam regras, calculos aritmeticos que a ULA utiliza para fazer os calculos, Memoria de coisas aritmeticos.)
 NÃO PRECISAMOS PROGRAMAR NADA DISSO, QM FAZ ESSE TRABALHO É O SO E O PROCESSADOR.
 
+Ordem de importância dos componentes do computador para programação -> Memoria RAM, Processador, SSD.
+
 Memória RAM
 -É a memória temporária de um computador, SÓ UTILIZADA COM ENERGIA QDO PC TA LIGADO, armazena dados de forma temporaria, qdo abrimos o browser, programas, windows, td q está sendo executado está usando a memória RAM para executar. A memoria RAM é muito mais rápida q o disco rigido que é o HD e o SSD. Os programas utilizam essa memoria em execução para ter mais velocidade. Voce coloca várias coisas na MEMORIA RAM e o sistema vai utilizando essa memoria e qdo vc fecha o programa ele pega a memoria guarda no HD qdo necessario e o resto ele limpa a memória.
 -Utilizada para o processador acessar os dados mais rápidos para fazer os cálculos
@@ -99,7 +101,7 @@ Classificação de redes
 
 -LAN
 Mais conhecida como rede local, que é a interligação de equipamentos em um mesmo ambiente.
--MAN
+-MANMemória RAM
 Rede metropolitana, ou seja, é uma interligação de equipamentos em um uma distância regional.
 -WAN
 Interliga equipamentos em longas distâncias, levando os dados para diversos países e regiões.
@@ -171,7 +173,7 @@ Essa prática faz com o que o HTTP vire HTTPS, sendo configurado um certificado 
 -Basic Authentication - usuario e senha para qm quiser utilizar o meu servidor. 
 -oAuth2 (ex com Bearer token)
 
------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 
 Demais protocolos de rede e periféricos
 
@@ -210,47 +212,60 @@ Camadas 1,2   x Network Interface - Acesso a Rede, parte física, placa de rede.
 
 -FTP
 É um protocolo de transferência de dados, que em português significa Protocolo de Transferência de Arquivos
--Utilizado muito para enviar arquivos para servidores
--O SFTP ou FTPS é uma forma mais segura
-Um utiliza SSH para autenticação e criptografia e a outra forma utiliza SSL/TLS (certificado digital) O SFTP ou FTPS é uma forma mais segura
+-Utilizado muito para enviar arquivos entre servidores; server e clientes. Ex.: img pinguim, enviado p server.
+-O SFTP ou FTPS é uma forma mais segura (1 S antes SFTP e 1 depois FTPS)
+Um utiliza SSH para autenticação e criptografia (o SFTP) e a outra forma utiliza SSL/TLS (FTPS) (certificado digital). O SFTP ou FTPS é uma forma mais segura. Utiliza certificado como o HTTPs para tornar mais seguro.
 -Programas utilizados para conectar via FTP
 O mais famoso deles é o FileZilla, mas você pode utilizar até mesmo o Windows Explorer
 
-SMTP - POP3 - IMAP
+EMAILs - SMTP - POP3 - IMAP
+ex.: Devaria me enviou um e-mail para ativar a minha conta, no back eu configuro uma autenticação/conexão com o server SMTP utilizando os protocolos SMTP, q é mandar e-mail.
 SMTP - Protocolo de Transferência de Correio Simples
 -Responsável pelo envio de e-mails
+
 POP3 - Protocolo dos Correios
+ex.: Tenho um servidor de e-mail, acesso o outlook e quero configurar o outlook na minha máquina como POP, utilizando o protocolo POP, eu baixo o e-mail e ele vem direto para minha máquina, diferente do IMAP.
 -Responsável pelo recebimento de e-mails
 o e-mail que é transferido desse protocolo é baixado para o ambiente local, retirando esse e-mail do servidor
+
 IMAP - Protocolo de acesso a mensagem da internet
 -Responsável pelo recebimento de e-mails
-Todo o e-mail baixado por esse protocolo é preservado no servidor mantendo o sincronismo das mensagens
+Todo o e-mail baixado por esse protocolo é preservado no servidor, outlook, mantendo o sincronismo das mensagens
 
 SSH
-Protocolo de rede criptográfico
+Protocolo de rede criptográfico, uma forma de autenticar o server usando criptografia
 -Canal seguro para conexão com servidores
 Método comum utilizado para conexão remota com servidores, através de uma autenticação
 -Envio de linhas de comando
 Servidores de aplicações podem receber commandos via SSH de um administrador, como por exemplo inicial, pausar ou desligar um serviço
+PUT - sistema q utiliza para conectar o sever SSH no windows.
 
 DNS
+Qdo entrar no site da Uol não preciso colocar o IP e já me direciona para o servidor da uol, por conta do DNS, responsavel por traduzir o IP para um nome amigavel o ip da uol, será www.uol.com.br 
 Sistema de Nomes de Domínio
 -Responsável pela gestão de nomes para computadores
 Com o DNS você não precisa chamar um site, um serviço ou um computador pelo IP.
+
 -O DNS não é uma gestão centralizada
-A hirearquia de Gestão do DNS é essencial para ter alta disponibilidade e performance. São somente 13 servidores raízes no mundo, sendo 10 nos USA, um no Japão, um na Suécia e outro na Holanda.
+A hirearquia de Gestão do DNS é essencial para ter alta disponibilidade e performance. 
+São somente 13 servidores raízes no mundo, sendo 10 nos USA, um no Japão, um na Suécia e outro na Holanda.
 
 Como funciona uma rede Lan?
 
+INTERNET (rede pública) -> MODEM (entra na empresa atraves do modem e esse trasmiti os dados para o roteador) -> Roteador -> Firewall (protetor dos dados) -> Switch (distribui os dados pelos equipamentos) -> Access Point (mandar sinal Wireless para tds equipamentos que tem rede sem fio)
+Switch -> Impressoras -> PC -> Notebooks.
+Switch -> Servidores.
+
 Modem
 -A junção do Modulador-Demulador
--Transforma os sinais digitais em analógicos e vice-versa
+-Transforma os sinais digitais em analógicos e vice-versa, HTTP.
 -Responsável por pegar os pacotes e transformá-los em analógicos
 -Geralmente são as operadoras que instalam e se responsabilizam pelos Modems
 
 Roteador
 -Responsável pela distribuição dos pacotes
--Verifica as melhores rotas para envio e recebimentoResidências costumam utilizar roteadores com antenas Wireless
+-Verifica as melhores rotas para envio e recebimento
+-Residências costumam utilizar roteadores com antenas Wireless
 -Responsável por pegar os pacotes e transformá-los em analógicos
 -Empresas maiores não tem o costume de utilizar Wireless junto com roteadores
 
@@ -270,5 +285,116 @@ Access Point
 -Uma forma prática e segura para escalar a rede sem necessidade de aumentar a infraestrutura
 -Possuem controles como separação de redes de convidados até mesmo limitação de banda
 
------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+Conceitos de cloud computing
+
+Computação na nuvem
+
+É a disponibilização de recursos tecnológicos pela internet com uma cobrança dos clientes através do uso do recurso.
+Paga pelo serviço que utiliza.
+
+IaaS – Infraestrutura como serviço (infraestructure as a service) - Alugar um serviço de infra como firewall..
+PaaS – Plataforma como serviço (Plataform as a service) - comprar plataforma de mensageria, worpress, sms..
+SaaS – Software como serviço (software as a service) - compra o software em nuvem ex.: spotify, compra e utiliza ele como serviço, vc nao tem ele na sua casa, nem um data center em algum lugar eles utilizam a amazon, nao tem data center proprio.
+
+O Gartner (centro de pesquisa) prevê que, em 2025, 80% das organizações migrarão totalmente dos data centers locais para a hospedagem em nuvem.
+
+Benefícios de utilizar Cloud
+
+-Agilidade
+Você tem um leque gigante de serviços e recursos disponíveis em poucos cliques.
+
+-Elasticidade
+Se seu negócio crescer e precisar de mais recursos tecnológicos no Cloud é possível escalar.
+
+-Economia
+Se bem escolhido e configurado. Os recursos que são utilizados serão de menor custo. Configurar a nuvem de acordo com sua necessidade.
+
+-Geolocalização
+A nuvem te permite ampliar o uso em diversas regiões.
+
+Alguns de serviços em IAAS
+-Servidores de armazenamento
+Possibilidade de configurar servidores de arquivos de acordo com a demanda.
+Storage - um monte de HD, SSD
+
+-Segurança
+É possível configurar Firewalls para ambientes empresariais e outras ferramentas de segurança.
+
+-Servidores de usuários
+Configurar todos os acessos de rede pelo Cloud como por exemplo o Active Directory (servidor de controle de usuario, senha, renovação de senha, e-mail de ativação) pode migrar ele para nuvem.
+
+-Backups
+Todos as aplicações, banco de dados e arquivos podem ser armazenados como Backup nos servidores Cloud
+A lei LGPD não pode fazer backup fora do país.
+
+Os principais provedores
+Amazon Web Services(AWS), Microsoft Azure, Google Cloud.
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+Noções de Sistemas Operacionais e Servidores
+
+Servidores
+
+* Fornecimento de serviços Responsável por prover serviços diversos para outros computadores.
+
+* Computadores mais robustos conectadas em redes
+Máquinas conectadas na LAN, WAN e WAN prontos para receber chamadas de serviços específicos.
+
+Tipos de Servidor:
+-Sservidor de Aplicação
+-servidor de Banco de Dados
+-servidor de Arquivos
+-servidor de Impressão
+-servidor de E-mail
+-servidor de Proxy
+-servidor de Mídia
+
+Datacenters
+- Conjunto de servidores
+Ambiente com vários servidores e com uma infraestrutura que gera segurança e disponibilidade.
+
+- Em empresas corporativas
+Chamamos datacenters de empresas corporativas de On-Premisse.
+
+- Empresas que vendem serviços
+Datacenters especialistas em vender serviços de tecnologia através de datacenters.
+
+Datacenter provedores
+- Infraestrutura elétrica
+A parte de eletricidade é um ponto chave em um datacenter, pois além da energia da
+concessionária eles possuem geradores.
+- Infraestrutura de redes
+Tanto a rede local do Datacenter quanto a conexão de internet são cruciais.
+- Infraestrutura de servidores
+Datacenters contam com uma estrutura de servidores de altíssimo nível de performance e tecnologia utilizando muito o conceito de S
+Virtualização.
+
+Virtualização de servidores
+-É uma técnica utilizada para transformar um servidor físico em servidores virtuais.
+
+Servidor de Aplicação
+* Responsável pelo processamento
+Com servidores de aplicações os computadores podem acessar sistemas simultaneamente através da rede.
+
+Como funciona o servidor de aplicação?
+* Cliente / Servidor
+O acesso ao sistema com servidor utiliza o conceito de cliente/servidor, e na maioria das vezes utiliza o protocolo HTTP
+
+* Frontend vs Backend
+O Frontend é utilizado pelo cliente e o Backend é de responsabilidade do servidor.
+
+O backend é executado e
+
+
+
+
+
+
+
+
 
