@@ -89,6 +89,8 @@ Placa de vídeo
 -Qto melhor o GPU, mais processamento de imagem vou ter.
 
 -----------------------------------------------------------------------------------------------------------
+Redes de computadores
+
 O que é redes?
 
 É a conexão de equipamentos (computadores, notebooks, impressoras, celulares ....) para permitir a troca de informações entre eles, possibilitando assim a utilização dos sistemas.
@@ -105,19 +107,20 @@ Interliga equipamentos em longas distâncias, levando os dados para diversos pa�
 Como é distribuído os dados?
 
 Redes moveis / Rede Residenciais -> ISP global -> ISP Regional <- Redes Corporativas.
-
+ISP regional - empresas q tomam conta e controlam todo trafego de internet regional.
+ISP global - entidade que recebem e trafegam os dados globalmente para tds paises.
 
 Mas os dados trafegam como?
+Pacote - td dado q sai da sua máquina que vai para internet e se comunica com outra pessoa, vai atraves de um pacote, como se fosse uma carta, dentro dela tem um cabeçalho e dentro desse pacote tem um conteudo origem/destino e manda esse pacote para o servidor, exemplo youtube, guarda no servidor, processa esse vídeo e manda para qm ta assistindo o vídeo, outros pacotes, ai recebe esses pacotes e ve o conteudo, tds com código binário e traduzido pela máquina para nossa visualização.
 
 Modelo OSI
-
-7. Interação com o usuário (Próprias aplicações como Browser) - Aplicação
-6. Preparar e traduzir os dados dos pacotes recebidos - Apresentação
-5. Responsável por iniciar, gerenciar e terminar as conexões - Sessão
-4. Controle do fluxo dos pacotes da origem e destino - Transporte 
-3. Endereçamento dos dispositivos de rede - Rede
-2. Transmissão física dos dados - Ligação de Dados
-1. São os próprios equipamentos de rede (Bit puro) - Física
+7. Interação com o usuário (Próprias aplicações como Browser) - Aplicação, visualização.
+6. Preparar e traduzir os dados dos pacotes recebidos - Apresentação trasnforma o analogico para digital e descriptografa os dados.
+5. Responsável por iniciar, gerenciar e terminar as conexões - Sessão, ligar e desligar portas 
+4. Controle do fluxo dos pacotes da origem e destino - Transporte, pega na placa de rede e envia para alguem.
+3. Endereçamento dos dispositivos de rede - Rede IP
+2. Transmissão física dos dados - Ligação de Dados, manda pelo USB os códigos binário para o pc q manda para placa mãe e manda pra o HD, processador, para o software utilizar.
+1. São os próprios equipamentos de rede (Bit puro) - Física, meu pc, webcam..
 
 -Protocolo de redes
 É uma bagunça a rede de computadores?
@@ -125,42 +128,147 @@ Como que as máquinas se entendem?
 Protocolo são regras e normas utilizadas para a comunicação entre máquinas e equipamentos.
 Vamos falar de IP, TCP, HTTP, FTP, SMTP, SSH e DNS.
 
--Protocolo HTTP e HTTPs
+-Protocolo HTTP e HTTPs*MAIS IMPORTANTE.
 Protocolo utilizado para comunicação entre cliente e servidor
 Toda comunicação HTTP funciona com uma requisição e uma resposta
 A aplicação mais comum do HTTP é a navegação de sites nos Browsers, troca de dados entre sistemas e Mobile
 Notebook -> Requisição -> Servidor -> resposta -> Notebook.
 
+O que é esse PACOTE?
+-Cabeçalho da mensagem: informações adicionais e o que está fazendo, GET, POST, PUT, Delete.
+-Corpo da MSG: Conteudo da msg para o sevidor como: application.json, img/jpeg, text/plain, text/html.
+
 -Método de requisição GET
-Requisição do cliente para o servidor para obter alguma informação
-Cliente -> Requisição de alguma informação -> servidor -> Resposta com a informação solicitada -> Cliente.
+Requisição do cliente para o servidor para OBTER alguma informação
+CLIENTE -> Requisição de alguma informação -> servidor -> Resposta com a informação solicitada -> CLIENTE.
 
 -Método de requisição POST
-Requisição do cliente para o servidor para enviar alguma informação para gravação
-Cliente -> Requisição com dados para ser salvos -> servidor -> Resposta se houvesse sucesso no processamento -> Cliente.
+Requisição do cliente para o servidor para ENVIAR alguma informação para gravação
+CLIENTE -> Requisição com dados para ser salvos -> servidor -> Resposta se houvesse sucesso no processamento -> CLIENTE.
 
 -Método de requisição PUT
-Requisição do cliente para o servidor para atualizar alguma informação
-Cliente -> Requisição com dados para ser atualizado -> servidor -> Resposta se houvesse sucesso no processamento -> Cliente.
+Requisição do cliente para o servidor para ATUALIZAR alguma informação
+CLIENTE -> Requisição com dados para ser atualizado -> servidor -> Resposta se houvesse sucesso no processamento -> CLIENTE.
 
 -Método de requisição DELETE
-Requisição do cliente para o servidor para deleção alguma informação
-Cliente -> Requisição com dados para ser excluido -> servidor -> Resposta se houvesse sucesso no processamento -> Cliente.
+Requisição do cliente para o servidor para DELETAR alguma informação
+CLIENTE -> Requisição com dados para ser excluido -> servidor -> Resposta se houvesse sucesso no processamento -> CLIENTE.
 
-1xx: Informational (Informação) – Informa que a requisição foi atendida e está em processo;
-2xx: Success (Sucesso) – Requisição do cliente foi bem sucedida;
-3xx: Redirection (Redirecionamento) – Ação adicional que deve ser tomada;
-4xx: Client Error (Erro no cliente) – Avisa que o cliente fez uma requisição que não pode ser atendida;
-5xx: Server Error (Erro no servidor) –Erro no servidor ao cumprir uma requisição válida
+1xx: Informational (Informação) – Informa que a requisição foi atendida e está em processo - 100, 101, 102;
+2xx: Success (Sucesso) – Requisição do cliente foi bem sucedida - 200, 201, 202;
+3xx: Redirection (Redirecionamento) – Ação adicional que deve ser tomada - 300, 301;
+4xx: Client Error (Erro no CLIENTE) – Avisa que o cliente fez uma requisição que não pode ser atendida - 400, 402;
+5xx: Server Error (Erro no SERVIDOR) –Erro no servidor ao cumprir uma requisição válida - 500, 501.
 
 Segurança HTTP/HTTPs
 -Uso do SSL/TLS
-Essa prática faz com o que o HTTP vire HTTPS, sendo configurado um certificado para gerar autenticidade e criptografia.
+Instala certificado digital no seu servidor e ele deixa de ser HTTP e vira HTTPs, seguro, ganhando autenticidade.
+Essa prática faz com o que o HTTP vire HTTPS, sendo configurado um certificado para gerar autenticidade e criptografia. Empresas próprias fazem isso, emitem certificados para empresa.
 
 -Uso de autenticação nas requisições
-É uma forma de garantir que quem requisite tem autorização dos dados. Alguns protocolos mais utilizados: No Auth Basic Authentication oAuth2 (ex com Bearer token)
-
+É uma forma de garantir que quem requisite tem autorização dos dados. Alguns protocolos mais utilizados: 
+-No Auth
+-Basic Authentication - usuario e senha para qm quiser utilizar o meu servidor. 
+-oAuth2 (ex com Bearer token)
 
 -----------------------------------------------------------------------------------------------------------
 
+Demais protocolos de rede e periféricos
+
+Protocolos mais importantes - http, smtp, dns, SSH e TCP/IP
+
+Camada de rede: Protocolo IP
+Identificar um equipamento em um rede e Toda rede se comunica atraves do IP 
+-IPv4 (Internet Protocol version 4): é um protocolo de comunicação usado entre duas ou mais máquinas em rede para encaminhamento dos dados. Nasceu á muito tempo atras e tem só 4 bilhoes de IP's.
+Exemplos: 192.168.0.1 ou 201.154.99.6 (Acesse www.meuip.com.br) IPv6 (Internet Protocol version 6): é a versão mais atual do protoc
+Rede LAN começa com 192
+
+-IPv6 (Internet Protocol version 6): é a versão mais atual do protocolo IP. Sua criação é fruto do esforço do IETF para criar a "nova geração do IP“.
+Exemplos: 2001:0DB8:AD1F:25E2:CADE:CAFE:F0CA:84C1 Diferença 4 bilhões (4x109) de endereços IP versus 340 undecilhões
+
+-Diferença
+Diferença 4 bilhões (4x109) de endereços IP versus 340 undecilhões (1036) endereços do IPv6
+
+*Para que serve o modelo OSI e TCP IP?
+Ele foi projetado para permitir a comunicação em qualquer tipo de rede, por isso funciona como um modelo de referência. Por outro lado, o modelo TCP/IP é uma implementação específica do modelo OSI voltada para a internet. Ele foi criado por conta da necessidade de padronização de outras tecnologias do stack de rede.
+
+Protocolo TCP/IP
+-Transmission Control Protocol
+-Responsável pelas regras de transmissão dos dados para toda a internet
+-Possui quatro camadas base: Aplicação -> Transporte -> Internet -> Acesso a Rede
+-De baixo desse protocolo tão importante existem diversos outros como:
+HTTP, SMTP, FTP, DNS
+
+Diferença do modelo OSI(referencia de modelo de rede) versus TCP/IP(regras de protocolo TCP)
+    OSI       x  TCP/IP
+Camadas 7,6,5 x Aplicação         - camada de usuário que vemos
+Trasnport     x Trasnport         - responsavel por mandar os dados da internet de um lado p outro.
+Network       x Network           - endereçamento, identificação, onde está o protocolo IP
+Camadas 1,2   x Network Interface - Acesso a Rede, parte física, placa de rede. Bit e byte, trasnferencia de dados analogicos.
+
+* O modelo de arquitetura TCP/IP possui suas funções divididas em camada da mesma forma que o OSI. A diferença principal nestas estruturas é o número de camadas encontradas em cada modelo: no OSI encontramos 7 camadas, enquanto no TCP/IP somente 4: Aplicação, Transporte, Rede e Interface de rede.
+
+-FTP
+É um protocolo de transferência de dados, que em português significa Protocolo de Transferência de Arquivos
+-Utilizado muito para enviar arquivos para servidores
+-O SFTP ou FTPS é uma forma mais segura
+Um utiliza SSH para autenticação e criptografia e a outra forma utiliza SSL/TLS (certificado digital) O SFTP ou FTPS é uma forma mais segura
+-Programas utilizados para conectar via FTP
+O mais famoso deles é o FileZilla, mas você pode utilizar até mesmo o Windows Explorer
+
+SMTP - POP3 - IMAP
+SMTP - Protocolo de Transferência de Correio Simples
+-Responsável pelo envio de e-mails
+POP3 - Protocolo dos Correios
+-Responsável pelo recebimento de e-mails
+o e-mail que é transferido desse protocolo é baixado para o ambiente local, retirando esse e-mail do servidor
+IMAP - Protocolo de acesso a mensagem da internet
+-Responsável pelo recebimento de e-mails
+Todo o e-mail baixado por esse protocolo é preservado no servidor mantendo o sincronismo das mensagens
+
+SSH
+Protocolo de rede criptográfico
+-Canal seguro para conexão com servidores
+Método comum utilizado para conexão remota com servidores, através de uma autenticação
+-Envio de linhas de comando
+Servidores de aplicações podem receber commandos via SSH de um administrador, como por exemplo inicial, pausar ou desligar um serviço
+
+DNS
+Sistema de Nomes de Domínio
+-Responsável pela gestão de nomes para computadores
+Com o DNS você não precisa chamar um site, um serviço ou um computador pelo IP.
+-O DNS não é uma gestão centralizada
+A hirearquia de Gestão do DNS é essencial para ter alta disponibilidade e performance. São somente 13 servidores raízes no mundo, sendo 10 nos USA, um no Japão, um na Suécia e outro na Holanda.
+
+Como funciona uma rede Lan?
+
+Modem
+-A junção do Modulador-Demulador
+-Transforma os sinais digitais em analógicos e vice-versa
+-Responsável por pegar os pacotes e transformá-los em analógicos
+-Geralmente são as operadoras que instalam e se responsabilizam pelos Modems
+
+Roteador
+-Responsável pela distribuição dos pacotes
+-Verifica as melhores rotas para envio e recebimentoResidências costumam utilizar roteadores com antenas Wireless
+-Responsável por pegar os pacotes e transformá-los em analógicos
+-Empresas maiores não tem o costume de utilizar Wireless junto com roteadores
+
+Firewall
+-Monitora todo o tráfego de saída e entrada de uma rede
+-O firewall pode permitir/bloquear qualquer pacote de acordo com alguma característica
+-Responsável por segurar/proteger ataques de hackres
+-Firewalls podem estar em formato de software ou hardware embarcado com um software
+
+Switch
+-São os responsáveis por conectar todos os equipamentos de uma rede
+-Existem os switches gerenciáveis e os não gerenciáveis
+-São compostos de portas cabeadas
+
+Access Point
+-Dispositivo que permite equipamentos se conectarem sem fio a rede
+-Uma forma prática e segura para escalar a rede sem necessidade de aumentar a infraestrutura
+-Possuem controles como separação de redes de convidados até mesmo limitação de banda
+
+-----------------------------------------------------------------------------------------------------------
 
