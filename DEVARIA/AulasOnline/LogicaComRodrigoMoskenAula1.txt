@@ -53,7 +53,9 @@ STACK E HEAP
 StackOverflow - tansborda a memoria stack.
 HeapOverflow - trasnborda a memoria Heap.
 
-
+Operadores lógicos
+Python - and / or / not
+java - && / || / !
 
 
 

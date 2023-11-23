@@ -335,7 +335,6 @@ Amazon Web Services(AWS), Microsoft Azure, Google Cloud.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-
 Noções de Sistemas Operacionais e Servidores
 
 Servidores
@@ -389,6 +388,7 @@ O acesso ao sistema com servidor utiliza o conceito de cliente/servidor, e na ma
 O Frontend é utilizado pelo cliente e o Backend é de responsabilidade do servidor.
 
 O backend é executado e
+
 
 
 
