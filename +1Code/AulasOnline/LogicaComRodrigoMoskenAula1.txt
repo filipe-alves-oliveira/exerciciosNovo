@@ -56,6 +56,7 @@ HeapOverflow - trasnborda a memoria Heap.
 Operadores lógicos
 Python - and / or / not
 java - && / || / !
+---------------------------------------------------------------
 
 
 

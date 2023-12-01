@@ -226,36 +226,41 @@
 
 # *obs: formula para o imc é: peso dividido pela altura ao quadrado
 
-idade = int(input("Informe sua idade: "))
-peso = float(input("Informe seu peso: "))
-altura = float(input("Informe sua altura: "))
-sexo = input("Informe seu sexo (M ou F): ")
+# idade = int(input("Informe sua idade: "))
+# peso = float(input("Informe seu peso: "))
+# altura = float(input("Informe sua altura: "))
+# sexo = input("Informe seu sexo (M ou F): ")
 
-imc = peso / (altura * altura)
+# imc = peso / (altura * altura)
 
-# Mulher
-if sexo.lower() == 'f':
-    if idade < 19:
-        print(f"Seu IMC é: {imc:.2f} Magreza")
-    elif 19 <= idade <= 23.9:
-        print(f"Seu IMC é: {imc:.2f} Normal")
-    elif 24 <= idade <= 28.9:
-        print(f"Seu IMC é: {imc:.2f} Obesidade leve")
-    elif 29 <= idade <= 38.9:
-        print(f"Seu IMC é: {imc:.2f} Obesidade moderada")
-    elif idade > 39:
-        print(f"Seu IMC é: {imc:.2f} Obesidade mórbida")
+# # Mulher
+# if sexo.lower() == 'f':
+#     if idade < 19:
+#         print(f"Seu IMC é: {imc:.2f} Magreza")
+#     elif 19 <= idade <= 23.9:
+#         print(f"Seu IMC é: {imc:.2f} Normal")
+#     elif 24 <= idade <= 28.9:
+#         print(f"Seu IMC é: {imc:.2f} Obesidade leve")
+#     elif 29 <= idade <= 38.9:
+#         print(f"Seu IMC é: {imc:.2f} Obesidade moderada")
+#     elif idade > 39:
+#         print(f"Seu IMC é: {imc:.2f} Obesidade mórbida")
 
-# Homem
-elif sexo.lower() == 'm':
-    if 29 <= idade <= 38.9:
-        print(f"Seu IMC é: {imc:.2f} Obesidade moderada")
-    elif idade > 39:
-        print(f"Seu IMC é: {imc:.2f} Obesidade mórbida")
+# # Homem
+# elif sexo.lower() == 'm':
+#     if 29 <= idade <= 38.9:
+#         print(f"Seu IMC é: {imc:.2f} Obesidade moderada")
+#     elif idade > 39:
+#         print(f"Seu IMC é: {imc:.2f} Obesidade mórbida")
 
-# Adicionei uma mensagem para o caso de sexo não reconhecido ou idade fora das faixas especificadas
-else:
-    print("Erro: Sexo não reconhecido ou idade fora das faixas especificadas.")
+# # Adicionei uma mensagem para o caso de sexo não reconhecido ou idade fora das faixas especificadas
+# else:
+#     print("Erro: Sexo não reconhecido ou idade fora das faixas especificadas.")
 
+numero = int(input("Digite um número: "))
+
+for i in range(1, numero + 1):
+    linha = '*' * i
+    print(linha)
 
 
