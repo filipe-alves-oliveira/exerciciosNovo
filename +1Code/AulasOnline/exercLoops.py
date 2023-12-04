@@ -1,24 +1,40 @@
-# Lendo o vetor de 20 posições
-vetor = []
-for i in range(20):
-    elemento = int(input(f"Digite o valor para a posição {i}: "))
-    vetor.append(elemento)
+## Leia um vetor de 20 posições e em seguida um valor X qualquer.
+# Seu programa devera fazer uma busca do valor de X no vetor lido e
+# informar a posição em que foi encontrado ou se não foi encontrado.
 
-# Lendo o valor x
-x = int(input("Digite o valor que deseja buscar:"))
+# numeros = 0
+# valores = []
+# valorx = 0
 
-# Verificando se o valor x está no vetor
-encontrado = False
-posicao = -1
+# while numeros < 20:
+#     valores.append(float(input(f'Posição {numeros+1}: ')))
+#     numeros +=1
 
-for i in range(len(vetor)):
-    if vetor[i] == x:
-        encontrado = True
-        posicao = i
-        break  # Encerra o loop quando o valor é encontrado
+# print(valores)
 
-# Exibindo o resultado
-if encontrado:
-    print(f"O valor {x} foi encontrado na posição {posicao}.")
-else:
-    print(f"O valor {x} não foi encontrado no vetor.")
+# valorx = float(input(f"Insira um valor: "))
+# print(valorx)
+# print(valores.index(valorx))
+
+
+# ---------------------------------------------------------------
+
+# Leia um vetor de 40 posições e atribua valor 0 para todos os elementos que possuírem valores negativos.
+
+numeros = 0
+valores = []
+
+
+while numeros < 5:
+    valores.append(float(input(f'Posição {numeros+1}: ')))
+    numeros +=1
+
+print(valores)
+
+
+for numero in valores:
+     if numero < 0:
+        # numero = 0     
+        print(numero)
+        valores[valores.index(numero)] = 0
+print(valores)
