@@ -345,36 +345,41 @@ Servidores
 Máquinas conectadas na LAN, WAN e WAN prontos para receber chamadas de serviços específicos.
 
 Tipos de Servidor:
--Sservidor de Aplicação
--servidor de Banco de Dados
--servidor de Arquivos
--servidor de Impressão
--servidor de E-mail
--servidor de Proxy
--servidor de Mídia
+-servidor de Aplicação - instlados as app aplicativas, redes socias.
+-servidor de Banco de Dados 
+-servidor de Arquivos - armzenar dados, videos, fotos.
+-servidor de Impressão - faculdade, empresas q tem muitas impressoras.
+-servidor de E-mail - central dos e-mails
+-servidor de Proxy - servidor q controla a internet dentro de uma empresa, controla o trafego de internet.
+-servidor de Mídia - gerenciar e controlar videos e fotos.
 
-Datacenters
+Datacenters - ambiente preparado com varias estruturas onde ficam os servidores.
 - Conjunto de servidores
 Ambiente com vários servidores e com uma infraestrutura que gera segurança e disponibilidade.
 
 - Em empresas corporativas
-Chamamos datacenters de empresas corporativas de On-Premisse.
+Chamamos datacenters de empresas corporativas de On-Premisse - dependencia de uma rede LAN de uma empresa, funciona Qdo
+nao qr colocar os dados em nuvem.
 
 - Empresas que vendem serviços
 Datacenters especialistas em vender serviços de tecnologia através de datacenters.
+Ex.: Microsoft, amazon, outros..
 
 Datacenter provedores
-- Infraestrutura elétrica
+- Infraestrutura elétrica, contra queda de energia, com gerador.
 A parte de eletricidade é um ponto chave em um datacenter, pois além da energia da
 concessionária eles possuem geradores.
+
 - Infraestrutura de redes
 Tanto a rede local do Datacenter quanto a conexão de internet são cruciais.
+
 - Infraestrutura de servidores
 Datacenters contam com uma estrutura de servidores de altíssimo nível de performance e tecnologia utilizando muito o conceito de S
 Virtualização.
 
 Virtualização de servidores
--É uma técnica utilizada para transformar um servidor físico em servidores virtuais.
+-É uma técnica utilizada para transformar um servidor físico em servidores virtuais, compra uma máquina com varios discos de armazenamento, memoria e processadores.
+software de virtualizacao: vmware
 
 Servidor de Aplicação
 * Responsável pelo processamento
@@ -386,11 +391,20 @@ O acesso ao sistema com servidor utiliza o conceito de cliente/servidor, e na ma
 
 * Frontend vs Backend
 O Frontend é utilizado pelo cliente e o Backend é de responsabilidade do servidor.
+A execução do codigo em font é processado pelo cliente.
+Todo visual é responsavel pelo front.
+Front chama o back para pegar e enviar as informações.
+O back é executado e instalado no servidor.
+Todos os processamentos dos dados sao realizados pelo back ao lado do servidor.
+É o servidor que salva e consulta os dados no bd.
 
-O backend é executado e
+* Como funciona ums servidor de aplicaçao?
+programadores > Código Font > Servidor, aplicaçao > Usuários.
 
+*Exemplos de servidores de Aplicaçòes:
+GAMES, SAP-ERPs , DEVARIA, BANKELINES, REDES SOCIAIS. 
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 
