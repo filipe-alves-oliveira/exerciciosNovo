@@ -392,7 +392,7 @@ O acesso ao sistema com servidor utiliza o conceito de cliente/servidor, e na ma
 * Frontend vs Backend
 O Frontend é utilizado pelo cliente e o Backend é de responsabilidade do servidor.
 A execução do codigo em font é processado pelo cliente.
-Todo visual é responsavel pelo front.
+Todo visual é responsavel pelo front. 
 Front chama o back para pegar e enviar as informações.
 O back é executado e instalado no servidor.
 Todos os processamentos dos dados sao realizados pelo back ao lado do servidor.
