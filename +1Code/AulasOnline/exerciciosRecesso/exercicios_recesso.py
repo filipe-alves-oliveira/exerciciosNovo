@@ -30,32 +30,32 @@
 # crescente.
 
 # RESOLUCAO
-def ordem_crescente(a, b, c):
-    if a <= b <= c:
-        return a, b, c
-    elif a <= c <= b:
-        return a, c, b
-    elif b <= a <= c:
-        return b, a, c
-    elif b <= c <= a:
-        return b, c, a
-    elif c <= a <= b:
-        return c, a, b
-    else:
-        return c, b, a
+# def ordem_crescente(a, b, c):
+#     if a <= b <= c:
+#         return a, b, c
+#     elif a <= c <= b:
+#         return a, c, b
+#     elif b <= a <= c:
+#         return b, a, c
+#     elif b <= c <= a:
+#         return b, c, a
+#     elif c <= a <= b:
+#         return c, a, b
+#     else:
+#         return c, b, a
 
-valores = []  # Lista para armazenar os valores
+# valores = []  # Lista para armazenar os valores
 
-# loop for para obter os três valores
-for i in range(3):
-    valor = int(input(f"Digite o valor {i + 1} : "))
-    valores.append(valor)
+# # loop for para obter os três valores
+# for i in range(3):
+#     valor = int(input(f"Digite o valor {i + 1} : "))
+#     valores.append(valor)
 
-# Desempacota os valores retornados pela função
-ordem = ordem_crescente(*valores)
+# # Desempacota os valores retornados pela função
+# ordem = ordem_crescente(*valores)
 
-# Imprime o resultado
-print(f'A ordem crescente dos números é: {ordem[0]}, {ordem[1]}, {ordem[2]}')
+# # Imprime o resultado
+# print(f'A ordem crescente dos números é: {ordem[0]}, {ordem[1]}, {ordem[2]}')
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 3 Faça um procedimento que recebe, por parâmetro, a hora de inicio e a hora de término de um jogo, ambas subdivididas
@@ -64,38 +64,87 @@ print(f'A ordem crescente dos números é: {ordem[0]}, {ordem[1]}, {ordem[2]}')
 # dia e terminar no outro.
 
 # RESOLUCAO
+# def calcular_duracao_jogo(hora_inicio, minuto_inicio, hora_termino, minuto_termino):
+#     # Limitando as horas
+#     if hora_inicio > 23 or hora_termino > 23 or minuto_inicio > 59 or minuto_termino > 59:
+#         print("Horário inválido!")
+#         return
+    
+#     # Convertendo tudo para minutos
+#     inicio_em_minutos = hora_inicio * 60 + minuto_inicio
+#     termino_em_minutos = hora_termino * 60 + minuto_termino
+    
+#     # Calculando a duração em minutos
+#     duracao_em_minutos = termino_em_minutos - inicio_em_minutos
+    
+#     # Considerando jogos que começam em um dia e terminam no outro
+#     if duracao_em_minutos < 0:
+#         duracao_em_minutos += 24 * 60
+    
+#     # Convertendo a duração de volta para horas e minutos
+#     duracao_horas = duracao_em_minutos // 60
+#     duracao_minutos = duracao_em_minutos % 60
+    
+#     print(f"Duração do jogo: {duracao_horas} horas e {duracao_minutos} minutos")
 
-def ordem_crescente(h, m):
-    if h:
-        return a, b, c
+# # Exemplo de uso
+# hora_inicio = int(input("Digite a hora de início do jogo: "))
+# minuto_inicio = int(input("Digite os minutos de início do jogo: "))
+# hora_termino = int(input("Digite a hora de término do jogo: "))
+# minuto_termino = int(input("Digite os minutos de término do jogo: "))
 
-# obter a hora de inicio e a hora de término de um jogo
-hora_inicio = str(input(f"Digite o horário em horas e minutos do inicio do jogo: "))
-hora_termino = str(input(f"Digite o horário em horas e minutos do termino do jogo: "))
+# calcular_duracao_jogo(hora_inicio, minuto_inicio, hora_termino, minuto_termino)
+
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 4 Escreva um procedimento que recebes 3 valores reais X, Y e Z e que verifique se esses valores podem ser os 
 # comprimentos dos lados de um triângulo e, neste caso, retornar qual o tipo de triângulo formado. Para que X, Y e Z 
-# formem um triângulo é necessário que a seguinte propriedade seja satisfeita: o comprimento de cada lado de um 
+# formem um triângulo é necessário que a seguinte propriedade seja satisfeita: O comprimento de cada lado de um 
 # triângulo é menor do que a soma do comprimento dos outros dois lados. O procedimento deve identificar o tipo de 
 # triângulo formado observando as seguintes definições:
-
-# RESOLUCAO
-
-
-# ----------------------------------------------------------------------------------------------------------------------
 # 	Triângulo Equilátero: os comprimentos dos 3 lados são iguais.
 # 	Triângulo Isósceles: os comprimentos de 2 lados são iguais.
 # 	Triângulo Escaleno: os comprimentos dos 3 lados são diferentes.
 
 # RESOLUCAO
 
+# def recebe_valores(x, y, z):
+#     if x + y > z and x + z > y and z + y > x:
+#         if x == y == z:
+#             print("Triângulo equilátero.")
+#         elif x == y or x == z or y == z:
+#             print("Triângulo isósceles.")
+#         else:
+#             print("Triângulo escaleno.")
+#     else:
+#         print("Não é um triângulo válido!")
+
+# x = float(input("Digite o comprimento do primeiro lado: "))
+# y = float(input("Digite o comprimento do segundo lado: "))
+# z = float(input("Digite o comprimento do terceiro lado: "))
+
+# recebe_valores(x, y, z)
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 5 Faça uma função que receba o número de notas e leia os valores positivos para cada uma dessas notas, e retorne a 
 # média aritmética dos mesmos.
 
 # RESOLUCAO
+
+def notas(b1, b2, b3, b4):
+    if b1 > 0 and b2 > 0 and b3 > 0 and b4 > 0:
+        media = (b1+b2+b3+b4) / 4
+        print(f"A sua média é {media}")
+    else:
+        print("Notas inválidas, digite apenas notas positivas.")
+    
+b1 = int(input("Digite a nota do 1 bimestre: "))
+b2 = int(input("Digite a nota do 2 bimestre: "))
+b3 = int(input("Digite a nota do 3 bimestre: "))
+b4 = int(input("Digite a nota do 4 bimestre: "))
+
+notas(b1, b2, b3, b4)
+
 
 
 # ----------------------------------------------------------------------------------------------------------------------
