@@ -107,7 +107,6 @@
 # 	Triângulo Escaleno: os comprimentos dos 3 lados são diferentes.
 
 # RESOLUCAO
-
 # def recebe_valores(x, y, z):
 #     if x + y > z and x + z > y and z + y > x:
 #         if x == y == z:
@@ -150,44 +149,99 @@
 
 # RESOLUCAO
 
-def calcular_fatorial(numero):
-    if numero < 0:
-        return "Número inválido. Deve ser inteiro e positivo."
-    elif numero == 0 or numero == 1:
-        return 1
-    else:
-        fatorial = 1
-        for i in range(2, numero + 1):
-            fatorial = fatorial * i
-        return fatorial
+# def calcular_fatorial(numero):
+#     if numero < 0:
+#         return "Número inválido. Deve ser inteiro e positivo."
+#     elif numero == 0 or numero == 1:
+#         return 1
+#     else:
+#         fatorial = 1
+#         for i in range(2, numero + 1):
+#             fatorial = fatorial * i
+#         return fatorial
 
-numero = int(input("Digite um número inteiro e positivo: "))
-resultado = calcular_fatorial(numero)
+# numero = int(input("Digite um número inteiro e positivo: "))
+# resultado = calcular_fatorial(numero)
 
-print(f"O fatorial de {numero} é {resultado}.")
+# print(f"O fatorial de {numero} é {resultado}.")
 
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 7 Faça um procedimento que lê 50 valores inteiros e retorna o maior e o menor deles.
 
 # RESOLUCAO
+# def encontrar_maior_menor():
+#     maior = float('-inf')  
+#     menor = float('inf')  
 
+#     for i in range(5):
+#         numero = int(input("Digite um número inteiro: "))
+#         if numero > maior:
+#             maior = numero
+#         if numero < menor:
+#             menor = numero
+
+#     print(f"O maior número é: {maior}")
+#     print(f"O menor número é: {menor}")
+
+# encontrar_maior_menor()
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 8 Faça uma função que recebe, por parâmetro, um valor inteiro e positivo e retorna o número de divisores desse valor.
 
 # RESOLUCAO
+# valor = int(input("Digite um número inteiro positivo: "))
 
+# def divisores(numero):
+#     if numero < 1:
+#         return "Número inválido. Deve ser um inteiro positivo."
+#     contador = 0
+#     for i in range(1, numero + 1):
+#         if numero % i == 0:
+#             contador = contador + 1
+#     return contador
+
+# resultado = divisores(valor)
+
+# print(f"O número de divisores de {valor} é {resultado}.")
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 9 Faça uma função que recebe, por parâmetro, um valor inteiro e positivo e retorna os divisores dele, numa lista.
 
 # RESOLUCAO
+# valor = int(input("Digite um número inteiro positivo: "))
 
+# def divisores_lista(numero):
+#     if numero < 1:
+#         return "Número inválido. Deve ser um inteiro positivo."
+#     divisores = []
+#     for i in range(1, numero + 1):
+#         if numero % i == 0:
+#             divisores.append(i)
+#     return divisores
+
+# resultado = divisores_lista(valor)
+
+# print(f"Os divisores de {valor} são: {resultado}.")
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 10 Faça uma função que recebe um número por parametro, e retorna um booleano, indicando se ele é um número primo ou 
 # não. (números primos são aqueles apenas divisiveis por 1 e por eles mesmos)
 
 # RESOLUCAO
+def primo(numero):
+    if numero < 2:
+        return False 
+    for i in range(2, int(numero**0.5) + 1):
+        if numero % i == 0:
+            return False 
+    return True
+
+valor = int(input("Digite um número: "))
+resultado = primo(valor)
+
+if resultado:
+    print(f"{valor} é um número primo.")
+else:
+    print(f"{valor} não é um número primo.")
 
