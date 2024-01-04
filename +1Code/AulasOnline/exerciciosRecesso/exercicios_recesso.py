@@ -130,28 +130,41 @@
 # média aritmética dos mesmos.
 
 # RESOLUCAO
-
-def notas(b1, b2, b3, b4):
-    if b1 > 0 and b2 > 0 and b3 > 0 and b4 > 0:
-        media = (b1+b2+b3+b4) / 4
-        print(f"A sua média é {media}")
-    else:
-        print("Notas inválidas, digite apenas notas positivas.")
+# def notas(b1, b2, b3, b4):
+#     if b1 > 0 and b2 > 0 and b3 > 0 and b4 > 0:
+#         media = (b1+b2+b3+b4) / 4
+#         print(f"A sua média é {media}")
+#     else:
+#         print("Notas inválidas, digite apenas notas positivas.")
     
-b1 = int(input("Digite a nota do 1 bimestre: "))
-b2 = int(input("Digite a nota do 2 bimestre: "))
-b3 = int(input("Digite a nota do 3 bimestre: "))
-b4 = int(input("Digite a nota do 4 bimestre: "))
+# b1 = int(input("Digite a nota do 1 bimestre: "))
+# b2 = int(input("Digite a nota do 2 bimestre: "))
+# b3 = int(input("Digite a nota do 3 bimestre: "))
+# b4 = int(input("Digite a nota do 4 bimestre: "))
 
-notas(b1, b2, b3, b4)
-
-
+# notas(b1, b2, b3, b4)
 
 # ----------------------------------------------------------------------------------------------------------------------
 # 6 Faça uma função que receba um valor inteiro e positivo e calcula o seu fatorial (fatorial é a multiplicação entre
 #  o número e todos os menores que ele até que chegue em 1, ex: 5! (a exclamação representa o fatorial) = 5*4*3*2*1).
 
 # RESOLUCAO
+
+def calcular_fatorial(numero):
+    if numero < 0:
+        return "Número inválido. Deve ser inteiro e positivo."
+    elif numero == 0 or numero == 1:
+        return 1
+    else:
+        fatorial = 1
+        for i in range(2, numero + 1):
+            fatorial = fatorial * i
+        return fatorial
+
+numero = int(input("Digite um número inteiro e positivo: "))
+resultado = calcular_fatorial(numero)
+
+print(f"O fatorial de {numero} é {resultado}.")
 
 
 # ----------------------------------------------------------------------------------------------------------------------
