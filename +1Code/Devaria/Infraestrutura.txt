@@ -406,9 +406,65 @@ GAMES, SAP-ERPs , DEVARIA, BANKELINES, REDES SOCIAIS.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
+Demais tipos de servidores:
 
+- Responsável por centralizar e-mails
+Todos e-mails de um dominio vao p servidor q é responsavel por controlar os e-mails.
 
+- Receber e enviar e-mails 
+SMTP e POP ou IMAP
 
+- AntiSpam sao essenciais 
+filtra conteudo dos e-mails antes de chegar para o destinatario.
+ex.: outlook, gmail, protonMail..
 
+SERVIDOR DE ARQUIVOS.
+- Responsavel por armazenar arquivos, em formato de storage.
 
+- Seguranca e alta disponibilidade para esses servidores, sem risco de pessoas sem privilégio acessar.
 
+- RAID - inteligencia de seguranca para os discos.
+Redundant Array of inexpensive Disks
+RAID 0 - juncao de varios hds em 1. ex.: juntar 3 hd em 1.
+RAID 1 - redundancia completa. Salva nos dois hds.
+RAID 5 - Junçao de varios hds com redundancia pariada. ex.: 4 hds de 10 tera, ele usa uma parte para fazer uma redundancia pariada,
+de acordo com a necessidade, ele comprime até garantir q se der um problema vc coloque de volta um novo. 
+RAID 0+1 - Junçao de varios hds com redundancia e juncao. Maior armazenamento e mais seguranca só que mais caros.
+
+- Servidor de BD, responsavel por armazenar todos dados salvos pelo sistema.
+Guarda tabela, nao arquivos, pessoas, rh..
+
+- BD relacionais e NAO relacionais.
+relacionais sao conjunto de tabelas q se liga entre elas.
+nao relacionais usados em redes sociais, com volume de dados muito grandes.
+
+- Servidor de Impressao
+servidor q controla todas as impressoes de uma loja q contem varias impressoras, essse servidor gerencia essas impressoes, com filas 
+e prioridade.
+
+ex.: uma faculdade de varias impressoras e td mundo qr imprimir, tem um servidor proprio pra isso, controlando essas impressoes e 
+empresas q fazem isso, empresa OUTSOURCING.
+
+- Servidor de Proxy
+intermediador entre seu pc e internet e vice-versa. Todo site q vc acessa passa pelo proxy e toda entrada tmb.
+faz isso para controlar o filtro do conteudo, rede corporativa e empresas. Bloqueia sites de acordo com perfil de usuario.
+Caching - memoria interna de um conteudo ja utilizado. No proxy ja tem um cache do que foi utilizado.
+Open Proxy - servidor publico de proxy, utilizado para mascarar aidentidade do requisitante.
+Ex.: votacoes de sites - pode mandar um robo para mandar votacao falsa, ele bloqueia muitas requisicoes naquele momento,
+no open proxy vc fingi ser uma pessoa é um robo fazendo varias requisicoes.
+
+- Servidor de Mídia centraliza e controla servidor de midia, videos, fotos..
+Todos disppositivos acessam pela conectividade DLNA, conectividade diferente para fazer um stremming, da mais perfomace e mais velocidade
+
+- Compartilhamento de mídias entre dispositivos.
+Tds usuarios compartilham um armazenamento centralizado dos arquivos de midia sem sobrecarregar seus discos.
+Storage NAS da Qnap - servidor de midia mais usado.
+
+Servidor pode falar com outro servidor?
+- Sim, pode e conversa, geralmente é um servidor de aplicacao q faz isso.
+Ex.: Cadastra no site DEVARIA > guarda os dados no servidor de BD > o Servidor de E-mail te manda um e-mail de cadastro para ativacao
+da conta. Sobe uma foto na devaria > guarda no Servidor de arquivos.
+
+- Formato de servidores
+Torres, gabinete e Racks que ficam em Rack para servidores, black box. Para acessar os racks, utiliza o Switch KVM, coloca dentro
+do rack. 1 monitor, teclado e mouse podem controlar vários servidores.
