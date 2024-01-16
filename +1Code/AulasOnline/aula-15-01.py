@@ -88,3 +88,29 @@ print("segunda:", time.time() - inicio2)
 #     print(f"A multa é de R${multa}")
 
 # multa_excesso(60)
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> EXERCÍCIOS para casa:
+# Escrever Pseudo-código (resolução do exercício passo a passo, escrevendo em português) para cada um dos exercícios abaixo:
+
+# 1 - Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+
+
+# 2 - Faça um Programa para um caixa eletrônico.
+# O programa deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas.
+# As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais.
+# O programa não deve se preocupar com a quantidade de notas existentes na máquina.
+
+# Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
+
+# Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+
+
+# 3 - Um posto está vendendo combustíveis com a seguinte tabela de descontos: Álcool: até 20 litros,
+#  desconto de 3% por litro acima de 20 litros, desconto de 5% por litro Gasolina: até 20 litros, 
+#  desconto de 4% por litro acima de 20 litros, desconto de 6% por litro
+
+# Escreva um algoritmo que leia o número de litros vendidos,
+#  o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), 
+#  calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 2,50
+# e o preço do litro do álcool é R$ 1,90.
+
