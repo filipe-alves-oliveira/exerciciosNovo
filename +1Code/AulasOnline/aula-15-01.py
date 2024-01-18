@@ -36,31 +36,30 @@
 # FIM
 
 #codificando em python
+# import random
+# import time
 
-import random
-import time
 
+# # Solucao1 - solução mais rápida, melhor.
+# def menor_numero_1(lista):
+#     menor = lista[0]
+#     for numero in lista:
+#         if numero < menor:
+#             menor = numero
+#     return menor
 
-# Solucao1 - solução mais rápida, melhor.
-def menor_numero_1(lista):
-    menor = lista[0]
-    for numero in lista:
-        if numero < menor:
-            menor = numero
-    return menor
+# # Solucao2
+# def menor_numero_2(lista: list):
+#     list.sort()
+#     return lista[0]
 
-# Solucao2
-def menor_numero_2(lista: list):
-    list.sort()
-    return lista[0]
-
-lista = [random.randint(1, 1000) for i in range(100000)]
-inicio1 = time.time()
-print(menor_numero_1(lista))
-print("primeira:", time.time() - incio1)
-inicio2 = time.time()
-print(menor_numero_2(lista))
-print("segunda:", time.time() - inicio2)
+# lista = [random.randint(1, 1000) for i in range(100000)]
+# inicio1 = time.time()
+# print(menor_numero_1(lista))
+# print("primeira:", time.time() - incio1)
+# inicio2 = time.time()
+# print(menor_numero_2(lista))
+# print("segunda:", time.time() - inicio2)
 
 # 3 - João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento
 # diário de seu trabalho.
@@ -94,15 +93,39 @@ print("segunda:", time.time() - inicio2)
 
 # 1 - Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
 
+# INICIO
+# entrada: valor do tamanho do arquivo (em MB)
+# entrada: valor da velocidade de um link de internet (em Mbps)
+# converter byte para bit para ficar na mesma medida q a valocidade de internet
+# fazer o calculo do "tempo" = "tamanho_em_megabits" x "1(s)" / "velocidade"
+# dividir o "tempo" por 60, para achar o valor em minutos.
+# exibir o valor do tempo na tela.
+# FIM
+
+def tempo_download(tamanho, velocidade):
+    tamanho_em_megabits = tamanho * 8
+    tempo = (tamanho_em_megabits * 1) / velocidade
+    tempo_em_minutos = tempo / 60
+    print(f"O tempo de download eh de {tempo_em_minutos} ")
+
+tempo_download(100, 100)
+
+
+#codificando em python
+
 
 # 2 - Faça um Programa para um caixa eletrônico.
-# O programa deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas.
-# As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais.
+# O programa deverá perguntar ao usuário o valor do saque e depois informar quantas notas de cada valor serão fornecidas.
+# As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo para saque é de 10 reais e o máximo de 600 reais.
 # O programa não deve se preocupar com a quantidade de notas existentes na máquina.
 
 # Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
 
 # Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+
+# INICIO
+
+# FIM
 
 
 # 3 - Um posto está vendendo combustíveis com a seguinte tabela de descontos: Álcool: até 20 litros,
