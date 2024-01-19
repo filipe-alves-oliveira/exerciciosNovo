@@ -24,12 +24,26 @@
 # conceito_aluno = obter_conceito(media_final_aluno)
 # print(f'O conceito do aluno é: {conceito_aluno}')
 
+# CORRECAO PROFESSOR
+# def retorna_conceito(media_fim: float) -> str:
+#     if media_fim < 5:
+#         return 'D'  
+#     elif media_fim < 7:
+#         return 'C'
+#     elif media_fim < 9:
+#         return 'B'
+#     elif media_fim <= 10:
+#         return 'A'
+#     return ''
+# print(retorna_conceito(10)) //A
 
-# ----------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------
 # 2 Faça um procedimento (função) que recebe 3 valores inteiros por parâmetro e retorna-os ordenados em ordem 
 # crescente.
 
-# RESOLUCAO
+# RESOLUCAO obs.: tupla coleção, lista, só  imutavel.
+# se iniciar com a,b,c = c reduz uma compraçao else.
+
 # def ordem_crescente(a, b, c):
 #     if a <= b <= c:
 #         return a, b, c
@@ -57,11 +71,8 @@
 # # Imprime o resultado
 # print(f'A ordem crescente dos números é: {ordem[0]}, {ordem[1]}, {ordem[2]}')
 
-# ----------------------------------------------------------------------------------------------------------------------
-# 3 Faça um procedimento que recebe, por parâmetro, a hora de inicio e a hora de término de um jogo, ambas subdivididas
-# em 2 valores distintos: horas e minutos. O procedimento deve retornar, também por parâmetro, a duração do jogo em 
-# horas e minutos, considerando que o tempo máximo de duração de um jogo é de 24 horas e que o jogo pode começar em um 
-# dia e terminar no outro.
+# ----------------------------------------------------------------------------------------------------------
+# 3 Faça um procedimento que recebe, por parâmetro, a hora de inicio e a hora de término de um jogo, ambas subdivididas em 2 valores distintos: horas e minutos. O procedimento deve retornar, também por parâmetro, a duração do jogo em horas e minutos, considerando que o tempo máximo de duração de um jogo é de 24 horas e que o jogo pode começar em um dia e terminar no outro.
 
 # RESOLUCAO
 # def calcular_duracao_jogo(hora_inicio, minuto_inicio, hora_termino, minuto_termino):
@@ -95,8 +106,16 @@
 
 # calcular_duracao_jogo(hora_inicio, minuto_inicio, hora_termino, minuto_termino)
 
+#CORRECAO PROFESSOR
 
-# ----------------------------------------------------------------------------------------------------------------------
+def retorna_duracao(inicio: tuple, fim: tuple)
+    diferença_horas = fim[0] - inicio[0]
+    diferença_minutos = fim[1] - inicio[1]
+
+
+retorna_duracao((1,4), (3,50))
+
+#----------------------------------------------------------------------------------------------------------
 # 4 Escreva um procedimento que recebes 3 valores reais X, Y e Z e que verifique se esses valores podem ser os 
 # comprimentos dos lados de um triângulo e, neste caso, retornar qual o tipo de triângulo formado. Para que X, Y e Z 
 # formem um triângulo é necessário que a seguinte propriedade seja satisfeita: O comprimento de cada lado de um 

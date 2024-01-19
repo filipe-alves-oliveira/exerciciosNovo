@@ -102,16 +102,13 @@
 # exibir o valor do tempo na tela.
 # FIM
 
-def tempo_download(tamanho, velocidade):
-    tamanho_em_megabits = tamanho * 8
-    tempo = (tamanho_em_megabits * 1) / velocidade
-    tempo_em_minutos = tempo / 60
-    print(f"O tempo de download eh de {tempo_em_minutos} ")
+# def tempo_download(tamanho, velocidade):
+#     tamanho_em_megabits = tamanho * 8
+#     tempo = (tamanho_em_megabits * 1) / velocidade
+#     tempo_em_minutos = tempo / 60
+#     print(f"O tempo de download eh de {tempo_em_minutos} ")
 
-tempo_download(100, 100)
-
-
-#codificando em python
+# tempo_download(100, 100)
 
 
 # 2 - Faça um Programa para um caixa eletrônico.
@@ -121,11 +118,26 @@ tempo_download(100, 100)
 
 # Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
 
+# INICIO
+# entrada: informar as notas disponíveis.
+# entrada: perguntar ao usuário qual valor ele quer sacar
+# fazer uma validação do valor mínimo e máximo para saque, ambos exceder os valores, dar uma msg que o saque tem q ser 10 e 600 reais.
+# verificar o valor do "saque" e dividir por 100 se resto 0 
+#   se notas = saque / 100
+#   retornar 0 - printar na tela - Para sacar o valor informado o programa forneceu notas de 100
+# se resto diferente de 0 dividir por 50 se resto 0 
+#   retornar 0 - printar na tela - Para sacar o valor informado o programa forneceu n notas de 50
+# se resto diferente de 0 dividir por 10 se resto 0 
+#   retornar 0
+# se resto diferente de 0 dividir por 5 se resto 0 
+#   retornar 0
+# se resto diferente de 0 dividir por 1 se resto 0 
+#   retornar 0
+# exibir na tela 
+# FIM
+
 # Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
 
-# INICIO
-
-# FIM
 
 
 # 3 - Um posto está vendendo combustíveis com a seguinte tabela de descontos: Álcool: até 20 litros,
