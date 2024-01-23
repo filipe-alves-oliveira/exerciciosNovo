@@ -108,12 +108,12 @@
 
 #CORRECAO PROFESSOR
 
-def retorna_duracao(inicio: tuple, fim: tuple)
-    diferença_horas = fim[0] - inicio[0]
-    diferença_minutos = fim[1] - inicio[1]
+# def retorna_duracao(inicio: tuple, fim: tuple)
+#     diferença_horas = fim[0] - inicio[0]
+#     diferença_minutos = fim[1] - inicio[1]
 
 
-retorna_duracao((1,4), (3,50))
+# retorna_duracao((1,4), (3,50))
 
 #----------------------------------------------------------------------------------------------------------
 # 4 Escreva um procedimento que recebes 3 valores reais X, Y e Z e que verifique se esses valores podem ser os 
