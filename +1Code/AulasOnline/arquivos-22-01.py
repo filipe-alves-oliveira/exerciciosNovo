@@ -111,7 +111,7 @@ import time
 #w - write - escrever
 #a - append - juntar/colocar no fim
 
-# arquivo = open("texto.txt", mode="r", encoding="utf8")
+# arquivo = open("+1Code/AulasOnline/texto.txt", mode="r", encoding="utf8")
 # lista_de_compras = []
 
 # for linha in arquivo:
@@ -124,7 +124,7 @@ import time
 
 # import csv
 
-# arquivo = open("texto.txt", mode="r", encoding="utf8")
+# arquivo = open("+1Code/AulasOnline/texto.txt", mode="r", encoding="utf8")
 # lista_de_compras = []
 
 # for linha in arquivo:
@@ -133,11 +133,11 @@ import time
 #     })
 # arquivo.close()
 
-# novo_arquivo = open("texto.txt", mode="w", encoding="utf8")
+# novo_arquivo = open("+1Code/AulasOnline/texto.txt", mode="w", encoding="utf8")
 # novo_arquivo.write(str(lista_de_compras))
 # novo_arquivo.close()
 
-# arquivo_csv = open("lista.csv", mode="w", encoding="utf8")
+# arquivo_csv = open("+1Code/AulasOnline/lista.csv", mode="w", encoding="utf8")
 # escritor_csv = csv.DictWriter(arquivo_csv, ["item"])
 # escritor_csv.writeheader()
 # escritor_csv.writerows(lista_de_compras)
@@ -210,19 +210,17 @@ import time
 arquivo = open("+1Code/AulasOnline/notas.txt", mode="r", encoding="utf8")
 
 soma_notas = 0
-
 num_notas = 0
 
 for linha in arquivo:
-    nota = float(linha.strip())
+    nota = float(linha)
     soma_notas += nota
     num_notas += 1
 
 arquivo.close()
+media = soma_notas / num_notas
 
-media_classe = soma_notas / num_notas
-
-print(f"A média da classe é: {media_classe}")
+print(f"A média da classe é: {media}")
 
 
 
