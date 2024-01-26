@@ -207,4 +207,22 @@ import time
  
 # 2- crie um script que lerá o arquivo enviado a seguir, que contém as notas de todos os alunos de uma classe, e calcule a média da classe, por fim exiba-a na tela!
 
+arquivo = open("+1Code/AulasOnline/notas.txt", mode="r", encoding="utf8")
+
+soma_notas = 0
+
+num_notas = 0
+
+for linha in arquivo:
+    nota = float(linha.strip())
+    soma_notas += nota
+    num_notas += 1
+
+arquivo.close()
+
+media_classe = soma_notas / num_notas
+
+print(f"A média da classe é: {media_classe}")
+
+
 
