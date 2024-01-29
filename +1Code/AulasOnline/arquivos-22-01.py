@@ -144,9 +144,9 @@ import time
 
 # -----------------------------------------------------------------------------------
 
-# **EXERCICIOS**
+# # **EXERCICIOS**
  
-# 1-Construir uma calculadora com menu, que faça as operações basicas e mais a operação de porcentagem, utilize as funções aprendidas em aula para melhorar a experiência do usuario
+# # 1-Construir uma calculadora com menu, que faça as operações basicas e mais a operação de porcentagem, utilize as funções aprendidas em aula para melhorar a experiência do usuario
 
 # def recebe_valores():
 #     a = float(input("Digite o primeiro numero: "))
@@ -205,22 +205,22 @@ import time
 #     operacao = menu()
 
  
-# 2- crie um script que lerá o arquivo enviado a seguir, que contém as notas de todos os alunos de uma classe, e calcule a média da classe, por fim exiba-a na tela!
+# # 2- crie um script que lerá o arquivo enviado a seguir, que contém as notas de todos os alunos de uma classe, e calcule a média da classe, por fim exiba-a na tela!
 
-arquivo = open("+1Code/AulasOnline/notas.txt", mode="r", encoding="utf8")
+# arquivo = open("+1Code/AulasOnline/notas.txt", mode="r", encoding="utf8")
 
-soma_notas = 0
-num_notas = 0
+# soma_notas = 0
+# num_notas = 0
 
-for linha in arquivo:
-    nota = float(linha)
-    soma_notas += nota
-    num_notas += 1
+# for linha in arquivo:
+#     nota = float(linha)
+#     soma_notas += nota
+#     num_notas += 1
 
-arquivo.close()
-media = soma_notas / num_notas
+# arquivo.close()
+# media = soma_notas / num_notas
 
-print(f"A média da classe é: {media}")
+# print(f"A média da classe é: {media}")
 
 
 
