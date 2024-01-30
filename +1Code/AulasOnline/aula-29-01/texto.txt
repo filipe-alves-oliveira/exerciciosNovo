@@ -1,0 +1,6 @@
+alface 1.0 10
+tomate 5.0 50
+cebola 3.0 50
+arroz 5.0 20
+feijao 6.0 15
+macarrao 4.0 70
