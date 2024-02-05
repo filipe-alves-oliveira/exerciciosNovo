@@ -54,7 +54,7 @@
 #   }
 # }
 
-import json
+# import json
 
 # arquivo = open('cep.json', 'r')
 # for linha in arquivo
@@ -96,4 +96,38 @@ import json
     
 # tag = bs_data.find('cep').get_text()
 # print(tag)
+
+# ---------------------------------------------------------------------------------------
+# EXERCICIOS P CASA
+
+# 1 - Lembram da lista de compras que criamos? vamos implementá-la novamente! 
+# Crie um dicionário contendo uma lista de compras, sendo que cada item deve conter o nome do item, o valor unitario, e a quantidade que deve ser comprado. Após construir esse dicionário, ele deve ser escrito em um arquivo JSON de nome "lista_de_compras.json"!
+# Utilize a biblioteca json do python para realizar a escrita através da função ".dump()" (lembre-se do "import json" no começo do arquivo), e a função open() para criar o arquivo!
+
+import json
+
+lista_de_compras = [
+    {
+        "item": "lapiseira",
+        "valor": 5.0,
+        "quantidade": 1
+    },
+    {
+        "item": "pincel",
+        "valor": 2.0,
+        "quantidade": 2
+    },
+    {
+        "item": "borracha",
+        "valor": 1.0,
+        "quantidade": 2
+    }
+]
+
+arquivo = open("+1Code/AulasOnline/aula-29-01/lista_de_compras.json", "w")
+json.dump(lista_de_compras, arquivo)
+
+
+
+
 
