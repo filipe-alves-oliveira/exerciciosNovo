@@ -100,6 +100,8 @@
 # ---------------------------------------------------------------------------------------
 # EXERCICIOS P CASA
 
+
+###### *EXERCICIOS* ######
 # 1 - Lembram da lista de compras que criamos? vamos implementá-la novamente! 
 # Crie um dicionário contendo uma lista de compras, sendo que cada item deve conter o nome do item, o valor unitario, e a quantidade que deve ser comprado. Após construir esse dicionário, ele deve ser escrito em um arquivo JSON de nome "lista_de_compras.json"!
 # Utilize a biblioteca json do python para realizar a escrita através da função ".dump()" (lembre-se do "import json" no começo do arquivo), e a função open() para criar o arquivo!
