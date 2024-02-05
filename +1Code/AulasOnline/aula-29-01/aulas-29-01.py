@@ -104,30 +104,68 @@
 # Crie um dicionário contendo uma lista de compras, sendo que cada item deve conter o nome do item, o valor unitario, e a quantidade que deve ser comprado. Após construir esse dicionário, ele deve ser escrito em um arquivo JSON de nome "lista_de_compras.json"!
 # Utilize a biblioteca json do python para realizar a escrita através da função ".dump()" (lembre-se do "import json" no começo do arquivo), e a função open() para criar o arquivo!
 
+# import json
+
+# lista_de_compras = [
+#     {
+#         "item": "lapiseira",
+#         "valor": 5.0,
+#         "quantidade": 1
+#     },
+#     {
+#         "item": "pincel",
+#         "valor": 2.0,
+#         "quantidade": 2
+#     },
+#     {
+#         "item": "borracha",
+#         "valor": 1.0,
+#         "quantidade": 2
+#     }
+# ]
+
+# arquivo = open("+1Code/AulasOnline/aula-29-01/lista_de_compras.json", "w")
+# json.dump(lista_de_compras, arquivo)
+
+# 2 - Agora nosso usuário foi no mercado, e comprou tudo que estava na lista! Mas esqueceu de por algumas coisas na lista! Devemos ler o arquivo criado anteriormente (utilize novamente a biblioteca json so python, com a função ".load()" dessa vez) e alterar todos os itens que estavam la anteriormente para a quantidade 0, já que já foram compradas, e deve ser adicionado na lista os seguintes itens que foram esquecidos:
+# nescau, custa 10 reais, 1 unidade
+# leite condensado, custa 5,50 reais, 3 unidades
+# creme de leite, custa 3,40 reais, 3 unidades
+ 
+# Após adicionados no dicionario, deve-se sobrescrever o arquivo criado anteriormente, agora com as novas quantidades dos itens anteriores, e os novos itens que foram esquecidos!
+
 import json
 
-lista_de_compras = [
+arquivo = open("+1Code/AulasOnline/aula-29-01/lista_de_compras.json", "r")
+lista_de_compras = json.load(arquivo)
+
+for item in lista_de_compras:
+    item["quantidade"] = 0
+
+novos_itens = [
     {
-        "item": "lapiseira",
-        "valor": 5.0,
+        "item": "nescau",
+        "valor": 10,
         "quantidade": 1
     },
     {
-        "item": "pincel",
-        "valor": 2.0,
-        "quantidade": 2
+        "item": "leite condensado",
+        "valor": 5.5,
+        "quantidade": 3
     },
     {
-        "item": "borracha",
-        "valor": 1.0,
-        "quantidade": 2
+        "item": "creme de leite",
+        "valor": 3.40,
+        "quantidade": 3
     }
 ]
 
+for novo_item in novos_itens:
+    if novo_item not in lista_de_compras:
+        lista_de_compras.append(novo_item)
+
 arquivo = open("+1Code/AulasOnline/aula-29-01/lista_de_compras.json", "w")
 json.dump(lista_de_compras, arquivo)
-
-
 
 
 
