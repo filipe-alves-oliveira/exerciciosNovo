@@ -39,9 +39,28 @@ import requests
 
 #     pilha_rodrigo = requests.get(f"https://www.deckofcardsapi.com/api/deck/{id_baralho}/pile/{'Rodrigo'}/list/").json()
 
-# CURRENCY
 
+# CURRENCY - https://currencyapi.com/
+# api_key = "cur_live_JpOS..."
+# cotacao = requests.get(f"https://api.currencyapi.com/v3/latest?apikey={api_key}&currencies=BRL").json()
+# print(cotacao)
+
+# Exercicio
+# Entrar no site: https://publicapis.dev/category/all
+# e escolher na lista duas APIs que mais te interessem, uma sem autenticação, e uma que use API Key, utilize o filtro "Auth" presente no site para filtrar cada uma delas!
+# Após escolher, consuma e exiba os dados em um script python, de cada uma dessas APIs!
+
+#sem autenticação
+
+#api_key
+# api_key = "YVFIG6pRda0e9cbf314c6c866ebfae5fb75fa1869eWuLk57As"
+# geo_ip = requests.get(f"https://ipgeo.proweblook.com/?ip=192.168.100.45&api_key={api_key}").json()
+# print(geo_ip)
            
-                                 
-                                 
-                                 
+# api_key = "YVFIG6pRda0e9cbf314c6c866ebfae5fb75fa1869eWuLk57As"
+# phone = requests.get(f"https://phoneapi.proweblook.com/?number=5518991373128&api_key={api_key}").json()
+# print(phone) #{'status': True, 'number': '+5518991373128', 'national_format': '(18) 99137-3128', 'name': 'Vivo Telefonica (06)', 'type': 'mobile', 'mcc': '724', 'mnc': '06'}               
+
+#Auth
+geo_ip = requests.get(f"https://v2.jokeapi.dev/joke/Programming,Misc?format=xml&blacklistFlags=nsfw,sexist&type=single&lang=ru&amount=2")
+print(geo_ip)
