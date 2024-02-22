@@ -1,0 +1,45 @@
+Paradigma - estruturado.
+Ex.: Inicio -> entrada do usuário - > Saída.
+
+POO
+classe - existe mas não é utilizada o tempo todo no meio do programa, ex.: molde, carro.
+objetos - alguma coisa real q existe, ex.: carro de verdade, fusca, gol.
+
+Memória divida em:
+
+STACK (pilha) - guardam as coisas principais, mais rápidas, variaveis com valor. Ex.: number = 35. Tipo referencia. Ex.: carro = 0123 (endereço da memória que está na HEAP)
+Cuidado com mais de uma variável apontando para um mesmo lugar.
+
+HEAP - memória maior só que mais lenta e mais bagunçada. 
+ex.: 0123 (stack) - palio, 2010, cinza, 4p. É o objeto.
+
+Ex.: 
+class Soma:
+    def executar(self, a, b):
+        return a + b
+        
+class Subtracao:
+    def executar(self, a, b):
+        return a - b
+
+
+Outro Ex.:
+class Poligono:
+    def __init__(self, lados):   #self-equivalente ao this (qdo criar um objto preciso dele 
+                                  p passar na funcao, cada objeto é um self)
+        self.numero_lados = lados
+
+quadrado = Poligono(4)
+triangulo = Poligono(3)
+
+print(quadrado)
+print(quadrado.numero_lados)
+
+ENCAPSULAMENTO - encapsular funcionalidades / caracteristicas de uma classe.
+Ex.: pilha, nao sabe o que tem dentro mas sabe q funciona. 
+
+HERANÇA - herdar os atributos e funcionalidades.
+
+POLIMORFISMO (só possível com herança) - 
+
+
