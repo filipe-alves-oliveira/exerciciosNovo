@@ -40,6 +40,30 @@ Ex.: pilha, nao sabe o que tem dentro mas sabe q funciona.
 
 HERANÇA - herdar os atributos e funcionalidades.
 
-POLIMORFISMO (só possível com herança) - 
+POLIMORFISMO (só possível com herança)
+Poli - muito/vários
+morfismo - formas
+tratar da mesma forma vários objetos diferentes.
+superclasse - ta em cima (classe pai)
+subclasse - ta em baixo (classe filha)
 
+Ex.: classe Animal           #classe pai
+comer()
+locomover()
 
+classe Mamifero(animal)      #filho de animal, recebe as duas função de animal
+comer()
+locomover()
+amamentar()
+
+classe Cachorro(mamifero)     #filho de mamifero, recebe as duas funcoes da classe vo e as da classe pai
+comer()
+locomover()
+amamentar()
+latir()
+
+morcego = Mamifero()
+cachorro = Cachorro()
+abelha = Animal()
+alimentarse(animal: Animal)
+    animal.comer
