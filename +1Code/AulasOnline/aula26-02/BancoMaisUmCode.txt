@@ -1,0 +1,20 @@
+Programinha de Banco
+
+Conta
+Número
+Saldo
+Tipo
+Usuário ----> Usuario
+                Nome
+                Sobrenome
+                CPF
+                Telefone
+                Endereço ----> Endereço
+                                CEP
+                                estado 
+                                cidade 
+                                Rua 
+                                Número
+                                complemento
+
+

@@ -43,4 +43,4 @@ fusca.acelerar(7)
 print(moto.ligado)
 moto.ligar()
 
-    def aumentar_velocidade(self, km):
+#   def aumentar_velocidade(self, km):
