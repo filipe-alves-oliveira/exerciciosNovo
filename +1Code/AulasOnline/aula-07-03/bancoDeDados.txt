@@ -1,0 +1,13 @@
+Banco de dados:
+- guardar informações de forma organizada.
+
+Banco Relacional/SQL feito com tabelas de linhas e colunas, tem relações entre as tabelas.
+
+Banco Não relacional/NoSQL (não somente SQL), qualquer coisa q não tem padrão relacional.
+    - colunar, grafos, documento, chave-valor
+
+diferença do relacional para o não relacional - estrutura de dados bem certa dificil de alterar, inserir novas colunas, alterar, no não relacional já é bem mais flexível fazer isso.
+- relacionamento forte entre entidades - relacional.
+
+
+SGBD - Sistema gerenciador de banco de dados.
