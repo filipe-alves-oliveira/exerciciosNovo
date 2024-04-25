@@ -1,0 +1,14 @@
+Modelo de responsabilidade compartilhada da AWS / AWS Elastic Compute Cloud
+-para trazer responsabilidade de segurança do lado do cliente e da aws.
+-AWS cuida da infra da estrutura física, datacenters e recursos, segurança da nuvem.
+-Cliente segurança na nuvem, o que insiro, utilizo e compartilho da nuvem.
+-responsabilidade varia de acordo com Características do serviço e responsabilidade de segurança
+
+tipo de serviços (Infra como serviço):
+-Exemplo de serviços gerenciados pelo clienteAmazon EC2Amazon Elastic Block Store (Amazon EBS)Amazon Virtual Private Cloud (Amazon VPC)
+
+paltaforma como serviço:
+-Exemplo de serviços de gerenciados pela AWS- aws lambda, amazon database service, aws elastic
+
+RDS - serviço de BD
+

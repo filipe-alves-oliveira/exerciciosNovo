@@ -1,0 +1,48 @@
+Canvas > Modulos - Material.
+O que é computação em nuvem?
+
+34:18
+- VANTAGENS
+-libera espaço no pc
+-aumentar velocidade e agilidade
+-globalização de serviços
+-gastar dinheiro com data centers
+
+----------------------------------------------------------------------------------------
+
+AWS(01:10) - Provedor de serviços em nuvem q oferece diversos serviços diferentes com soluções para:
+anális, ar e vr, blockchain, computação, armazenamento, rede de entrega e conteudo, gerenciamento e governança, bd..
+
+client (instagram) -> mensagem solicitação -> serviço web
+client             <- mensagem resposta    <-  serviço web  
+
+EXEMPLO DE SOLUÇÃO SIMPLES
+Usuario - VPC - ec2, dynamoDB, amazon s3
+
+Serviço a selecionar depende do serviço empresarial e da tecnologia.
+
+
+----------------------------------------------------------------------------------------
+MANEIRAS PARA INTERAGIR
+-console de gerenciamento aws - pelo browser
+-aws command terminal aws cli - meio de comando e scripts
+-kits de desenvolvimento de software (SDKs) da aws, acessar diretamento do código.
+
+(**CAI NA PROVA perspectiva**)
+AWS CLOUD ADOPTION FRAMEWORK (AWS CAF) - o AWS CAF é um guia abrangente para ajudar as organizações a adotarem com sucesso os serviços de computação em nuvem da AWS em suas operações e processos de negócios.
+-oferece recurso de formulário q tem diretrizes p estabelecer, desenvolver e executar ambientes da aws.
+-Pespectivas - negócios / operações / segurança / plataforma / governança / pessoas
+
+DOCUMENTAÇÃO
+-Boa e concisa.
+
+----------------------------------------------------------------------------------------
+MODELO DE PREÇO AWS
+-computação - cobrado por hora/segundo* e varia por tipo de instancia (só linux)
+-armazenamento - cobrado por gb 
+-transferencia de dados - saida de dados. Ex.: usuário q baixa o PDF disponibilizado pela AWS, saída de dados. Cobrado por GB, entrada não tem cobrança. No local - cresce conforme o uso. AWS se não utilizo pago menos, depende do uso.
+-Paga conforme uso, apenas pelo q consumir.
+-Paga menos ao fazer reserva. Pagamento total antecipado, maior desconto. Parcial, menos desconto. Sem pagamento parcial, desconto menor.
+-Paga menos ao usar mais e a medida q AWS cresce.
+
+

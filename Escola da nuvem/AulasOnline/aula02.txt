@@ -1,0 +1,6 @@
+Infraestrutura
+
+Latencia - tempo de entrega de conteúdo.
+ponto de presença - cache q diminui a latencia
+
+cognito - serviço de login para aplicações.

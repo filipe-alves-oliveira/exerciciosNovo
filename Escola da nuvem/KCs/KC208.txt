@@ -1,0 +1,30 @@
+despesas fixas em despesas variáveis? (Selecione DUAS respostas.) TDS CERTAS
+ Poder investir em data centers com base no forecast
+ Pagar apenas quando os recursos de computação são consumidos
+ Compra de servidores físicos conforme necessário
+ Pagar apenas pelo o que é consumido
+ Comprar propriedades e prédios conforme necessário
+
+O que significa o conceito de grande economia de escala em termos de computação em nuvem?
+ O custo de computação em nuvem é reduzido quando os clientes usam serviços de scaling.
+ A computação em nuvem tem custo variável menor quando a economia está boa.
+ As economias podem ser repassadas para os clientes quando mais clientes usam a AWS. CERTA
+ As economias podem ser repassadas para os clientes quando a AWS cria mais data centers.
+
+Qual é a vantagem da segurança da computação em nuvem?
+ Velocidade e agilidade maiores CERTA
+ Maior investimento em data centers
+ Controle completo da infraestrutura
+ Custo fixo de uso de recursos de computação
+
+Qual é um benefício do desenvolvimento em um ambiente de nuvem?
+ O ambiente de nuvem encontra erros automaticamente em um código de aplicativo.
+ Um desenvolvedor precisa de poucas habilidades de programação para criar aplicativos complexos.
+ O ambiente de nuvem fornece os dados usados para testar um aplicativo.
+ O tempo necessário para acessar recursos de computação é reduzido. CERTA
+
+O que quer dizer a frase “tenha alcance global em minutos”?
+ Os usuários podem ter clientes de todo o mundo adicionados às suas contas da AWS instantaneamente.
+ Os usuários podem implantar suas soluções em várias Regiões AWS ao redor do mundo com apenas alguns cliques. CERTA
+ Os usuários podem compartilhar recursos de computação de uma região AWS com outras regiões.
+ Os usuários podem acessar recursos de desenvolvedor de outras partes do mundo para acelerar seus projetos.
