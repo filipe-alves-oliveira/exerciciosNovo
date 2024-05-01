@@ -1,6 +1,105 @@
-Infraestrutura
+Visão geral da Infraestrutura da AWS
 
-Latencia - tempo de entrega de conteúdo.
-ponto de presença - cache q diminui a latencia
+Vários países existentes dataCenter da AWS (São paulo) 
+-33 zonas de Datacentes no mundo
+-dividido em Regiões / Zonas de disponibilidade / Pontos de presença a partir dessa infra q vem a virtualização e os serviços, computação, redes e armazenamento e espande o serviço de plataforma como bd e outros.
 
-cognito - serviço de login para aplicações.
+DATA CENTERS
+-um CONJUNTO de servidores representa um DATACENTER
+-local físico onde tudo ocorre
+-50k a 80k servidores
+-todos online
+-nenhum fica inativo
+-equipamento de redes personalizados -hardware originario de varios fabricantes do projeto ODM e conjunto de protocolos de redes personalizados da amazon.
+-se ocorrer um dano em algum isso empede q outro seja afetado.
+
+REGIÃO
+-uma ou mais ZONA DE DISPONIBILIDADE constitui uma regiao.
+-Regiao de SP tem um conjunto de dtcenters dispostos de maneira estrategica e tem 3 ZD 
+-ficam em uma região isolada.
+-composta por 1 ou mais ZD
+-AWS tem 33 regioes ao redor do mundo.
+-comunicação entre regioes usa estrutura de conecoes de rede da infra da aws
+-Aba superior seleciona a região, ao criar uma aplicação na região diferente da que foi criada pode não aparecer.
+-1 Governança de dados, requisitos legais.
+-2 proximidade com os clientes (latencia)
+-3 serviços disponiveis na regiao
+-4 custos (variam por regiao)
+-Escolha de região é feita com base em exigencias de conformidade ou redução de latencia.
+
+ZONA DE DISPONIBILIDADE
+-um conjunto de DATACENTER configura uma ZONA DE DISPONIBILIDADE
+-cada zona tem 1 ou mais Datacentes.
+-isolado de falhas
+-1 ou mais Datacentes
+-ficam dispostos geograficamente pertos um do outro mas dispersos, zona de disponibilidade.
+-ficam interconectados atraves de links privados de alta disponibilidade.
+-AWS recomenda replicar entre zonas de disponibilidade para fins de resiliencia
+
+DC - DC - DC = ZD --> REGIÃO AWS
+DC - DC - DC = ZD --> REGIÃO AWS
+
+PONTO DE PRESENÇA 
+-é o cache de cada região/ZD
+-AWS tem esse serviço de PP/cache, permitindo menor latencia na entrega de conteudo
+-Ao acessar 1 vez demora mais, acessando pela 2 vez o tempo de latencia é menor pq tem p chache
+-216 locais de ponto de presença (205 locais de borda e 11 caches de borda regionais)
+-os PP saõ usados pelos serviços de entrega de conteudo (CDN) - Cloud front - distribui conteudo aos usuarios finais com latencia reduzida. (Ex.: quero fazer uma entrega de um front de forma global em minutos no cloud front e habilitar todos os paises.)
+-Locais de borda e caches de bordas regionais.
+-caches de borda regionais sao usados para conteudo com acesso infrequente.
+-melhora o desempenho ao armazenar conteudo no cache mais proximo dos usuários.
+
+VANTAGENS DESSES RECURSOS
+-infra elasticam adaptacao dinamica
+-tolerante a falhas.
+-Replicar o serviço em 2 ZDs caso tenha falhas em uma.
+-alta disponibilidade, alto nivel de desempenho com menor tempo de inatividade reduzido.
+
+
+Um CONJUNTO de servidores representa um DATACENTER e um conjunto de DATACENTER configura uma ZONA DE DISPONIBILIDADE naquele mesmo ponto regional e uma ou mais ZONA DE DISPONIBILIDADE constitui uma regiao.
+
+RECURSOS DO WAVELENGHT
+-exclusivo para PP app moveis.
+
+-----------------------------------------------------------------------------------------------------
+
+SERVIÇOS FUNDAMENTAIS DA AWS
+-computação(UEC2, UECS), redes(VPC) e armazenamento são os fundamentais da AWS(S3)
+-Categorias mais usadas: Conteiners, BD, Gerencimento e Governança, redes e entrega de conteudo, computação, Gerencimento de custos da AWS
+
+CATEGORIAS DE SERVIÇOS DE ARMAZENAMENTO 
+-4 serviços: amazon simple storage service (amazon s3), Amazon block store - EBS, Amazon flie system - EFS(divide em 3) e Amazon simple storage service glacier.
+
+CATEGORIAS DE SERVIÇOS DE COMPUTÇÃO 
+-3 servicos - Amazon EC2(como se fosse um pc novo), Amazon EC2 auto scaling(Verificar o uso computacional de maneira inteligente), AWS Elastic Beanstalk(implantacao de código de dev), AWS lambda(serviço da Amazon que permite rodar código sem precisar gerenciar servidores - servless 5k lambdas por mes, 15 minutos de limite, micro-serviço utiliza bastante o lambda)
+
+CATEGORIAS DE SERVIÇOS DE CONTEINERS 
+-Isolamento de recursos, forma de empacotar e executar aplicativos com todas as suas dependências (bibliotecas, ferramentas, configurações) isolados em um ambiente.
+-Amazon ECS, Amazon Elastic container registry, Amazon Elastic service (EKS), AWS fargate
+-servless: serviço sem servidor.
+
+CATEGORIAS DE SERVIÇOS DE BD
+-BD relacional (Amazon RDS), Amazon Aurora, Amazon Redshift(analise de dados) e Amazon DynamoDB(n relacional)
+
+CATEGORIAS DE SERVIÇOS DE REDES E ENTREGAS DE CONTEUDO 
+-amazon virutal private cloud (VPC) tudo passa por aqui, Elastic load balancing(entrega de conteudo), Amazon cloudfront(entrega de conteudo CDN), AWS Trasnit Gateway, Amazon Route53, AWS direct Connect, AWS VPN
+
+CATEGORIAS DE SERVIÇOS DE SEGURANÇA IDENTIDADE E CONFORMIDADE 
+-Serviços - AWS identity and acces management (IAM) admin da aws, AWS organizations - qm tem + 1 conta, Amazon Cognito(serviço de login para aplicações, aceita SSO), AWS artifact (aritgos de padronização do mercado), AWS key management service(AWS KMS) criptografia e AWS Shield-serviços conta ataque de DDOS.
+
+CATEGORIAS DE SERVIÇOS DE GERENCIAMENTO DE CUSTOS 
+-Serviços - AWS cost and usage report, AWS budgets - orçamento, AWS cost explorer
+
+SERVIÇOS DE GERENCIAMENTO E GOVERNANÇA DA AWS
+-aws management console, aws config - colocar regras de conformidade, nao permitir acesso a instancia 22, amazon cloudWatch-monitoramento - grava logs e cria alarmes, aws auto scaling, aws command line interface, aws trusted advisor-recomendacao de segurança, aws well-architected tool-avaliação, aws cloudTrail - guarda os passos q foi feito na sua conta.
+
+-----------------------------------------------------------------------------------------------------
+AMAZON SIMPLE STORAGE SERVICE (amazon s3)
+-serviço de armazenamento da nuvem.
+-armazenados como objetos em buckets (um unico obejto pode ter até 5TB)
+-11 noves (99,999999999999%) de durabilidade
+-acesso granular a buckets e objetos        01:13
+
+
+
+
